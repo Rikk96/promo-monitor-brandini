@@ -1,15 +1,8 @@
 {
-  "id": "87b5a158-2987-4de5-aabb-48233400e5bd",
-  "status": "COMPLETED",
-  "brand": "abarth",
-  "brand_label": "Abarth",
-  "requested_at": "2026-08-24T14:24:51.321Z",
-  "message": "Esecuzione completata",
-  "script": "abarth_push_to_sheet.py",
-  "started_at": "2026-08-24T14:25:23+00:00",
-  "finished_at": "2026-08-24T14:25:52+00:00",
-  "elapsed_seconds": 27.1,
-  "result": "OK",
-  "return_code": 0,
-  "log_excerpt": "URL ABARTH TROVATI: 2\n1/2 | 500e | elettrica | Abarth 500e Hatchback | € 269 | € 32.600 | € 10.306 | € 14.844 | € 22.565 | € 24.317 | 1,99% | 3,69% | 31/08/2026 | extended_legal_found | source=detail_legal\n2/2 | 600e | elettrica | Abarth 600e Turismo | € 399 | € 37.950 | € 9.948 | € 20.373 | € 28.273 | € 34.410 | 7,45% | 9,18% | 31/08/2026 | extended_legal_found | source=detail_legal\n\nRIGHE ABARTH: 2\nERRORI: 0\nPUSH COMPLETATO: righe Abarth scritte: 2\n\n/home/gruppobrandini/promo-monitor/abarth_push_to_sheet.py:99: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  ws.update(\"A1\", values)"
+  "id": "738823c3-249f-4106-ad56-b84ee53a54fb",
+  "status": "PENDING",
+  "brand": "alfa",
+  "brand_label": "Alfa Romeo",
+  "requested_at": "2026-08-24T14:26:48.600Z",
+  "message": "Aggiornamento manuale Alfa Romeo in coda"
 }
