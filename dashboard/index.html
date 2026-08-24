@@ -42,6 +42,10 @@
       margin: 0 0 7px;
       font-size: clamp(30px, 5vw, 48px);
       letter-spacing: -0.04em;
+      background: linear-gradient(135deg, #ffffff 0%, #93c5fd 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
 
     .subtitle, #updated {
@@ -55,6 +59,30 @@
       border-radius: 999px;
       background: #141b2d;
       font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    #overall .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #64748b;
+    }
+
+    #overall.error .dot {
+      background: #ef4444;
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+
+    #overall.ok .dot {
+      background: #22c55e;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, .55); }
+      50% { box-shadow: 0 0 0 6px rgba(239, 68, 68, 0); }
     }
 
     .notice {
@@ -98,6 +126,29 @@
       font-size: 29px;
     }
 
+    .metric.ok strong { color: #4ade80; }
+    .metric.bad strong { color: #f87171; }
+    .metric.pending strong { color: #fbbf24; }
+
+    .avatar {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 800;
+      color: #0b0f1a;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
     #grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
@@ -108,6 +159,25 @@
       padding: 18px;
       border-radius: 16px;
       border-left: 5px solid #64748b;
+      display: flex;
+      flex-direction: column;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+      animation: rise .35s ease backwards;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 46px rgba(0, 0, 0, .28);
+      border-color: #3a4a6b;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card > .force-button {
+      margin-top: auto;
     }
 
     .card.ok { border-left-color: #22c55e; }
@@ -288,7 +358,7 @@
       <div class="subtitle">Controllo aggiornamenti promozioni Brandini</div>
       <div id="updated">Caricamento…</div>
     </div>
-    <div id="overall">Caricamento</div>
+    <div id="overall"><span class="dot"></span><span id="overall-text">Caricamento</span></div>
   </header>
 
   <div id="historical-notice" class="notice" hidden></div>
@@ -303,15 +373,15 @@
       <span>Brand configurati</span>
       <strong id="configured">–</strong>
     </div>
-    <div class="metric">
+    <div class="metric ok">
       <span>Completati</span>
       <strong id="ok">–</strong>
     </div>
-    <div class="metric">
+    <div class="metric bad">
       <span>Errori</span>
       <strong id="bad">–</strong>
     </div>
-    <div class="metric">
+    <div class="metric pending">
       <span>Non eseguiti</span>
       <strong id="not-run">–</strong>
     </div>
@@ -342,6 +412,37 @@
       NOT_RUN: "NON ESEGUITO",
       RUNNING: "IN CORSO"
     }[status] || status;
+  }
+
+  function statusIcon(status) {
+    return {
+      OK: "✓",
+      FAIL: "⚠",
+      TIMEOUT: "⏱",
+      MISSING: "⚠",
+      NOT_RUN: "⏳",
+      RUNNING: "…"
+    }[status] || "•";
+  }
+
+  const AVATAR_PALETTE = [
+    "#f87171", "#fb923c", "#fbbf24", "#a3e635",
+    "#4ade80", "#34d399", "#2dd4bf", "#38bdf8",
+    "#818cf8", "#a78bfa", "#e879f9", "#fb7185"
+  ];
+
+  function avatarColor(name) {
+    let hash = 0;
+    for (let i = 0; i < name.length; i++) {
+      hash = (hash * 31 + name.charCodeAt(i)) >>> 0;
+    }
+    return AVATAR_PALETTE[hash % AVATAR_PALETTE.length];
+  }
+
+  function avatarInitials(name) {
+    const words = name.replace("/", " ").trim().split(/\s+/);
+    if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+    return (words[0][0] + words[1][0]).toUpperCase();
   }
 
 
@@ -467,15 +568,25 @@
     const head = document.createElement("div");
     head.className = "card-head";
 
+    const brandBox = document.createElement("div");
+    brandBox.className = "brand-name";
+
+    const avatar = document.createElement("div");
+    avatar.className = "avatar";
+    avatar.style.background = avatarColor(item.brand);
+    avatar.textContent = avatarInitials(item.brand);
+
     const brand = document.createElement("div");
     brand.className = "brand";
     brand.textContent = item.brand;
 
+    brandBox.append(avatar, brand);
+
     const badge = document.createElement("div");
     badge.className = "badge";
-    badge.textContent = statusLabel(item.status);
+    badge.textContent = `${statusIcon(item.status)} ${statusLabel(item.status)}`;
 
-    head.append(brand, badge);
+    head.append(brandBox, badge);
     article.append(head);
 
     const duration = document.createElement("div");
@@ -510,7 +621,7 @@
       const line = document.createElement("div");
       line.className = "manual-run-line";
       line.textContent =
-        `Ultimo forzato: ${statusLabel(manual.status)} \u00b7 ` +
+        `Ultimo forzato: ${statusLabel(manual.status)} · ` +
         localDate(manual.finished_at);
       box.append(line);
 
@@ -558,10 +669,9 @@
     $("#updated").textContent =
       `Ultimo ciclo: ${localDate(data.run_started_at)} · Run ${data.run_id}`;
 
-    $("#overall").textContent =
-      data.overall_status === "OK"
-        ? "🟢 Tutto regolare"
-        : "🔴 Controllo richiesto";
+    const isOk = data.overall_status === "OK";
+    $("#overall").className = isOk ? "ok" : "error";
+    $("#overall-text").textContent = isOk ? "Tutto regolare" : "Controllo richiesto";
 
     const runDate = new Date(data.run_started_at);
     const hoursOld = (Date.now() - runDate.getTime()) / 3600000;
@@ -599,12 +709,17 @@
       return rankA - rankB;
     });
 
-    sortedItems.forEach(item => grid.append(makeCard(item)));
+    sortedItems.forEach((item, index) => {
+      const card = makeCard(item);
+      card.style.animationDelay = `${Math.min(index * 28, 400)}ms`;
+      grid.append(card);
+    });
   }
 
   loadStatus().catch(error => {
     $("#updated").textContent = "Impossibile caricare lo stato";
-    $("#overall").textContent = "⚠️ Errore dashboard";
+    $("#overall").className = "error";
+    $("#overall").innerHTML = '<span class="dot"></span>Errore dashboard';
 
     const empty = document.createElement("div");
     empty.className = "empty";
