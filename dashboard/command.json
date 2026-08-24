@@ -1,4 +1,8 @@
 {
-  "status": "IDLE",
-  "message": "Nessun comando manuale in coda"
+  "id": "87b5a158-2987-4de5-aabb-48233400e5bd",
+  "status": "PENDING",
+  "brand": "abarth",
+  "brand_label": "Abarth",
+  "requested_at": "2026-08-24T14:24:51.321Z",
+  "message": "Aggiornamento manuale Abarth in coda"
 }
