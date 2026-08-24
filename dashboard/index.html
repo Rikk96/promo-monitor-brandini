@@ -219,6 +219,38 @@
       color: #fca5a5;
     }
 
+    .manual-run {
+      margin-top: 13px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid #28334b;
+      background: #101728;
+      font-size: 12px;
+    }
+
+    .manual-run.ok {
+      border-color: #1c4a30;
+      background: #0f1f16;
+    }
+
+    .manual-run.fail, .manual-run.timeout {
+      border-color: #5c2530;
+      background: #23131a;
+    }
+
+    .manual-run-line {
+      color: #c3cbdc;
+      font-weight: 650;
+    }
+
+    .manual-run.ok .manual-run-line { color: #86efac; }
+    .manual-run.fail .manual-run-line, .manual-run.timeout .manual-run-line { color: #fca5a5; }
+
+    .manual-run summary {
+      margin-top: 6px;
+      font-size: 12px;
+    }
+
     .force-button {
       width: 100%;
       margin-top: 15px;
@@ -470,6 +502,33 @@
       article.append(details);
     }
 
+    if (item.last_manual_run) {
+      const manual = item.last_manual_run;
+      const box = document.createElement("div");
+      box.className = "manual-run " + manual.status.toLowerCase();
+
+      const line = document.createElement("div");
+      line.className = "manual-run-line";
+      line.textContent =
+        `Ultimo forzato: ${statusLabel(manual.status)} \u00b7 ` +
+        localDate(manual.finished_at);
+      box.append(line);
+
+      if (manual.log_excerpt) {
+        const details = document.createElement("details");
+        const summary = document.createElement("summary");
+        const pre = document.createElement("pre");
+
+        summary.textContent = "Mostra log esecuzione manuale";
+        pre.textContent = manual.log_excerpt;
+
+        details.append(summary, pre);
+        box.append(details);
+      }
+
+      article.append(box);
+    }
+
     const forceButton = document.createElement("button");
     forceButton.className = "force-button";
     forceButton.type = "button";
@@ -526,7 +585,21 @@
       return;
     }
 
-    data.items.forEach(item => grid.append(makeCard(item)));
+    const statusOrder = {
+      FAIL: 0,
+      TIMEOUT: 0,
+      MISSING: 0,
+      NOT_RUN: 1,
+      OK: 2
+    };
+
+    const sortedItems = [...data.items].sort((a, b) => {
+      const rankA = statusOrder[a.status] ?? 3;
+      const rankB = statusOrder[b.status] ?? 3;
+      return rankA - rankB;
+    });
+
+    sortedItems.forEach(item => grid.append(makeCard(item)));
   }
 
   loadStatus().catch(error => {
