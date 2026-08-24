@@ -1,8 +1,10 @@
 {
   "id": "f3c794fc-594e-4d6a-892f-b8ab06e27765",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "abarth",
   "brand_label": "Abarth",
   "requested_at": "2026-08-24T14:30:56.611Z",
-  "message": "Aggiornamento manuale Abarth in coda"
+  "message": "Esecuzione manuale di abarth_push_to_sheet.py",
+  "script": "abarth_push_to_sheet.py",
+  "started_at": "2026-08-24T14:31:33+00:00"
 }
