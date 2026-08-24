@@ -189,6 +189,58 @@
       color: #aab4c8;
     }
 
+
+    .manual-panel {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      margin-top: 16px;
+      padding: 14px 17px;
+      border: 1px solid #28334b;
+      border-radius: 13px;
+      background: rgba(20, 27, 45, .94);
+      color: #cbd3e1;
+      font-size: 14px;
+    }
+
+    .manual-panel.busy {
+      border-color: #7c5b16;
+      color: #fcd34d;
+    }
+
+    .manual-panel.success {
+      border-color: #176b3a;
+      color: #86efac;
+    }
+
+    .manual-panel.failure {
+      border-color: #7f2630;
+      color: #fca5a5;
+    }
+
+    .force-button {
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px 12px;
+      border: 1px solid #415171;
+      border-radius: 10px;
+      background: #202b43;
+      color: #eef2ff;
+      font-weight: 750;
+      cursor: pointer;
+    }
+
+    .force-button:hover {
+      background: #2a3857;
+      border-color: #61749b;
+    }
+
+    .force-button:disabled {
+      cursor: not-allowed;
+      opacity: .45;
+    }
+
     @media (max-width: 760px) {
       main { padding-top: 28px; }
       .summary { grid-template-columns: repeat(2, 1fr); }
@@ -208,6 +260,11 @@
   </header>
 
   <div id="historical-notice" class="notice" hidden></div>
+
+
+  <div id="manual-panel" class="manual-panel">
+    <span id="manual-status">Controllo manuale disponibile</span>
+  </div>
 
   <section class="summary">
     <div class="metric">
@@ -255,6 +312,118 @@
     }[status] || status;
   }
 
+
+  function brandKey(script) {
+    return script.replace("_push_to_sheet.py", "");
+  }
+
+  function setButtonsDisabled(disabled) {
+    document.querySelectorAll(".force-button").forEach(button => {
+      button.disabled = disabled;
+    });
+  }
+
+  function savedSecret() {
+    let secret = sessionStorage.getItem("promoDashboardSecret");
+
+    if (!secret) {
+      secret = prompt("Inserisci la password della dashboard:");
+
+      if (secret) {
+        sessionStorage.setItem("promoDashboardSecret", secret);
+      }
+    }
+
+    return secret;
+  }
+
+  async function forceBrand(item) {
+    const confirmed = confirm(
+      `Vuoi eseguire manualmente soltanto ${item.brand}?`
+    );
+
+    if (!confirmed) return;
+
+    const secret = savedSecret();
+    if (!secret) return;
+
+    setButtonsDisabled(true);
+
+    const response = await fetch("/api/control", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Dashboard-Secret": secret
+      },
+      body: JSON.stringify({
+        brand: brandKey(item.script)
+      })
+    });
+
+    const data = await response.json();
+
+    if (response.status === 401) {
+      sessionStorage.removeItem("promoDashboardSecret");
+      setButtonsDisabled(false);
+      alert("Password non valida. Riprova.");
+      return;
+    }
+
+    if (!response.ok) {
+      setButtonsDisabled(false);
+      alert(data.error || "Impossibile accodare il comando");
+      return;
+    }
+
+    alert(`${item.brand}: aggiornamento messo in coda`);
+    await loadCommand();
+  }
+
+  async function loadCommand() {
+    const panel = $("#manual-panel");
+    const label = $("#manual-status");
+
+    try {
+      const response = await fetch(`/api/control?t=${Date.now()}`, {
+        cache: "no-store"
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      const command = await response.json();
+      const busy = ["PENDING", "RUNNING"].includes(command.status);
+
+      panel.className = "manual-panel";
+      setButtonsDisabled(busy);
+
+      if (command.status === "PENDING") {
+        panel.classList.add("busy");
+        label.textContent =
+          `${command.brand_label}: comando in coda, attesa worker VM`;
+      } else if (command.status === "RUNNING") {
+        panel.classList.add("busy");
+        label.textContent =
+          `${command.brand_label}: aggiornamento manuale in corso`;
+      } else if (command.status === "COMPLETED") {
+        panel.classList.add("success");
+        label.textContent =
+          `${command.brand_label}: ultimo aggiornamento manuale completato`;
+      } else if (["FAILED", "REJECTED"].includes(command.status)) {
+        panel.classList.add("failure");
+        label.textContent =
+          `${command.brand_label || "Comando"}: ultimo tentativo fallito`;
+      } else {
+        label.textContent = "Controllo manuale disponibile";
+      }
+
+    } catch (error) {
+      panel.className = "manual-panel failure";
+      label.textContent = "Controllo manuale temporaneamente non disponibile";
+    }
+  }
+
   function makeCard(item) {
     const article = document.createElement("article");
     article.className = "card " + item.status.toLowerCase();
@@ -296,6 +465,13 @@
       details.append(summary, pre);
       article.append(details);
     }
+
+    const forceButton = document.createElement("button");
+    forceButton.className = "force-button";
+    forceButton.type = "button";
+    forceButton.textContent = "Forza aggiornamento";
+    forceButton.addEventListener("click", () => forceBrand(item));
+    article.append(forceButton);
 
     return article;
   }
@@ -358,6 +534,9 @@
     empty.textContent = error.message;
     $("#grid").replaceChildren(empty);
   });
+
+  loadCommand();
+  setInterval(loadCommand, 10000);
 </script>
 </body>
 </html>
