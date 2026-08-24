@@ -371,7 +371,11 @@
 
     if (!response.ok) {
       setButtonsDisabled(false);
-      alert(data.error || "Impossibile accodare il comando");
+      alert(
+        [data.error, data.detail]
+          .filter(Boolean)
+          .join("\n")
+      );
       return;
     }
 
