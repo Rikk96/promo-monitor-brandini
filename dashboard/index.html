@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Brandini Promo Monitor</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, Arial, sans-serif;
+      background: #090d18;
+      color: #f5f7fb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top right, #17213c 0, transparent 35%),
+        #090d18;
+      min-height: 100vh;
+    }
+
+    main {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+      padding: 46px 0 70px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      margin: 0 0 7px;
+      font-size: clamp(30px, 5vw, 48px);
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle, #updated {
+      color: #9ca6ba;
+      font-size: 14px;
+    }
+
+    #overall {
+      padding: 10px 15px;
+      border: 1px solid #34415d;
+      border-radius: 999px;
+      background: #141b2d;
+      font-weight: 700;
+    }
+
+    .notice {
+      margin-top: 25px;
+      padding: 14px 17px;
+      border: 1px solid #4a4127;
+      border-radius: 13px;
+      background: #211d12;
+      color: #f3d477;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin: 25px 0 30px;
+    }
+
+    .metric, .card {
+      background: rgba(20, 27, 45, 0.94);
+      border: 1px solid #28334b;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, .16);
+    }
+
+    .metric {
+      padding: 19px;
+      border-radius: 15px;
+    }
+
+    .metric span {
+      display: block;
+      color: #97a2b7;
+      font-size: 13px;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 6px;
+      font-size: 29px;
+    }
+
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      padding: 18px;
+      border-radius: 16px;
+      border-left: 5px solid #64748b;
+    }
+
+    .card.ok { border-left-color: #22c55e; }
+    .card.fail, .card.timeout, .card.missing { border-left-color: #ef4444; }
+    .card.not_run { border-left-color: #f59e0b; }
+
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: 750;
+    }
+
+    .badge {
+      padding: 5px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      background: #29344c;
+      white-space: nowrap;
+    }
+
+    .ok .badge { color: #86efac; background: #12301f; }
+    .fail .badge, .timeout .badge, .missing .badge {
+      color: #fca5a5;
+      background: #3a161b;
+    }
+    .not_run .badge { color: #fcd34d; background: #36290c; }
+
+    .duration {
+      margin-top: 18px;
+      color: #cbd3e1;
+      font-size: 14px;
+    }
+
+    .script {
+      margin-top: 5px;
+      color: #7f8aa0;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    details {
+      margin-top: 15px;
+      border-top: 1px solid #2b354c;
+      padding-top: 13px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: #d3daf0;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    pre {
+      max-height: 360px;
+      overflow: auto;
+      margin: 13px 0 0;
+      padding: 13px;
+      border-radius: 10px;
+      background: #070a12;
+      color: #d8deea;
+      font: 11px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .empty {
+      padding: 25px;
+      border: 1px solid #28334b;
+      border-radius: 15px;
+      background: #141b2d;
+      color: #aab4c8;
+    }
+
+    @media (max-width: 760px) {
+      main { padding-top: 28px; }
+      .summary { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+
+<body>
+<main>
+  <header>
+    <div>
+      <h1>Promo Monitor</h1>
+      <div class="subtitle">Controllo aggiornamenti promozioni Brandini</div>
+      <div id="updated">Caricamento…</div>
+    </div>
+    <div id="overall">Caricamento</div>
+  </header>
+
+  <div id="historical-notice" class="notice" hidden></div>
+
+  <section class="summary">
+    <div class="metric">
+      <span>Brand configurati</span>
+      <strong id="configured">–</strong>
+    </div>
+    <div class="metric">
+      <span>Completati</span>
+      <strong id="ok">–</strong>
+    </div>
+    <div class="metric">
+      <span>Errori</span>
+      <strong id="bad">–</strong>
+    </div>
+    <div class="metric">
+      <span>Non eseguiti</span>
+      <strong id="not-run">–</strong>
+    </div>
+  </section>
+
+  <section id="grid"></section>
+</main>
+
+<script>
+  const $ = selector => document.querySelector(selector);
+
+  function localDate(value) {
+    if (!value) return "non disponibile";
+
+    return new Intl.DateTimeFormat("it-IT", {
+      dateStyle: "medium",
+      timeStyle: "short",
+      timeZone: "Europe/Rome"
+    }).format(new Date(value));
+  }
+
+  function statusLabel(status) {
+    return {
+      OK: "OK",
+      FAIL: "ERRORE",
+      TIMEOUT: "TIMEOUT",
+      MISSING: "MANCANTE",
+      NOT_RUN: "NON ESEGUITO",
+      RUNNING: "IN CORSO"
+    }[status] || status;
+  }
+
+  function makeCard(item) {
+    const article = document.createElement("article");
+    article.className = "card " + item.status.toLowerCase();
+
+    const head = document.createElement("div");
+    head.className = "card-head";
+
+    const brand = document.createElement("div");
+    brand.className = "brand";
+    brand.textContent = item.brand;
+
+    const badge = document.createElement("div");
+    badge.className = "badge";
+    badge.textContent = statusLabel(item.status);
+
+    head.append(brand, badge);
+    article.append(head);
+
+    const duration = document.createElement("div");
+    duration.className = "duration";
+    duration.textContent = item.elapsed_seconds
+      ? `Durata: ${item.elapsed_seconds} secondi`
+      : "Durata non disponibile";
+    article.append(duration);
+
+    const script = document.createElement("div");
+    script.className = "script";
+    script.textContent = item.script;
+    article.append(script);
+
+    if (item.log_excerpt) {
+      const details = document.createElement("details");
+      const summary = document.createElement("summary");
+      const pre = document.createElement("pre");
+
+      summary.textContent = "Mostra dettagli errore";
+      pre.textContent = item.log_excerpt;
+
+      details.append(summary, pre);
+      article.append(details);
+    }
+
+    return article;
+  }
+
+  async function loadStatus() {
+    const response = await fetch(`./status.json?t=${Date.now()}`, {
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error(`Errore HTTP ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    $("#configured").textContent = data.totals.configured;
+    $("#ok").textContent = data.totals.ok;
+    $("#bad").textContent = data.totals.bad;
+    $("#not-run").textContent = data.totals.not_run;
+
+    $("#updated").textContent =
+      `Ultimo ciclo: ${localDate(data.run_started_at)} · Run ${data.run_id}`;
+
+    $("#overall").textContent =
+      data.overall_status === "OK"
+        ? "🟢 Tutto regolare"
+        : "🔴 Controllo richiesto";
+
+    const runDate = new Date(data.run_started_at);
+    const hoursOld = (Date.now() - runDate.getTime()) / 3600000;
+
+    if (hoursOld > 20) {
+      const notice = $("#historical-notice");
+      notice.hidden = false;
+      notice.textContent =
+        "Attenzione: questi risultati appartengono a un ciclo precedente. " +
+        "La dashboard verrà aggiornata automaticamente dopo la prossima esecuzione.";
+    }
+
+    const grid = $("#grid");
+    grid.replaceChildren();
+
+    if (!data.items.length) {
+      const empty = document.createElement("div");
+      empty.className = "empty";
+      empty.textContent = "Nessun risultato disponibile.";
+      grid.append(empty);
+      return;
+    }
+
+    data.items.forEach(item => grid.append(makeCard(item)));
+  }
+
+  loadStatus().catch(error => {
+    $("#updated").textContent = "Impossibile caricare lo stato";
+    $("#overall").textContent = "⚠️ Errore dashboard";
+
+    const empty = document.createElement("div");
+    empty.className = "empty";
+    empty.textContent = error.message;
+    $("#grid").replaceChildren(empty);
+  });
+</script>
+</body>
+</html>
