@@ -3,7 +3,7 @@
   "run_id": "20260824_043005",
   "run_type": "scheduled",
   "run_started_at": "2026-08-24T04:30:05+00:00",
-  "generated_at": "2026-08-24T14:29:11+00:00",
+  "generated_at": "2026-08-24T14:32:00+00:00",
   "overall_status": "ERROR",
   "totals": {
     "configured": 23,
@@ -26,11 +26,11 @@
       "elapsed_seconds": 27.1,
       "log_excerpt": "",
       "last_manual_run": {
-        "command_id": "87b5a158-2987-4de5-aabb-48233400e5bd",
+        "command_id": "f3c794fc-594e-4d6a-892f-b8ab06e27765",
         "status": "OK",
-        "started_at": "2026-08-24T14:25:23+00:00",
-        "finished_at": "2026-08-24T14:25:52+00:00",
-        "elapsed_seconds": 27.1,
+        "started_at": "2026-08-24T14:31:33+00:00",
+        "finished_at": "2026-08-24T14:32:00+00:00",
+        "elapsed_seconds": 25.4,
         "return_code": 0,
         "log_excerpt": "URL ABARTH TROVATI: 2\n1/2 | 500e | elettrica | Abarth 500e Hatchback | € 269 | € 32.600 | € 10.306 | € 14.844 | € 22.565 | € 24.317 | 1,99% | 3,69% | 31/08/2026 | extended_legal_found | source=detail_legal\n2/2 | 600e | elettrica | Abarth 600e Turismo | € 399 | € 37.950 | € 9.948 | € 20.373 | € 28.273 | € 34.410 | 7,45% | 9,18% | 31/08/2026 | extended_legal_found | source=detail_legal\n\nRIGHE ABARTH: 2\nERRORI: 0\nPUSH COMPLETATO: righe Abarth scritte: 2\n\n/home/gruppobrandini/promo-monitor/abarth_push_to_sheet.py:99: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  ws.update(\"A1\", values)"
       }
