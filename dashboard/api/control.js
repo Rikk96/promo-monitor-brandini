@@ -5,31 +5,7 @@ const REPOSITORY =
 const BRANCH = "main";
 const COMMAND_PATH = "dashboard/command.json";
 
-const ALLOWED_BRANDS = {
-  fiat: "Fiat",
-  abarth: "Abarth",
-  lancia: "Lancia",
-  alfa: "Alfa Romeo",
-  jeep: "Jeep",
-  peugeot: "Peugeot",
-  citroen: "Citroen",
-  opel: "Opel",
-  ds: "DS",
-  fiat_pro: "Fiat Professional",
-  nissan: "Nissan",
-  leapmotor: "Leapmotor",
-  honda: "Honda",
-  mazda: "Mazda",
-  hyundai: "Hyundai",
-  mg: "MG",
-  omodajaecoo: "Omoda / Jaecoo",
-  changan: "Changan",
-  bmw: "BMW",
-  mini: "MINI",
-  dr: "DR",
-  lepas: "Lepas",
-  dongfeng: "Dongfeng"
-};
+const STATUS_PATH = "dashboard/status.json";
 
 function send(response, status, data) {
   response.setHeader("Content-Type", "application/json; charset=utf-8");
@@ -51,7 +27,7 @@ function validSecret(value) {
   );
 }
 
-async function github(method, body) {
+async function github(method, body, path = COMMAND_PATH) {
   const token = process.env.GITHUB_TOKEN;
 
   if (!token) {
@@ -59,7 +35,7 @@ async function github(method, body) {
   }
 
   const url =
-    `https://api.github.com/repos/${REPOSITORY}/contents/${COMMAND_PATH}`;
+    `https://api.github.com/repos/${REPOSITORY}/contents/${path}`;
 
   const response = await fetch(url, {
     method,
@@ -84,7 +60,7 @@ async function github(method, body) {
 }
 
 async function readCommand() {
-  const file = await github("GET");
+  const file = await github("GET", undefined, COMMAND_PATH);
   const content = Buffer.from(
     file.content.replace(/\n/g, ""),
     "base64"
@@ -94,6 +70,24 @@ async function readCommand() {
     command: JSON.parse(content),
     sha: file.sha
   };
+}
+
+async function readAllowedBrands() {
+  const file = await github("GET", undefined, STATUS_PATH);
+  const content = Buffer.from(
+    file.content.replace(/\n/g, ""),
+    "base64"
+  ).toString("utf8");
+
+  const status = JSON.parse(content);
+  const allowed = {};
+
+  for (const item of status.items || []) {
+    const key = item.script.replace("_push_to_sheet.py", "");
+    allowed[key] = item.brand;
+  }
+
+  return allowed;
 }
 
 module.exports = async function handler(request, response) {
@@ -117,8 +111,9 @@ module.exports = async function handler(request, response) {
         : request.body || {};
 
     const brand = body.brand;
+    const allowedBrands = await readAllowedBrands();
 
-    if (!Object.prototype.hasOwnProperty.call(ALLOWED_BRANDS, brand)) {
+    if (!Object.prototype.hasOwnProperty.call(allowedBrands, brand)) {
       return send(response, 400, { error: "Brand non autorizzato" });
     }
 
@@ -135,19 +130,19 @@ module.exports = async function handler(request, response) {
       id: crypto.randomUUID(),
       status: "PENDING",
       brand,
-      brand_label: ALLOWED_BRANDS[brand],
+      brand_label: allowedBrands[brand],
       requested_at: new Date().toISOString(),
-      message: `Aggiornamento manuale ${ALLOWED_BRANDS[brand]} in coda`
+      message: `Aggiornamento manuale ${allowedBrands[brand]} in coda`
     };
 
     await github("PUT", {
-      message: `Dashboard: richiede aggiornamento ${ALLOWED_BRANDS[brand]}`,
+      message: `Dashboard: richiede aggiornamento ${allowedBrands[brand]}`,
       content: Buffer.from(
         JSON.stringify(command, null, 2) + "\n"
       ).toString("base64"),
       branch: BRANCH,
       sha
-    });
+    }, COMMAND_PATH);
 
     return send(response, 202, command);
 
