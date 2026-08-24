@@ -1,8 +1,10 @@
 {
   "id": "625ff530-94a0-4833-80e5-f78185e53d46",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "honda",
   "brand_label": "Honda",
   "requested_at": "2026-08-24T15:12:05.200Z",
-  "message": "Aggiornamento manuale Honda in coda"
+  "message": "Esecuzione manuale di honda_push_to_sheet.py",
+  "script": "honda_push_to_sheet.py",
+  "started_at": "2026-08-24T15:13:13+00:00"
 }
