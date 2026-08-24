@@ -1,8 +1,10 @@
 {
   "id": "738823c3-249f-4106-ad56-b84ee53a54fb",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "alfa",
   "brand_label": "Alfa Romeo",
   "requested_at": "2026-08-24T14:26:48.600Z",
-  "message": "Aggiornamento manuale Alfa Romeo in coda"
+  "message": "Esecuzione manuale di alfa_push_to_sheet.py",
+  "script": "alfa_push_to_sheet.py",
+  "started_at": "2026-08-24T14:27:43+00:00"
 }
