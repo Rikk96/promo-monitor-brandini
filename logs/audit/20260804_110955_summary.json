@@ -1,0 +1,200 @@
+[
+  {
+    "script": "fiat_push_to_sheet.py",
+    "return": 0,
+    "seconds": 142.8,
+    "issues": [],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_fiat_push_to_sheet.py.log"
+  },
+  {
+    "script": "abarth_push_to_sheet.py",
+    "return": 0,
+    "seconds": 35.1,
+    "issues": [],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_abarth_push_to_sheet.py.log"
+  },
+  {
+    "script": "alfa_push_to_sheet.py",
+    "return": 1,
+    "seconds": 145.4,
+    "issues": [
+      "RETURN_CODE",
+      "stop:"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_alfa_push_to_sheet.py.log"
+  },
+  {
+    "script": "bmw_push_to_sheet.py",
+    "return": 0,
+    "seconds": 146.8,
+    "issues": [
+      "debug only",
+      "bad:",
+      "missing_"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_bmw_push_to_sheet.py.log"
+  },
+  {
+    "script": "changan_push_to_sheet.py",
+    "return": 0,
+    "seconds": 25.8,
+    "issues": [
+      "debug only",
+      "bad:"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_changan_push_to_sheet.py.log"
+  },
+  {
+    "script": "citroen_push_to_sheet.py",
+    "return": 0,
+    "seconds": 479.3,
+    "issues": [
+      "debug only"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_citroen_push_to_sheet.py.log"
+  },
+  {
+    "script": "dr_push_to_sheet.py",
+    "return": 1,
+    "seconds": 40.2,
+    "issues": [
+      "RETURN_CODE",
+      "debug only",
+      "stop:",
+      "bad:"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_dr_push_to_sheet.py.log"
+  },
+  {
+    "script": "ds_push_to_sheet.py",
+    "return": 0,
+    "seconds": 135.8,
+    "issues": [],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_ds_push_to_sheet.py.log"
+  },
+  {
+    "script": "fiat_pro_push_to_sheet.py",
+    "return": 1,
+    "seconds": 169.4,
+    "issues": [
+      "RETURN_CODE",
+      "debug only",
+      "stop:"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_fiat_pro_push_to_sheet.py.log"
+  },
+  {
+    "script": "honda_push_to_sheet.py",
+    "return": 1,
+    "seconds": 56.3,
+    "issues": [
+      "RETURN_CODE",
+      "debug only",
+      "stop:",
+      "bad:",
+      "missing_"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_honda_push_to_sheet.py.log"
+  },
+  {
+    "script": "hyundai_push_to_sheet.py",
+    "return": 0,
+    "seconds": 184.6,
+    "issues": [
+      "debug only"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_hyundai_push_to_sheet.py.log"
+  },
+  {
+    "script": "jeep_push_to_sheet.py",
+    "return": 0,
+    "seconds": 123.4,
+    "issues": [],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_jeep_push_to_sheet.py.log"
+  },
+  {
+    "script": "lancia_push_to_sheet.py",
+    "return": 0,
+    "seconds": 96.6,
+    "issues": [],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_lancia_push_to_sheet.py.log"
+  },
+  {
+    "script": "leapmotor_push_to_sheet.py",
+    "return": 0,
+    "seconds": 54.6,
+    "issues": [],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_leapmotor_push_to_sheet.py.log"
+  },
+  {
+    "script": "mazda_push_to_sheet.py",
+    "return": 0,
+    "seconds": 104.8,
+    "issues": [
+      "debug only",
+      "bad:",
+      "missing_"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_mazda_push_to_sheet.py.log"
+  },
+  {
+    "script": "mg_push_to_sheet.py",
+    "return": 0,
+    "seconds": 83.0,
+    "issues": [
+      "debug only",
+      "bad:"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_mg_push_to_sheet.py.log"
+  },
+  {
+    "script": "mini_push_to_sheet.py",
+    "return": 1,
+    "seconds": 66.7,
+    "issues": [
+      "RETURN_CODE",
+      "debug only",
+      "stop:",
+      "bad:",
+      "missing_"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_mini_push_to_sheet.py.log"
+  },
+  {
+    "script": "nissan_push_to_sheet.py",
+    "return": 0,
+    "seconds": 307.2,
+    "issues": [
+      "debug only",
+      "bad:"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_nissan_push_to_sheet.py.log"
+  },
+  {
+    "script": "omodajaecoo_push_to_sheet.py",
+    "return": 1,
+    "seconds": 105.9,
+    "issues": [
+      "RETURN_CODE",
+      "debug only",
+      "stop:",
+      "bad:",
+      "missing_"
+    ],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_omodajaecoo_push_to_sheet.py.log"
+  },
+  {
+    "script": "opel_push_to_sheet.py",
+    "return": 0,
+    "seconds": 180.0,
+    "issues": [],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_opel_push_to_sheet.py.log"
+  },
+  {
+    "script": "peugeot_push_to_sheet.py",
+    "return": 0,
+    "seconds": 228.3,
+    "issues": [],
+    "log": "/home/gruppobrandini/promo-monitor/logs/audit/20260804_110955_peugeot_push_to_sheet.py.log"
+  }
+]
