@@ -324,13 +324,13 @@
   }
 
   function savedSecret() {
-    let secret = sessionStorage.getItem("promoDashboardSecret");
+    let secret = localStorage.getItem("promoDashboardSecret");
 
     if (!secret) {
       secret = prompt("Inserisci la password della dashboard:");
 
       if (secret) {
-        sessionStorage.setItem("promoDashboardSecret", secret);
+        localStorage.setItem("promoDashboardSecret", secret);
       }
     }
 
@@ -363,7 +363,7 @@
     const data = await response.json();
 
     if (response.status === 401) {
-      sessionStorage.removeItem("promoDashboardSecret");
+      localStorage.removeItem("promoDashboardSecret");
       setButtonsDisabled(false);
       alert("Password non valida. Riprova.");
       return;
