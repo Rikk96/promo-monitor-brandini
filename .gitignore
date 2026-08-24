@@ -8,3 +8,5 @@ logs/*.log
 *.swp
 
 dashboard/status.json.tmp
+
+.dashboard_publish.lock
