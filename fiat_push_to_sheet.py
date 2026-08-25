@@ -3,7 +3,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 from playwright.sync_api import sync_playwright
 
-from promo_common import HEADERS
+from promo_common import HEADERS, with_retry
 from fiat_to_sheet_v2 import get_urls, parse_detail, BRAND
 
 
@@ -88,7 +88,10 @@ creds = Credentials.from_service_account_file(KEY_PATH, scopes=[
 ])
 
 gc = gspread.authorize(creds)
-ws = gc.open_by_key(SPREADSHEET_ID).worksheet("Promo_Output")
+ws = with_retry(
+    lambda: gc.open_by_key(SPREADSHEET_ID).worksheet("Promo_Output"),
+    label="apertura foglio Fiat"
+)
 
 existing = ws.get_all_records()
 kept = [r for r in existing if str(r.get("Brand","")).strip().lower() != BRAND.lower()]
@@ -104,8 +107,8 @@ for ri, row in enumerate(values, start=1):
 if too_long:
     raise SystemExit(f"STOP: celle oltre 50k prima del clear: {too_long[:10]}")
 
-ws.clear()
-ws.update("A1", values)
+with_retry(lambda: ws.clear(), label="pulizia foglio Fiat")
+with_retry(lambda: ws.update("A1", values), label="scrittura foglio Fiat")
 ws.freeze(rows=1)
 ws.format("1:1", {"textFormat": {"bold": True}})
 ws.format("A:AA", {"verticalAlignment": "TOP", "wrapStrategy": "WRAP"})

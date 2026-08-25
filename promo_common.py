@@ -1,6 +1,9 @@
 import re
 import hashlib
+import time
+import random
 from datetime import datetime
+from gspread.exceptions import APIError
 
 HEADERS = [
     "Brand",
@@ -352,3 +355,32 @@ def extract_intero(legal):
         r"Prezzo\s+promozionale[^\d]{0,80}([0-9]{1,3}(?:\.[0-9]{3})*(?:,[0-9]+)?|[0-9]{4,}(?:,[0-9]+)?)\s*€",
         r"Tua\s+da\s*([0-9]{1,3}(?:\.[0-9]{3})*(?:,[0-9]+)?|[0-9]{4,}(?:,[0-9]+)?)\s*€",
     ], legal)
+
+
+def with_retry(fn, retries=4, base_delay=3, label="operazione Google Sheets"):
+    """Esegue fn() ritentando con backoff esponenziale su errori transitori
+    dell'API Google Sheets (503, 500, 502, 504, 429 - rate limit).
+    Rilancia subito l'errore se non e' transitorio o se i tentativi finiscono."""
+    TRANSIENT_STATUS = {429, 500, 502, 503, 504}
+    last_error = None
+
+    for attempt in range(1, retries + 1):
+        try:
+            return fn()
+        except APIError as e:
+            status = None
+            try:
+                status = e.response.status_code
+            except Exception:
+                pass
+
+            last_error = e
+
+            if status not in TRANSIENT_STATUS or attempt == retries:
+                raise
+
+            delay = base_delay * (2 ** (attempt - 1)) + random.uniform(0, 1)
+            print(f"AVVISO: {label} fallita (tentativo {attempt}/{retries}, status {status}). Retry tra {delay:.1f}s...")
+            time.sleep(delay)
+
+    raise last_error
