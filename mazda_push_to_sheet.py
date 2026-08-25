@@ -1,7 +1,7 @@
 import gspread
 from google.oauth2.service_account import Credentials
 
-from promo_common import HEADERS
+from promo_common import HEADERS, with_retry
 from mazda_to_sheet_v3 import build_rows, BRAND, MIN_EXPECTED_ROWS
 
 SPREADSHEET_ID = "1okKJrFrLMRXHaZsGUpiJICroVpxLm3wsF22X2o1WXfo"
@@ -84,7 +84,10 @@ creds = Credentials.from_service_account_file(KEY_PATH, scopes=[
 ])
 
 gc = gspread.authorize(creds)
-ws = gc.open_by_key(SPREADSHEET_ID).worksheet("Promo_Output")
+ws = with_retry(
+    lambda: gc.open_by_key(SPREADSHEET_ID).worksheet("Promo_Output"),
+    label="apertura foglio mazda"
+)
 
 existing = ws.get_all_records()
 kept = [r for r in existing if str(r.get("Brand", "")).strip().lower() != BRAND.lower()]
@@ -101,8 +104,8 @@ for ri, row in enumerate(values, start=1):
 if too_long:
     raise SystemExit(f"STOP: celle oltre 50k prima del clear: {too_long[:10]}")
 
-ws.clear()
-ws.update("A1", values)
+with_retry(lambda: ws.clear(), label="pulizia foglio mazda")
+with_retry(lambda: ws.update("A1", values), label="scrittura foglio mazda")
 ws.format("A:AA", {"wrapStrategy": "WRAP"})
 
 print("PUSH COMPLETATO: righe Mazda scritte:", len(rows))
