@@ -1,8 +1,10 @@
 {
   "id": "5347aee4-1950-4d2c-af2d-51eb2cc14938",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "abarth",
   "brand_label": "Abarth",
   "requested_at": "2026-08-25T10:30:18.379Z",
-  "message": "Aggiornamento manuale Abarth in coda (richiesto da {'display_name': 'Riccardo Pescini', 'user_id': 2, 'username': 'riccardo.pescini@brandini.it'} via BDH)"
+  "message": "Esecuzione manuale di abarth_push_to_sheet.py",
+  "script": "abarth_push_to_sheet.py",
+  "started_at": "2026-08-25T10:30:23+00:00"
 }
