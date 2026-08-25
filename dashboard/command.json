@@ -1,8 +1,10 @@
 {
   "id": "5f8f294c-353f-451e-b7b3-9971816c536a",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "fiat",
   "brand_label": "Fiat",
   "requested_at": "2026-08-25T07:35:17.869Z",
-  "message": "Aggiornamento manuale Fiat in coda"
+  "message": "Esecuzione manuale di fiat_push_to_sheet.py",
+  "script": "fiat_push_to_sheet.py",
+  "started_at": "2026-08-25T07:35:43+00:00"
 }
