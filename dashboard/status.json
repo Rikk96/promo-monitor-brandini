@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "run_id": "20260825_043001",
+  "run_id": "20260826_043005",
   "run_type": "scheduled",
-  "run_started_at": "2026-08-25T04:30:01+00:00",
-  "generated_at": "2026-08-25T10:30:52+00:00",
+  "run_started_at": "2026-08-26T04:30:05+00:00",
+  "generated_at": "2026-08-26T05:10:08+00:00",
   "overall_status": "ERROR",
   "totals": {
     "configured": 23,
@@ -15,180 +15,162 @@
     {
       "brand": "Fiat",
       "script": "fiat_push_to_sheet.py",
-      "status": "FAIL",
-      "elapsed_seconds": 126.7,
-      "log_excerpt": "URL FIAT TROVATI: 12\n1/12 | Pandina | hybrid | Nuova Fiat Pandina | € 99 | € 9.950 | € 1.699 | € 8.011 | € 8.614 | € 11.497 | 8,99% | 13,71% | 27/08/2026 | extended_legal_found | source=detail_legal\n2/12 | 500 | hybrid | Fiat 500 Ibrida Pop | € 99 | € 14.950 | € 4.247 | € 11.096 | € 10.974 | € 14.589 | 8,99% | 12,65% | 27/08/2026 | extended_legal_found | source=detail_legal\n3/12 | 500 | hybrid | Fiat 500 Hybrid Dolcevita | € 199 | € 19.950 | € 2.757 | € 15.573 | € 17.464 | € 22.582 | 8,99% | 11,57% | 27/08/2026 | extended_legal_found | source=detail_legal\n4/12 | 500 | elettrica | 500e POP 23 KW | € 199 | € 19.950 | € 6.960 | € 8.896 | € 13.261 | € 15.895 | 5,99% | 9,19% | 31/08/2026 | extended_legal_found | source=detail_legal\n5/12 | Grande Panda | benzina | Grande Panda Benzina Turbo 100 POP | € 129 | € 14.950 | € 2.550 | € 10.874 | € 12.671 | € 15.421 | 5,99% | 9,02% | 27/08/2026 | extended_legal_found | source=detail_legal\n6/12 | Grande Panda | hybrid | Grande Panda Hybrid | € 149 | € 17.450 | € 3.073 | € 12.472 | € 14.648 | € 17.724 | 5,99% | 8,65% | 27/08/2026 | extended_legal_found | source=detail_legal\n7/12 | Grande Panda | elettrica | Grande Panda Electric | € 199 | € 20.950 | € 5.959 | € 11.290 | € 15.262 | € 18.294 | 5,99% | 8,7% | 31/08/2026 | extended_legal_found | source=detail_legal\n8/12 | 600 | benzina | Nuova 600 Benzina Turbo 100 POP | € 149 | € 18.950 | € 5.706 | € 12.590 | € 13.650 | € 17.840 | 8,99% | 12,12% | 31/08/2026 | extended_legal_found | source=detail_legal\n9/12 | 600 | hybrid | 600 Hybrid | € 199 | € 19.950 | € 4.214 | € 13.843 | € 16.142 | € 20.850 | 8,99% | 11,78% | 27/08/2026 | extended_legal_found | source=detail_legal\n10/12 | 600 | elettrica | 600e POP | € 299 | € 25.950 | € 8.194 | € 12.295 | € 18.027 | € 22.806 | 8,99% | 11,74% | 31/08/2026 | extended_legal_found | source=detail_legal\n11/12 | Qubo | benzina | Qubo L | € 249 | € 19.950 | € 2.762 | € 13.559 | € 17.459 | € 22.318 | 8,99% | 11,7% | 27/08/2026 | extended_legal_found | source=detail_legal\n12/12 | Topolino | elettrica | Fiat Topolino | € 39 | € 7.450 | € 3.796 | € 4.393 | € 4.154 | € 5.769 | 8,99% | 13,47% | 27/08/2026 | extended_legal_found | source=detail_legal\n\nRIGHE FIAT: 12\nERRORI: 0\n\nTraceback (most recent call last):\n  File \"/home/gruppobrandini/promo-monitor/fiat_push_to_sheet.py\", line 91, in <module>\n    ws = gc.open_by_key(SPREADSHEET_ID).worksheet(\"Promo_Output\")\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/gspread/client.py\", line 174, in open_by_key\n    raise ex\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/gspread/client.py\", line 168, in open_by_key\n    spreadsheet = Spreadsheet(self.http_client, {\"id\": key})\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/gspread/spreadsheet.py\", line 29, in __init__\n    metadata = self.fetch_sheet_metadata()\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/gspread/spreadsheet.py\", line 230, in fetch_sheet_metadata\n    return self.client.fetch_sheet_metadata(self.id, params=params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/gspread/http_client.py\", line 305, in fetch_sheet_metadata\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [503]: The service is currently unavailable.",
-      "last_manual_run": {
-        "command_id": "0049c779-eb52-4952-bf92-e9912a96be43",
-        "status": "OK",
-        "started_at": "2026-08-25T10:23:33+00:00",
-        "finished_at": "2026-08-25T10:25:49+00:00",
-        "elapsed_seconds": 134.4,
-        "return_code": 0,
-        "log_excerpt": "URL FIAT TROVATI: 12\n1/12 | Pandina | hybrid | Nuova Fiat Pandina | € 99 | € 9.950 | € 1.699 | € 8.011 | € 8.614 | € 11.497 | 8,99% | 13,71% | 27/08/2026 | extended_legal_found | source=detail_legal\n2/12 | 500 | hybrid | Fiat 500 Ibrida Pop | € 99 | € 14.950 | € 4.247 | € 11.096 | € 10.974 | € 14.589 | 8,99% | 12,65% | 27/08/2026 | extended_legal_found | source=detail_legal\n3/12 | 500 | hybrid | Fiat 500 Hybrid Dolcevita | € 199 | € 19.950 | € 2.757 | € 15.573 | € 17.464 | € 22.582 | 8,99% | 11,57% | 27/08/2026 | extended_legal_found | source=detail_legal\n4/12 | 500 | elettrica | 500e POP 23 KW | € 199 | € 19.950 | € 6.960 | € 8.896 | € 13.261 | € 15.895 | 5,99% | 9,19% | 31/08/2026 | extended_legal_found | source=detail_legal\n5/12 | Grande Panda | benzina | Grande Panda Benzina Turbo 100 POP | € 129 | € 14.950 | € 2.550 | € 10.874 | € 12.671 | € 15.421 | 5,99% | 9,02% | 27/08/2026 | extended_legal_found | source=detail_legal\n6/12 | Grande Panda | hybrid | Grande Panda Hybrid | € 149 | € 17.450 | € 3.073 | € 12.472 | € 14.648 | € 17.724 | 5,99% | 8,65% | 27/08/2026 | extended_legal_found | source=detail_legal\n7/12 | Grande Panda | elettrica | Grande Panda Electric | € 199 | € 20.950 | € 5.959 | € 11.290 | € 15.262 | € 18.294 | 5,99% | 8,7% | 31/08/2026 | extended_legal_found | source=detail_legal\n8/12 | 600 | benzina | Nuova 600 Benzina Turbo 100 POP | € 149 | € 18.950 | € 5.706 | € 12.590 | € 13.650 | € 17.840 | 8,99% | 12,12% | 31/08/2026 | extended_legal_found | source=detail_legal\n9/12 | 600 | hybrid | 600 Hybrid | € 199 | € 19.950 | € 4.214 | € 13.843 | € 16.142 | € 20.850 | 8,99% | 11,78% | 27/08/2026 | extended_legal_found | source=detail_legal\n10/12 | 600 | elettrica | 600e POP | € 299 | € 25.950 | € 8.194 | € 12.295 | € 18.027 | € 22.806 | 8,99% | 11,74% | 31/08/2026 | extended_legal_found | source=detail_legal\n11/12 | Qubo | benzina | Qubo L | € 249 | € 19.950 | € 2.762 | € 13.559 | € 17.459 | € 22.318 | 8,99% | 11,7% | 27/08/2026 | extended_legal_found | source=detail_legal\n12/12 | Topolino | elettrica | Fiat Topolino | € 39 | € 7.450 | € 3.796 | € 4.393 | € 4.154 | € 5.769 | 8,99% | 13,47% | 27/08/2026 | extended_legal_found | source=detail_legal\n\nRIGHE FIAT: 12\nERRORI: 0\nPUSH COMPLETATO: righe Fiat scritte: 12\n\n/home/gruppobrandini/promo-monitor/fiat_push_to_sheet.py:111: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio Fiat\")"
-      }
+      "status": "OK",
+      "elapsed_seconds": 133.3,
+      "log_excerpt": ""
     },
     {
       "brand": "Abarth",
       "script": "abarth_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 26.0,
-      "log_excerpt": "",
-      "last_manual_run": {
-        "command_id": "5347aee4-1950-4d2c-af2d-51eb2cc14938",
-        "status": "OK",
-        "started_at": "2026-08-25T10:30:23+00:00",
-        "finished_at": "2026-08-25T10:30:52+00:00",
-        "elapsed_seconds": 27.0,
-        "return_code": 0,
-        "log_excerpt": "URL ABARTH TROVATI: 2\n1/2 | 500e | elettrica | Abarth 500e Hatchback | € 269 | € 32.600 | € 10.306 | € 14.844 | € 22.565 | € 24.317 | 1,99% | 3,69% | 31/08/2026 | extended_legal_found | source=detail_legal\n2/2 | 600e | elettrica | Abarth 600e Turismo | € 399 | € 37.950 | € 9.948 | € 20.373 | € 28.273 | € 34.410 | 7,45% | 9,18% | 31/08/2026 | extended_legal_found | source=detail_legal\n\nRIGHE ABARTH: 2\nERRORI: 0\nPUSH COMPLETATO: righe Abarth scritte: 2\n\n/home/gruppobrandini/promo-monitor/abarth_push_to_sheet.py:102: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio abarth\")"
-      }
+      "elapsed_seconds": 26.6,
+      "log_excerpt": ""
     },
     {
       "brand": "Lancia",
       "script": "lancia_push_to_sheet.py",
-      "status": "OK",
-      "elapsed_seconds": 69.7,
-      "log_excerpt": ""
+      "status": "FAIL",
+      "elapsed_seconds": 66.4,
+      "log_excerpt": "URL LANCIA TROVATI: 10\n1/10 | Ypsilon | benzina | Ypsilon Turbo 100 | € 99 | € 17.600 | € 4.268 | € 11.961 | € 11.953 | € 15.457 | 7,99% | 11,25% | 31/08/2026 | extended_legal_found | source=detail_legal\n2/10 | Ypsilon | hybrid | Ypsilon Ibrida 1.2 110cv | € 269 | € 21.100 | € 9.071 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 31/08/2026 | extended_legal_found | source=detail_legal\n3/10 | Ypsilon | elettrica | Ypsilon Elettrica | € 199 | € 29.400 | € 12.209 | € 12.422 | € 17.462 | € 19.432 | 2,99% | 5,16% | 31/08/2026 | extended_legal_found | source=detail_legal\n4/10 | Ypsilon | benzina | Ypsilon Turbo 100 LX | € 109 | € 20.550 | € 5.574 | € 13.653 | € 13.597 | € 17.503 | 7,99% | 10,89% | 31/08/2026 | extended_legal_found | source=detail_legal\n5/10 | Ypsilon | benzina | Ypsilon Turbo 100 HF Line | € 109 | € 20.550 | € 5.574 | € 13.653 | € 13.597 | € 17.503 | 7,99% | 10,89% | 31/08/2026 | extended_legal_found | source=detail_legal\n6/10 | Ypsilon | hybrid | Ypsilon Ibrida 1.2 110 | € 269 | € 24.000 | € 11.971 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 31/08/2026 | extended_legal_found | source=detail_legal\n7/10 | Ypsilon | hybrid | Ypsilon Ibrida HF Line 1.2 110cv | € 269 | € 24.000 | € 11.971 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 31/08/2026 | extended_legal_found | source=detail_legal\n8/10 | Ypsilon | elettrica | Ypsilon LX Elettrica | € 199 | € 32.400 | € 14.218 | € 13.505 | € 18.453 | € 20.518 | 2,99% | 5,03% | 31/08/2026 | extended_legal_found | source=detail_legal\nDEBUG NO LEGAL: https://www.lancia.it/offerte-ypsilon/offerta-finanziamento-ypsilon-elettrica-hf-line\n9/10 | NO_ROW | https://www.lancia.it/offerte-ypsilon/offerta-finanziamento-ypsilon-elettrica-hf-line\n10/10 | Ypsilon | elettrica | Ypsilon HF 280cv | € 199 | € 37.300 | € 17.501 | € 15.274 | € 20.070 | € 22.291 | 2,99% | 4,84% | 31/08/2026 | extended_legal_found | source=detail_legal\n\nRIGHE LANCIA: 9\nERRORI: 1\nERRORE: 9/10 NO_ROW https://www.lancia.it/offerte-ypsilon/offerta-finanziamento-ypsilon-elettrica-hf-line\n\nSTOP: errori presenti, nessun push eseguito."
     },
     {
       "brand": "Alfa Romeo",
       "script": "alfa_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 87.2,
+      "elapsed_seconds": 87.8,
       "log_excerpt": ""
     },
     {
       "brand": "Jeep",
       "script": "jeep_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 68.2,
+      "elapsed_seconds": 67.0,
       "log_excerpt": ""
     },
     {
       "brand": "Peugeot",
       "script": "peugeot_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 214.0,
+      "elapsed_seconds": 216.0,
       "log_excerpt": ""
     },
     {
       "brand": "Citroen",
       "script": "citroen_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 280.9,
+      "elapsed_seconds": 278.7,
       "log_excerpt": ""
     },
     {
       "brand": "Opel",
       "script": "opel_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 194.2,
+      "elapsed_seconds": 202.2,
       "log_excerpt": ""
     },
     {
       "brand": "DS",
       "script": "ds_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 115.9,
+      "elapsed_seconds": 118.2,
       "log_excerpt": ""
     },
     {
       "brand": "Fiat Professional",
       "script": "fiat_pro_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 102.9,
+      "elapsed_seconds": 102.4,
       "log_excerpt": ""
     },
     {
       "brand": "Nissan",
       "script": "nissan_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 290.4,
+      "elapsed_seconds": 292.9,
       "log_excerpt": ""
     },
     {
       "brand": "Leapmotor",
       "script": "leapmotor_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 37.6,
+      "elapsed_seconds": 37.4,
       "log_excerpt": ""
     },
     {
       "brand": "Honda",
       "script": "honda_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 59.9,
+      "elapsed_seconds": 59.4,
       "log_excerpt": ""
     },
     {
       "brand": "Mazda",
       "script": "mazda_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 99.7,
+      "elapsed_seconds": 100.8,
       "log_excerpt": ""
     },
     {
       "brand": "Hyundai",
       "script": "hyundai_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 169.6,
+      "elapsed_seconds": 169.1,
       "log_excerpt": ""
     },
     {
       "brand": "MG",
       "script": "mg_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 68.4,
+      "elapsed_seconds": 69.2,
       "log_excerpt": ""
     },
     {
       "brand": "Omoda / Jaecoo",
       "script": "omodajaecoo_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 91.1,
+      "elapsed_seconds": 92.1,
       "log_excerpt": ""
     },
     {
       "brand": "Changan",
       "script": "changan_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 18.9,
+      "elapsed_seconds": 20.0,
       "log_excerpt": ""
     },
     {
       "brand": "BMW",
       "script": "bmw_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 100.0,
+      "elapsed_seconds": 101.9,
       "log_excerpt": ""
     },
     {
       "brand": "MINI",
       "script": "mini_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 60.6,
+      "elapsed_seconds": 63.6,
       "log_excerpt": ""
     },
     {
       "brand": "DR",
       "script": "dr_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 63.2,
+      "elapsed_seconds": 64.3,
       "log_excerpt": ""
     },
     {
       "brand": "Lepas",
       "script": "lepas_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 18.5,
+      "elapsed_seconds": 16.4,
       "log_excerpt": ""
     },
     {
       "brand": "Dongfeng",
       "script": "dongfeng_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 14.5,
+      "elapsed_seconds": 14.3,
       "log_excerpt": ""
     }
   ]
