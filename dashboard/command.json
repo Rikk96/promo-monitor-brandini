@@ -1,10 +1,15 @@
 {
   "id": "6ecc47fe-4e04-4eaf-9f70-d0b7d3487a0b",
-  "status": "RUNNING",
+  "status": "COMPLETED",
   "brand": "lancia",
   "brand_label": "Lancia",
   "requested_at": "2026-08-26T14:59:37.342Z",
-  "message": "Esecuzione manuale di lancia_push_to_sheet.py",
+  "message": "Esecuzione completata",
   "script": "lancia_push_to_sheet.py",
-  "started_at": "2026-08-26T15:00:23+00:00"
+  "started_at": "2026-08-26T15:00:23+00:00",
+  "finished_at": "2026-08-26T15:01:37+00:00",
+  "elapsed_seconds": 71.9,
+  "result": "OK",
+  "return_code": 0,
+  "log_excerpt": "URL LANCIA TROVATI: 10\n1/10 | Ypsilon | benzina | Ypsilon Turbo 100 | € 99 | € 17.600 | € 4.268 | € 11.961 | € 11.953 | € 15.457 | 7,99% | 11,25% | 31/08/2026 | extended_legal_found | source=detail_legal\n2/10 | Ypsilon | hybrid | Ypsilon Ibrida 1.2 110cv | € 269 | € 21.100 | € 9.071 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 31/08/2026 | extended_legal_found | source=detail_legal\n3/10 | Ypsilon | elettrica | Ypsilon Elettrica | € 199 | € 29.400 | € 12.209 | € 12.422 | € 17.462 | € 19.432 | 2,99% | 5,16% | 31/08/2026 | extended_legal_found | source=detail_legal\n4/10 | Ypsilon | benzina | Ypsilon Turbo 100 LX | € 109 | € 20.550 | € 5.574 | € 13.653 | € 13.597 | € 17.503 | 7,99% | 10,89% | 31/08/2026 | extended_legal_found | source=detail_legal\n5/10 | Ypsilon | benzina | Ypsilon Turbo 100 HF Line | € 109 | € 20.550 | € 5.574 | € 13.653 | € 13.597 | € 17.503 | 7,99% | 10,89% | 31/08/2026 | extended_legal_found | source=detail_legal\n6/10 | Ypsilon | hybrid | Ypsilon Ibrida 1.2 110 | € 269 | € 24.000 | € 11.971 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 31/08/2026 | extended_legal_found | source=detail_legal\n7/10 | Ypsilon | hybrid | Ypsilon Ibrida HF Line 1.2 110cv | € 269 | € 24.000 | € 11.971 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 31/08/2026 | extended_legal_found | source=detail_legal\n8/10 | Ypsilon | elettrica | Ypsilon LX Elettrica | € 199 | € 32.400 | € 14.218 | € 13.505 | € 18.453 | € 20.518 | 2,99% | 5,03% | 31/08/2026 | extended_legal_found | source=detail_legal\nSKIP (modulo Richiedi Informazioni, non e una pagina offerta): https://www.lancia.it/offerte-ypsilon/offerta-finanziamento-ypsilon-elettrica-hf-line\n9/10 | SKIP (modulo richiesta info, non offerta) | https://www.lancia.it/offerte-ypsilon/offerta-finanziamento-ypsilon-elettrica-hf-line\n10/10 | Ypsilon | elettrica | Ypsilon HF 280cv | € 199 | € 37.300 | € 17.501 | € 15.274 | € 20.070 | € 22.291 | 2,99% | 4,84% | 31/08/2026 | extended_legal_found | source=detail_legal\n\nRIGHE LANCIA: 9\nERRORI: 0\nModuli 'richiedi informazioni' esclusi (non offerte): 1\nRighe attese: 9\nPUSH COMPLETATO: righe Lancia scritte: 9\n\n/home/gruppobrandini/promo-monitor/lancia_push_to_sheet.py:108: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio lancia\")"
 }
