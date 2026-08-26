@@ -104,6 +104,20 @@ def claim_from_legal(legal):
 
     return "; ".join(dict.fromkeys(claims))
 
+def is_lead_gen_form(text):
+    """Riconosce le pagine 'Richiedi Informazioni' (modulo lead a 3 step:
+    Modello / I tuoi dati / Concessionaria) che compaiono tra i link della hub
+    ma non sono pagine offerta vere - non hanno mai avuto una nota legale."""
+    low = text.lower()
+    return (
+        "i tuoi dati" in low
+        and "concessionaria" in low
+        and "compila con i tuoi dati" in low
+        and "prezzo" not in low
+        and "dettaglio promozione" not in low
+        and "iniziativa valida" not in low
+    )
+
 def extract_legal_from_html(html):
     text = html_to_text(html)
     low = text.lower()
@@ -198,6 +212,10 @@ def parse_detail(page, url, run_id):
     legal = extract_legal_from_html(html)
 
     if not legal:
+        text = html_to_text(html)
+        if is_lead_gen_form(text):
+            print("SKIP (modulo Richiedi Informazioni, non e una pagina offerta):", url)
+            return "NOT_OFFER"
         print("DEBUG NO LEGAL:", url)
         return None
 
@@ -246,6 +264,9 @@ def build_rows():
         for i, url in enumerate(urls, start=1):
             try:
                 r = parse_detail(detail, url, run_id)
+                if r == "NOT_OFFER":
+                    print(f"{i}/{len(urls)} | SKIP (modulo richiesta info, non offerta) | {url}")
+                    continue
                 if not r:
                     skipped.append(f"{i} NO_ROW {url}")
                     print(f"{i}/{len(urls)} | NO_ROW | {url}")

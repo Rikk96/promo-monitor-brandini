@@ -29,9 +29,15 @@ with sync_playwright() as p:
 
     detail = browser.new_page(viewport={"width":1366,"height":10000})
 
+    not_offer_count = 0
     for i, url in enumerate(urls, start=1):
         try:
             r = parse_detail(detail, url, run_id)
+
+            if r == "NOT_OFFER":
+                not_offer_count += 1
+                print(f"{i}/{len(urls)} | SKIP (modulo richiesta info, non offerta) | {url}")
+                continue
 
             if not r:
                 errors.append(f"{i}/{len(urls)} NO_ROW {url}")
@@ -63,11 +69,15 @@ print("ERRORI:", len(errors))
 for e in errors:
     print("ERRORE:", e)
 
+expected = len(urls) - not_offer_count
+print(f"Moduli 'richiedi informazioni' esclusi (non offerte): {not_offer_count}")
+print(f"Righe attese: {expected}")
+
 if errors:
     raise SystemExit("STOP: errori presenti, nessun push eseguito.")
 
-if len(rows) != 10:
-    raise SystemExit(f"STOP: attese 10 righe Lancia, trovate {len(rows)}. Nessun push eseguito.")
+if len(rows) != expected:
+    raise SystemExit(f"STOP: attese {expected} righe Lancia, trovate {len(rows)}. Nessun push eseguito.")
 
 creds = Credentials.from_service_account_file(KEY_PATH, scopes=[
     "https://www.googleapis.com/auth/spreadsheets",
