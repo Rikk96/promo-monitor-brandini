@@ -1,8 +1,10 @@
 {
   "id": "6ecc47fe-4e04-4eaf-9f70-d0b7d3487a0b",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "lancia",
   "brand_label": "Lancia",
   "requested_at": "2026-08-26T14:59:37.342Z",
-  "message": "Aggiornamento manuale Lancia in coda"
+  "message": "Esecuzione manuale di lancia_push_to_sheet.py",
+  "script": "lancia_push_to_sheet.py",
+  "started_at": "2026-08-26T15:00:23+00:00"
 }
