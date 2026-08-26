@@ -1,15 +1,8 @@
 {
-  "id": "5347aee4-1950-4d2c-af2d-51eb2cc14938",
-  "status": "COMPLETED",
-  "brand": "abarth",
-  "brand_label": "Abarth",
-  "requested_at": "2026-08-25T10:30:18.379Z",
-  "message": "Esecuzione completata",
-  "script": "abarth_push_to_sheet.py",
-  "started_at": "2026-08-25T10:30:23+00:00",
-  "finished_at": "2026-08-25T10:30:52+00:00",
-  "elapsed_seconds": 27.0,
-  "result": "OK",
-  "return_code": 0,
-  "log_excerpt": "URL ABARTH TROVATI: 2\n1/2 | 500e | elettrica | Abarth 500e Hatchback | € 269 | € 32.600 | € 10.306 | € 14.844 | € 22.565 | € 24.317 | 1,99% | 3,69% | 31/08/2026 | extended_legal_found | source=detail_legal\n2/2 | 600e | elettrica | Abarth 600e Turismo | € 399 | € 37.950 | € 9.948 | € 20.373 | € 28.273 | € 34.410 | 7,45% | 9,18% | 31/08/2026 | extended_legal_found | source=detail_legal\n\nRIGHE ABARTH: 2\nERRORI: 0\nPUSH COMPLETATO: righe Abarth scritte: 2\n\n/home/gruppobrandini/promo-monitor/abarth_push_to_sheet.py:102: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio abarth\")"
+  "id": "5521b860-dd9b-445a-8967-eb4bd9d0e2b2",
+  "status": "PENDING",
+  "brand": "lancia",
+  "brand_label": "Lancia",
+  "requested_at": "2026-08-26T07:53:58.926Z",
+  "message": "Aggiornamento manuale Lancia in coda (richiesto da {'display_name': 'Riccardo Pescini', 'user_id': 2, 'username': 'riccardo.pescini@brandini.it'} via BDH)"
 }
