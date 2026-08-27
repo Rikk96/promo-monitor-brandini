@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "run_id": "20260826_043005",
+  "run_id": "20260827_043001",
   "run_type": "scheduled",
-  "run_started_at": "2026-08-26T04:30:05+00:00",
-  "generated_at": "2026-08-26T15:01:37+00:00",
-  "overall_status": "ERROR",
+  "run_started_at": "2026-08-27T04:30:01+00:00",
+  "generated_at": "2026-08-27T05:09:04+00:00",
+  "overall_status": "OK",
   "totals": {
     "configured": 23,
-    "ok": 22,
-    "bad": 1,
+    "ok": 23,
+    "bad": 0,
     "not_run": 0
   },
   "items": [
@@ -16,72 +16,63 @@
       "brand": "Fiat",
       "script": "fiat_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 133.3,
+      "elapsed_seconds": 134.7,
       "log_excerpt": ""
     },
     {
       "brand": "Abarth",
       "script": "abarth_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 26.6,
+      "elapsed_seconds": 25.3,
       "log_excerpt": ""
     },
     {
       "brand": "Lancia",
       "script": "lancia_push_to_sheet.py",
-      "status": "FAIL",
-      "elapsed_seconds": 66.4,
-      "log_excerpt": "URL LANCIA TROVATI: 10\n1/10 | Ypsilon | benzina | Ypsilon Turbo 100 | € 99 | € 17.600 | € 4.268 | € 11.961 | € 11.953 | € 15.457 | 7,99% | 11,25% | 31/08/2026 | extended_legal_found | source=detail_legal\n2/10 | Ypsilon | hybrid | Ypsilon Ibrida 1.2 110cv | € 269 | € 21.100 | € 9.071 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 31/08/2026 | extended_legal_found | source=detail_legal\n3/10 | Ypsilon | elettrica | Ypsilon Elettrica | € 199 | € 29.400 | € 12.209 | € 12.422 | € 17.462 | € 19.432 | 2,99% | 5,16% | 31/08/2026 | extended_legal_found | source=detail_legal\n4/10 | Ypsilon | benzina | Ypsilon Turbo 100 LX | € 109 | € 20.550 | € 5.574 | € 13.653 | € 13.597 | € 17.503 | 7,99% | 10,89% | 31/08/2026 | extended_legal_found | source=detail_legal\n5/10 | Ypsilon | benzina | Ypsilon Turbo 100 HF Line | € 109 | € 20.550 | € 5.574 | € 13.653 | € 13.597 | € 17.503 | 7,99% | 10,89% | 31/08/2026 | extended_legal_found | source=detail_legal\n6/10 | Ypsilon | hybrid | Ypsilon Ibrida 1.2 110 | € 269 | € 24.000 | € 11.971 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 31/08/2026 | extended_legal_found | source=detail_legal\n7/10 | Ypsilon | hybrid | Ypsilon Ibrida HF Line 1.2 110cv | € 269 | € 24.000 | € 11.971 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 31/08/2026 | extended_legal_found | source=detail_legal\n8/10 | Ypsilon | elettrica | Ypsilon LX Elettrica | € 199 | € 32.400 | € 14.218 | € 13.505 | € 18.453 | € 20.518 | 2,99% | 5,03% | 31/08/2026 | extended_legal_found | source=detail_legal\nDEBUG NO LEGAL: https://www.lancia.it/offerte-ypsilon/offerta-finanziamento-ypsilon-elettrica-hf-line\n9/10 | NO_ROW | https://www.lancia.it/offerte-ypsilon/offerta-finanziamento-ypsilon-elettrica-hf-line\n10/10 | Ypsilon | elettrica | Ypsilon HF 280cv | € 199 | € 37.300 | € 17.501 | € 15.274 | € 20.070 | € 22.291 | 2,99% | 4,84% | 31/08/2026 | extended_legal_found | source=detail_legal\n\nRIGHE LANCIA: 9\nERRORI: 1\nERRORE: 9/10 NO_ROW https://www.lancia.it/offerte-ypsilon/offerta-finanziamento-ypsilon-elettrica-hf-line\n\nSTOP: errori presenti, nessun push eseguito.",
-      "last_manual_run": {
-        "command_id": "6ecc47fe-4e04-4eaf-9f70-d0b7d3487a0b",
-        "status": "OK",
-        "started_at": "2026-08-26T15:00:23+00:00",
-        "finished_at": "2026-08-26T15:01:37+00:00",
-        "elapsed_seconds": 71.9,
-        "return_code": 0,
-        "log_excerpt": "URL LANCIA TROVATI: 10\n1/10 | Ypsilon | benzina | Ypsilon Turbo 100 | € 99 | € 17.600 | € 4.268 | € 11.961 | € 11.953 | € 15.457 | 7,99% | 11,25% | 31/08/2026 | extended_legal_found | source=detail_legal\n2/10 | Ypsilon | hybrid | Ypsilon Ibrida 1.2 110cv | € 269 | € 21.100 | € 9.071 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 31/08/2026 | extended_legal_found | source=detail_legal\n3/10 | Ypsilon | elettrica | Ypsilon Elettrica | € 199 | € 29.400 | € 12.209 | € 12.422 | € 17.462 | € 19.432 | 2,99% | 5,16% | 31/08/2026 | extended_legal_found | source=detail_legal\n4/10 | Ypsilon | benzina | Ypsilon Turbo 100 LX | € 109 | € 20.550 | € 5.574 | € 13.653 | € 13.597 | € 17.503 | 7,99% | 10,89% | 31/08/2026 | extended_legal_found | source=detail_legal\n5/10 | Ypsilon | benzina | Ypsilon Turbo 100 HF Line | € 109 | € 20.550 | € 5.574 | € 13.653 | € 13.597 | € 17.503 | 7,99% | 10,89% | 31/08/2026 | extended_legal_found | source=detail_legal\n6/10 | Ypsilon | hybrid | Ypsilon Ibrida 1.2 110 | € 269 | € 24.000 | € 11.971 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 31/08/2026 | extended_legal_found | source=detail_legal\n7/10 | Ypsilon | hybrid | Ypsilon Ibrida HF Line 1.2 110cv | € 269 | € 24.000 | € 11.971 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 31/08/2026 | extended_legal_found | source=detail_legal\n8/10 | Ypsilon | elettrica | Ypsilon LX Elettrica | € 199 | € 32.400 | € 14.218 | € 13.505 | € 18.453 | € 20.518 | 2,99% | 5,03% | 31/08/2026 | extended_legal_found | source=detail_legal\nSKIP (modulo Richiedi Informazioni, non e una pagina offerta): https://www.lancia.it/offerte-ypsilon/offerta-finanziamento-ypsilon-elettrica-hf-line\n9/10 | SKIP (modulo richiesta info, non offerta) | https://www.lancia.it/offerte-ypsilon/offerta-finanziamento-ypsilon-elettrica-hf-line\n10/10 | Ypsilon | elettrica | Ypsilon HF 280cv | € 199 | € 37.300 | € 17.501 | € 15.274 | € 20.070 | € 22.291 | 2,99% | 4,84% | 31/08/2026 | extended_legal_found | source=detail_legal\n\nRIGHE LANCIA: 9\nERRORI: 0\nModuli 'richiedi informazioni' esclusi (non offerte): 1\nRighe attese: 9\nPUSH COMPLETATO: righe Lancia scritte: 9\n\n/home/gruppobrandini/promo-monitor/lancia_push_to_sheet.py:108: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio lancia\")"
-      }
+      "status": "OK",
+      "elapsed_seconds": 67.8,
+      "log_excerpt": ""
     },
     {
       "brand": "Alfa Romeo",
       "script": "alfa_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 87.8,
+      "elapsed_seconds": 88.3,
       "log_excerpt": ""
     },
     {
       "brand": "Jeep",
       "script": "jeep_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 67.0,
+      "elapsed_seconds": 66.7,
       "log_excerpt": ""
     },
     {
       "brand": "Peugeot",
       "script": "peugeot_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 216.0,
+      "elapsed_seconds": 202.5,
       "log_excerpt": ""
     },
     {
       "brand": "Citroen",
       "script": "citroen_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 278.7,
+      "elapsed_seconds": 252.4,
       "log_excerpt": ""
     },
     {
       "brand": "Opel",
       "script": "opel_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 202.2,
+      "elapsed_seconds": 190.8,
       "log_excerpt": ""
     },
     {
       "brand": "DS",
       "script": "ds_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 118.2,
+      "elapsed_seconds": 107.0,
       "log_excerpt": ""
     },
     {
@@ -95,91 +86,91 @@
       "brand": "Nissan",
       "script": "nissan_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 292.9,
+      "elapsed_seconds": 289.1,
       "log_excerpt": ""
     },
     {
       "brand": "Leapmotor",
       "script": "leapmotor_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 37.4,
+      "elapsed_seconds": 36.7,
       "log_excerpt": ""
     },
     {
       "brand": "Honda",
       "script": "honda_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 59.4,
+      "elapsed_seconds": 60.0,
       "log_excerpt": ""
     },
     {
       "brand": "Mazda",
       "script": "mazda_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 100.8,
+      "elapsed_seconds": 100.4,
       "log_excerpt": ""
     },
     {
       "brand": "Hyundai",
       "script": "hyundai_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 169.1,
+      "elapsed_seconds": 168.5,
       "log_excerpt": ""
     },
     {
       "brand": "MG",
       "script": "mg_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 69.2,
+      "elapsed_seconds": 68.2,
       "log_excerpt": ""
     },
     {
       "brand": "Omoda / Jaecoo",
       "script": "omodajaecoo_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 92.1,
+      "elapsed_seconds": 95.2,
       "log_excerpt": ""
     },
     {
       "brand": "Changan",
       "script": "changan_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 20.0,
+      "elapsed_seconds": 19.6,
       "log_excerpt": ""
     },
     {
       "brand": "BMW",
       "script": "bmw_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 101.9,
+      "elapsed_seconds": 101.5,
       "log_excerpt": ""
     },
     {
       "brand": "MINI",
       "script": "mini_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 63.6,
+      "elapsed_seconds": 72.3,
       "log_excerpt": ""
     },
     {
       "brand": "DR",
       "script": "dr_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 64.3,
+      "elapsed_seconds": 62.0,
       "log_excerpt": ""
     },
     {
       "brand": "Lepas",
       "script": "lepas_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 16.4,
+      "elapsed_seconds": 14.7,
       "log_excerpt": ""
     },
     {
       "brand": "Dongfeng",
       "script": "dongfeng_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 14.3,
+      "elapsed_seconds": 14.2,
       "log_excerpt": ""
     }
   ]
