@@ -1,8 +1,10 @@
 {
   "id": "77cd5f05-7691-452c-92e5-109d5932e646",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "omodajaecoo",
   "brand_label": "Omoda / Jaecoo",
   "requested_at": "2026-09-01T13:05:12.051Z",
-  "message": "Aggiornamento manuale Omoda / Jaecoo in coda"
+  "message": "Esecuzione manuale di omodajaecoo_push_to_sheet.py",
+  "script": "omodajaecoo_push_to_sheet.py",
+  "started_at": "2026-09-01T13:05:33+00:00"
 }
