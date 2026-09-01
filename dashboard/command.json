@@ -1,8 +1,10 @@
 {
   "id": "e778068f-7d20-49b5-be2e-efe4d472f53f",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "leapmotor",
   "brand_label": "Leapmotor",
   "requested_at": "2026-09-01T13:03:47.643Z",
-  "message": "Aggiornamento manuale Leapmotor in coda"
+  "message": "Esecuzione manuale di leapmotor_push_to_sheet.py",
+  "script": "leapmotor_push_to_sheet.py",
+  "started_at": "2026-09-01T13:04:23+00:00"
 }
