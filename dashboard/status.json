@@ -3,7 +3,7 @@
   "run_id": "20260901_043005",
   "run_type": "scheduled",
   "run_started_at": "2026-09-01T04:30:05+00:00",
-  "generated_at": "2026-09-01T13:03:10+00:00",
+  "generated_at": "2026-09-01T13:05:02+00:00",
   "overall_status": "OK",
   "totals": {
     "configured": 23,
@@ -121,7 +121,16 @@
       "script": "leapmotor_push_to_sheet.py",
       "status": "OK",
       "elapsed_seconds": 36.0,
-      "log_excerpt": ""
+      "log_excerpt": "",
+      "last_manual_run": {
+        "command_id": "e778068f-7d20-49b5-be2e-efe4d472f53f",
+        "status": "OK",
+        "started_at": "2026-09-01T13:04:23+00:00",
+        "finished_at": "2026-09-01T13:05:02+00:00",
+        "elapsed_seconds": 37.6,
+        "return_code": 0,
+        "log_excerpt": "URL LEAPMOTOR TROVATI: 4\n1/4 | T03 | elettrica | T03 | € 79 | € 15.900 | € 7.377 | € 7.872 | € 8.794 | € 10.660 | 4,99% | 9,07% | 31/08/2026 | extended_legal_found | source=detail_legal\n2/4 | B10 | hybrid | B10 REEV HYBRID Life | € 179 | € 24.900 | € 4.896 | € 17.428 | € 20.275 | € 23.745 | 4,99% | 6,88% | 31/08/2026 | extended_legal_found | source=detail_legal\n3/4 | C10 | hybrid | C10 REEV HYBRID Life | € 199 | € 29.900 | € 7.370 | € 19.606 | € 22.801 | € 26.629 | 4,99% | 6,69% | 31/08/2026 | extended_legal_found | source=detail_legal\n4/4 | B05 | elettrica | B05 Life | € 179 | € 22.900 | € 8.214 | € 11.253 | € 14.957 | € 17.556 | 4,99% | 7,63% | 31/08/2026 | extended_legal_found | source=detail_legal\n\nRIGHE LEAPMOTOR: 4\nERRORI: 0\nPUSH COMPLETATO: righe Leapmotor scritte: 4\n\n/home/gruppobrandini/promo-monitor/leapmotor_push_to_sheet.py:102: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio leapmotor\")"
+      }
     },
     {
       "brand": "Honda",
