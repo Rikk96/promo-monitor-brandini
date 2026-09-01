@@ -7,7 +7,7 @@ from promo_common import HEADERS, clean
 
 BRAND = "BMW"
 HUB = "https://www.bmw.it/it/topics/offerte-bmw/panoramica.html"
-MIN_EXPECTED_ROWS = 8
+MIN_EXPECTED_ROWS = 15
 
 def normalize_legal(note):
     note = clean(note or "")
