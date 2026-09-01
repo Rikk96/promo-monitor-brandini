@@ -1,8 +1,10 @@
 {
   "id": "aea9b99b-89bc-42cd-8bef-0be60b605836",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "mg",
   "brand_label": "MG",
   "requested_at": "2026-09-01T12:42:06.587Z",
-  "message": "Aggiornamento manuale MG in coda"
+  "message": "Esecuzione manuale di mg_push_to_sheet.py",
+  "script": "mg_push_to_sheet.py",
+  "started_at": "2026-09-01T12:50:53+00:00"
 }
