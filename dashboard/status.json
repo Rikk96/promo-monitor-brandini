@@ -3,7 +3,7 @@
   "run_id": "20260901_043005",
   "run_type": "scheduled",
   "run_started_at": "2026-09-01T04:30:05+00:00",
-  "generated_at": "2026-09-01T12:52:26+00:00",
+  "generated_at": "2026-09-01T12:55:05+00:00",
   "overall_status": "OK",
   "totals": {
     "configured": 23,
@@ -38,7 +38,16 @@
       "script": "alfa_push_to_sheet.py",
       "status": "OK",
       "elapsed_seconds": 88.1,
-      "log_excerpt": ""
+      "log_excerpt": "",
+      "last_manual_run": {
+        "command_id": "5860d652-77ac-48fe-8e15-ea1db680b634",
+        "status": "OK",
+        "started_at": "2026-09-01T12:53:33+00:00",
+        "finished_at": "2026-09-01T12:55:05+00:00",
+        "elapsed_seconds": 90.5,
+        "return_code": 0,
+        "log_excerpt": "https://www.alfaromeo.it/offerte/junior | link: 6\nhttps://www.alfaromeo.it/offerte/tonale | link: 6\nhttps://www.alfaromeo.it/offerte/stelvio | link: 4\nhttps://www.alfaromeo.it/offerte/giulia | link: 4\nURL ALFA TROVATI: 10\n1/10 | Junior | hybrid | ALFA ROMEO JUNIOR IBRIDA MY26 1.2 145CV HYBRID EDCT6 | € 159 | € 27.950 | € 6.012 | € 20.963 | € 22.209 | € 26.585 | 5,75% | 7,49% | 30/09/2026 | extended_legal_found | source=detail_legal\n2/10 | Junior | hybrid | ALFA ROMEO JUNIOR IBRIDA MY26 1.2 145CV HYBRID EDCT6 Q4 | € 159 | € 30.950 | € 7.355 | € 22.931 | € 23.866 | € 28.557 | 5,75% | 7,37% | 30/09/2026 | extended_legal_found | source=detail_legal\n3/10 | Junior | elettrica | ALFA ROMEO JUNIOR ELETTRICA MY26 156CV - 115KW | € 199 | € 36.472 | € 14.778 | € 17.348 | € 21.965 | € 24.369 | 2,99% | 4,67% | 30/09/2026 | extended_legal_found | source=detail_legal\n4/10 | Tonale | hybrid | ALFA ROMEO TONALE MY26 1.5 IBRIDA 175CV | € 399 | € 36.500 | € 18.231 |  | € 18.540 | € 19.119 | 0% | 2,49% | 30/09/2026 | extended_legal_found | source=detail_legal\n5/10 | Tonale | diesel | ALFA ROMEO TONALE 1.6 130CV DIESEL | € 399 | € 34.700 | € 16.431 |  | € 18.540 | € 19.119 | 0% | 2,49% | 31/08/2026 | extended_legal_found | source=detail_legal\n6/10 | Tonale | diesel | ALFA ROMEO TONALE 1.6 130CV DIESEL | € 399 | € 40.950 | € 22.681 |  | € 18.540 | € 19.119 | 0% | 2,49% | 31/08/2026 | extended_legal_found | source=detail_legal\n7/10 | Stelvio | diesel | ALFA ROMEO STELVIO 2.2 TURBO DIESEL 210CV, ALLESTIMENTO SPRINT | € 449 | € 52.139 | € 12.597 | € 25.610 | € 39.813 | € 46.813 | 4,75% | 5,7% | 31/08/2026 | extended_legal_found | source=detail_legal\n8/10 | Stelvio | benzina | ALFA ROMEO STELVIO MY25 2.9 V6 BENZINA 520CV QUADRIFOGLIO | € 799 | € 97.870 | € 15.881 | € 65.420 | € 82.260 | € 93.592 | 4,75% | 5,38% | 30/09/2026 | extended_legal_found | source=detail_legal\n9/10 | Giulia | diesel | ALFA ROMEO GIULIA 2.2 TURBO DIESEL 210CV, ALLESTIMENTO SPRINT | € 449 | € 47.345 | € 12.178 | € 20.320 | € 35.438 | € 41.513 | 4,75% | 5,83% | 31/08/2026 | extended_legal_found | source=detail_legal\n10/10 | Giulia | benzina | ALFA ROMEO GIULIA MY25 2.9 V6 BENZINA 520CV QUADRIFOGLIO | € 799 | € 89.692 | € 13.937 | € 58.234 | € 76.026 | € 86.390 | 4,75% | 5,42% | 30/09/2026 | extended_legal_found | source=detail_legal\n\nRIGHE ALFA: 10\nERRORI: 0\nPUSH COMPLETATO: righe Alfa Romeo scritte: 10\n\n/home/gruppobrandini/promo-monitor/alfa_push_to_sheet.py:102: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio alfa\")"
+      }
     },
     {
       "brand": "Jeep",
