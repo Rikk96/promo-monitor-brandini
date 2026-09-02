@@ -1,15 +1,8 @@
 {
-  "id": "307cefa2-509b-4261-b16c-163fe9630d13",
-  "status": "FAILED",
-  "brand": "jeep",
-  "brand_label": "Jeep",
-  "requested_at": "2026-09-02T10:38:54.170Z",
-  "message": "Esecuzione terminata con errore",
-  "script": "jeep_push_to_sheet.py",
-  "started_at": "2026-09-02T10:40:03+00:00",
-  "finished_at": "2026-09-02T10:41:08+00:00",
-  "elapsed_seconds": 63.5,
-  "result": "FAIL",
-  "return_code": 1,
-  "log_excerpt": "https://www.jeep-official.it/offerte-jeep-prezzi/avenger | link: 4\nhttps://www.jeep-official.it/offerte-jeep-prezzi/nuova-compass | link: 3\nURL JEEP TROVATI: 8\n1/8 | Avenger | plug-in | Nuova Jeep® Avenger 4xe Upland 1.2 145 CV | € 149 | € 29.900 | € 7.913 | € 21.404 | € 22.258 | € 26.675 | 5,75% | 7,47% | 30/09/2026 | extended_legal_found | source=detail_legal\n2/8 | Avenger | hybrid | Nuova Jeep® Avenger Longitide e-Hybrid 1.2 110 CV | € 149 | € 24.900 | € 6.155 |  | € 19.016 | € 22.816 | 5,75% | 7,76% | 30/09/2026 | extended_legal_found | source=detail_legal\n3/8 | SKIP | https://www.jeep-official.it/offerte-jeep-prezzi/promozione/offerta-nuova-avenger-elettrica#NewAvenger\n4/8 | Avenger | benzina | Nuova Jeep® Avenger Longitude 1.2 Turbo 100 CV | € 299 | € 21.900 | € 8.431 |  | € 13.740 | € 14.387 | 0% | 3,33% | 30/09/2026 | extended_legal_found | source=detail_legal\n5/8 | SKIP | https://www.jeep-official.it/offerte-jeep-prezzi/promozione/finanziamento-compass-elettrica#NuovaCompass\n6/8 | Compass | hybrid | Jeep® Nuova Compass Altitude e-Hybrid 145cv | € 428 | € 33.900 | € 14.239 |  | € 19.932 | € 20.595 | 0% | 2,32% | 30/09/2026 | extended_legal_found | source=detail_legal\n7/8 | Compass | plug-in | Jeep® Nuova Compass Altitude e-Hybrid Plug-In 225cv | € 249 | € 40.900 | € 12.644 | € 25.030 | € 28.527 | € 33.818 | 5,75% | 7,2% | 30/09/2026 | extended_legal_found | source=detail_legal\nDEBUG NO LEGAL: https://www.jeep-official.it/offerte-jeep-prezzi/promozione/grand-cherokee-offerta-rata\n8/8 | SKIP | https://www.jeep-official.it/offerte-jeep-prezzi/promozione/grand-cherokee-offerta-rata\n\nRIGHE JEEP: 5\nERRORI: 0\n\nSTOP: attese almeno 7 righe Jeep, trovate 5. Nessun push eseguito."
+  "id": "f80f32a1-1de4-41d2-9f1d-a057fef38814",
+  "status": "PENDING",
+  "brand": "leapmotor",
+  "brand_label": "Leapmotor",
+  "requested_at": "2026-09-02T12:54:23.181Z",
+  "message": "Aggiornamento manuale Leapmotor in coda"
 }
