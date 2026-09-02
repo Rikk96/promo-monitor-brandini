@@ -1,8 +1,10 @@
 {
   "id": "7495e8f6-20dc-4228-9e89-1a2c190e5c44",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "opel",
   "brand_label": "Opel",
   "requested_at": "2026-09-02T08:53:39.797Z",
-  "message": "Aggiornamento manuale Opel in coda"
+  "message": "Esecuzione manuale di opel_push_to_sheet.py",
+  "script": "opel_push_to_sheet.py",
+  "started_at": "2026-09-02T08:54:23+00:00"
 }
