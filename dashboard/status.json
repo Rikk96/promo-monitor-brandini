@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "run_id": "20260901_043005",
+  "run_id": "20260902_043005",
   "run_type": "scheduled",
-  "run_started_at": "2026-09-01T04:30:05+00:00",
-  "generated_at": "2026-09-01T13:07:11+00:00",
-  "overall_status": "OK",
+  "run_started_at": "2026-09-02T04:30:05+00:00",
+  "generated_at": "2026-09-02T05:10:15+00:00",
+  "overall_status": "ERROR",
   "totals": {
     "configured": 23,
-    "ok": 23,
-    "bad": 0,
+    "ok": 21,
+    "bad": 2,
     "not_run": 0
   },
   "items": [
@@ -16,224 +16,161 @@
       "brand": "Fiat",
       "script": "fiat_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 133.5,
-      "log_excerpt": "",
-      "last_manual_run": {
-        "command_id": "d67781b3-adbc-4319-af5b-adf5f59293a4",
-        "status": "OK",
-        "started_at": "2026-09-01T13:00:53+00:00",
-        "finished_at": "2026-09-01T13:03:10+00:00",
-        "elapsed_seconds": 135.2,
-        "return_code": 0,
-        "log_excerpt": "URL FIAT TROVATI: 12\n1/12 | Pandina | hybrid | Nuova Fiat Pandina | € 99 | € 9.950 | € 1.699 | € 8.011 | € 8.614 | € 11.497 | 8,99% | 13,71% | 28/09/2026 | extended_legal_found | source=detail_legal\n2/12 | 500 | hybrid | Fiat 500 Ibrida Pop | € 149 | € 16.450 | € 0 | € 12.074 | € 16.721 | € 17.328 | 0% | 2,07% | 28/09/2026 | extended_legal_found | source=detail_legal\n3/12 | 500 | hybrid | Fiat 500 Hybrid Dolcevita | € 239 | € 21.750 | € 0 | € 15.356 | € 22.021 | € 23.770 | 1,99% | 3,69% | 28/09/2026 | extended_legal_found | source=detail_legal\n4/12 | 500 | elettrica | 500e POP 23 KW | € 199 | € 19.950 | € 6.960 | € 8.896 | € 13.261 | € 15.895 | 5,99% | 9,19% | 30/09/2026 | extended_legal_found | source=detail_legal\n5/12 | Grande Panda | benzina | Grande Panda Benzina Turbo 100 POP | € 129 | € 14.950 | € 2.550 | € 10.874 | € 12.671 | € 15.421 | 5,99% | 9,02% | 28/09/2026 | extended_legal_found | source=detail_legal\n6/12 | Grande Panda | hybrid | Grande Panda Hybrid | € 149 | € 17.450 | € 3.073 | € 12.472 | € 14.648 | € 17.724 | 5,99% | 8,65% | 28/09/2026 | extended_legal_found | source=detail_legal\n7/12 | Grande Panda | elettrica | Grande Panda Electric | € 199 | € 20.950 | € 5.959 | € 11.290 | € 15.262 | € 18.294 | 5,99% | 8,7% | 30/09/2026 | extended_legal_found | source=detail_legal\n8/12 | 600 | benzina | Nuova 600 Benzina Turbo 100 POP | € 149 | € 18.950 | € 5.706 | € 12.590 | € 13.650 | € 17.840 | 8,99% | 12,12% | 28/09/2026 | extended_legal_found | source=detail_legal\n9/12 | 600 | hybrid | 600 Hybrid | € 199 | € 229 | € 5.714 | € 13.843 | € 16.142 | € 20.850 | 8,99% | 11,78% | 28/09/2026 | extended_legal_found | source=detail_legal\n10/12 | 600 | elettrica | 600e POP | € 299 | € 25.950 | € 8.194 | € 12.295 | € 18.027 | € 22.806 | 8,99% | 11,74% | 30/09/2026 | extended_legal_found | source=detail_legal\n11/12 | Qubo | benzina | Qubo L | € 249 | € 19.950 | € 2.762 | € 13.559 | € 17.459 | € 22.318 | 8,99% | 11,7% | 28/09/2026 | extended_legal_found | source=detail_legal\n12/12 | Topolino | elettrica | Fiat Topolino | € 39 | € 6.950 | € 2.796 | € 4.393 | € 4.154 | € 5.769 | 8,99% | 13,47% | 28/09/2026 | extended_legal_found | source=detail_legal\n\nRIGHE FIAT: 12\nERRORI: 0\nPUSH COMPLETATO: righe Fiat scritte: 12\n\n/home/gruppobrandini/promo-monitor/fiat_push_to_sheet.py:111: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio Fiat\")"
-      }
+      "elapsed_seconds": 132.8,
+      "log_excerpt": ""
     },
     {
       "brand": "Abarth",
       "script": "abarth_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 24.4,
+      "elapsed_seconds": 27.1,
       "log_excerpt": ""
     },
     {
       "brand": "Lancia",
       "script": "lancia_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 67.3,
-      "log_excerpt": "",
-      "last_manual_run": {
-        "command_id": "0f10323e-f7f8-43c9-b3df-69767329b7f2",
-        "status": "OK",
-        "started_at": "2026-09-01T12:58:33+00:00",
-        "finished_at": "2026-09-01T12:59:42+00:00",
-        "elapsed_seconds": 67.5,
-        "return_code": 0,
-        "log_excerpt": "URL LANCIA TROVATI: 10\n1/10 | Ypsilon | benzina | Ypsilon Turbo 100 | € 99 | € 17.600 | € 4.268 | € 11.961 | € 11.953 | € 15.457 | 7,99% | 11,25% | 30/09/2026 | extended_legal_found | source=detail_legal\n2/10 | Ypsilon | hybrid | Ypsilon Ibrida 1.2 110cv | € 269 | € 21.100 | € 9.071 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 30/09/2026 | extended_legal_found | source=detail_legal\n3/10 | Ypsilon | elettrica | Ypsilon Elettrica | € 199 | € 29.400 | € 12.209 | € 12.422 | € 17.462 | € 19.432 | 2,99% | 5,16% | 30/09/2026 | extended_legal_found | source=detail_legal\n4/10 | Ypsilon | benzina | Ypsilon Turbo 100 LX | € 109 | € 20.550 | € 5.574 | € 13.653 | € 13.597 | € 17.503 | 7,99% | 10,89% | 30/09/2026 | extended_legal_found | source=detail_legal\n5/10 | Ypsilon | benzina | Ypsilon Turbo 100 HF Line | € 109 | € 20.550 | € 5.574 | € 13.653 | € 13.597 | € 17.503 | 7,99% | 10,89% | 30/09/2026 | extended_legal_found | source=detail_legal\n6/10 | Ypsilon | hybrid | Ypsilon Ibrida 1.2 110 | € 269 | € 24.000 | € 11.971 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 30/09/2026 | extended_legal_found | source=detail_legal\n7/10 | Ypsilon | hybrid | Ypsilon Ibrida HF Line 1.2 110cv | € 269 | € 24.000 | € 11.971 |  | € 12.720 | € 12.944 | 0,00% | 3,71% | 30/09/2026 | extended_legal_found | source=detail_legal\n8/10 | Ypsilon | elettrica | Ypsilon LX Elettrica | € 199 | € 32.400 | € 14.218 | € 13.505 | € 18.453 | € 20.518 | 2,99% | 5,03% | 30/09/2026 | extended_legal_found | source=detail_legal\n9/10 | Ypsilon | elettrica | Ypsilon HF Line Elettrica | € 199 | € 32.400 | € 14.218 | € 13.505 | € 18.453 | € 20.518 | 2,99% | 5,03% | 30/09/2026 | extended_legal_found | source=detail_legal\n10/10 | Ypsilon | elettrica | Ypsilon HF 280cv | € 199 | € 37.300 | € 17.501 | € 15.274 | € 20.070 | € 22.291 | 2,99% | 4,84% | 30/09/2026 | extended_legal_found | source=detail_legal\n\nRIGHE LANCIA: 10\nERRORI: 0\nModuli 'richiedi informazioni' esclusi (non offerte): 0\nRighe attese: 10\nPUSH COMPLETATO: righe Lancia scritte: 10\n\n/home/gruppobrandini/promo-monitor/lancia_push_to_sheet.py:108: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio lancia\")"
-      }
+      "elapsed_seconds": 72.5,
+      "log_excerpt": ""
     },
     {
       "brand": "Alfa Romeo",
       "script": "alfa_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 88.1,
-      "log_excerpt": "",
-      "last_manual_run": {
-        "command_id": "5860d652-77ac-48fe-8e15-ea1db680b634",
-        "status": "OK",
-        "started_at": "2026-09-01T12:53:33+00:00",
-        "finished_at": "2026-09-01T12:55:05+00:00",
-        "elapsed_seconds": 90.5,
-        "return_code": 0,
-        "log_excerpt": "https://www.alfaromeo.it/offerte/junior | link: 6\nhttps://www.alfaromeo.it/offerte/tonale | link: 6\nhttps://www.alfaromeo.it/offerte/stelvio | link: 4\nhttps://www.alfaromeo.it/offerte/giulia | link: 4\nURL ALFA TROVATI: 10\n1/10 | Junior | hybrid | ALFA ROMEO JUNIOR IBRIDA MY26 1.2 145CV HYBRID EDCT6 | € 159 | € 27.950 | € 6.012 | € 20.963 | € 22.209 | € 26.585 | 5,75% | 7,49% | 30/09/2026 | extended_legal_found | source=detail_legal\n2/10 | Junior | hybrid | ALFA ROMEO JUNIOR IBRIDA MY26 1.2 145CV HYBRID EDCT6 Q4 | € 159 | € 30.950 | € 7.355 | € 22.931 | € 23.866 | € 28.557 | 5,75% | 7,37% | 30/09/2026 | extended_legal_found | source=detail_legal\n3/10 | Junior | elettrica | ALFA ROMEO JUNIOR ELETTRICA MY26 156CV - 115KW | € 199 | € 36.472 | € 14.778 | € 17.348 | € 21.965 | € 24.369 | 2,99% | 4,67% | 30/09/2026 | extended_legal_found | source=detail_legal\n4/10 | Tonale | hybrid | ALFA ROMEO TONALE MY26 1.5 IBRIDA 175CV | € 399 | € 36.500 | € 18.231 |  | € 18.540 | € 19.119 | 0% | 2,49% | 30/09/2026 | extended_legal_found | source=detail_legal\n5/10 | Tonale | diesel | ALFA ROMEO TONALE 1.6 130CV DIESEL | € 399 | € 34.700 | € 16.431 |  | € 18.540 | € 19.119 | 0% | 2,49% | 31/08/2026 | extended_legal_found | source=detail_legal\n6/10 | Tonale | diesel | ALFA ROMEO TONALE 1.6 130CV DIESEL | € 399 | € 40.950 | € 22.681 |  | € 18.540 | € 19.119 | 0% | 2,49% | 31/08/2026 | extended_legal_found | source=detail_legal\n7/10 | Stelvio | diesel | ALFA ROMEO STELVIO 2.2 TURBO DIESEL 210CV, ALLESTIMENTO SPRINT | € 449 | € 52.139 | € 12.597 | € 25.610 | € 39.813 | € 46.813 | 4,75% | 5,7% | 31/08/2026 | extended_legal_found | source=detail_legal\n8/10 | Stelvio | benzina | ALFA ROMEO STELVIO MY25 2.9 V6 BENZINA 520CV QUADRIFOGLIO | € 799 | € 97.870 | € 15.881 | € 65.420 | € 82.260 | € 93.592 | 4,75% | 5,38% | 30/09/2026 | extended_legal_found | source=detail_legal\n9/10 | Giulia | diesel | ALFA ROMEO GIULIA 2.2 TURBO DIESEL 210CV, ALLESTIMENTO SPRINT | € 449 | € 47.345 | € 12.178 | € 20.320 | € 35.438 | € 41.513 | 4,75% | 5,83% | 31/08/2026 | extended_legal_found | source=detail_legal\n10/10 | Giulia | benzina | ALFA ROMEO GIULIA MY25 2.9 V6 BENZINA 520CV QUADRIFOGLIO | € 799 | € 89.692 | € 13.937 | € 58.234 | € 76.026 | € 86.390 | 4,75% | 5,42% | 30/09/2026 | extended_legal_found | source=detail_legal\n\nRIGHE ALFA: 10\nERRORI: 0\nPUSH COMPLETATO: righe Alfa Romeo scritte: 10\n\n/home/gruppobrandini/promo-monitor/alfa_push_to_sheet.py:102: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio alfa\")"
-      }
+      "elapsed_seconds": 91.2,
+      "log_excerpt": ""
     },
     {
       "brand": "Jeep",
       "script": "jeep_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 65.6,
+      "elapsed_seconds": 69.1,
       "log_excerpt": ""
     },
     {
       "brand": "Peugeot",
       "script": "peugeot_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 202.1,
+      "elapsed_seconds": 210.8,
       "log_excerpt": ""
     },
     {
       "brand": "Citroen",
       "script": "citroen_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 274.9,
+      "elapsed_seconds": 281.2,
       "log_excerpt": ""
     },
     {
       "brand": "Opel",
       "script": "opel_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 185.1,
+      "elapsed_seconds": 208.9,
       "log_excerpt": ""
     },
     {
       "brand": "DS",
       "script": "ds_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 107.1,
+      "elapsed_seconds": 117.2,
       "log_excerpt": ""
     },
     {
       "brand": "Fiat Professional",
       "script": "fiat_pro_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 97.9,
+      "elapsed_seconds": 101.0,
       "log_excerpt": ""
     },
     {
       "brand": "Nissan",
       "script": "nissan_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 290.2,
+      "elapsed_seconds": 291.7,
       "log_excerpt": ""
     },
     {
       "brand": "Leapmotor",
       "script": "leapmotor_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 36.0,
-      "log_excerpt": "",
-      "last_manual_run": {
-        "command_id": "e778068f-7d20-49b5-be2e-efe4d472f53f",
-        "status": "OK",
-        "started_at": "2026-09-01T13:04:23+00:00",
-        "finished_at": "2026-09-01T13:05:02+00:00",
-        "elapsed_seconds": 37.6,
-        "return_code": 0,
-        "log_excerpt": "URL LEAPMOTOR TROVATI: 4\n1/4 | T03 | elettrica | T03 | € 79 | € 15.900 | € 7.377 | € 7.872 | € 8.794 | € 10.660 | 4,99% | 9,07% | 31/08/2026 | extended_legal_found | source=detail_legal\n2/4 | B10 | hybrid | B10 REEV HYBRID Life | € 179 | € 24.900 | € 4.896 | € 17.428 | € 20.275 | € 23.745 | 4,99% | 6,88% | 31/08/2026 | extended_legal_found | source=detail_legal\n3/4 | C10 | hybrid | C10 REEV HYBRID Life | € 199 | € 29.900 | € 7.370 | € 19.606 | € 22.801 | € 26.629 | 4,99% | 6,69% | 31/08/2026 | extended_legal_found | source=detail_legal\n4/4 | B05 | elettrica | B05 Life | € 179 | € 22.900 | € 8.214 | € 11.253 | € 14.957 | € 17.556 | 4,99% | 7,63% | 31/08/2026 | extended_legal_found | source=detail_legal\n\nRIGHE LEAPMOTOR: 4\nERRORI: 0\nPUSH COMPLETATO: righe Leapmotor scritte: 4\n\n/home/gruppobrandini/promo-monitor/leapmotor_push_to_sheet.py:102: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio leapmotor\")"
-      }
+      "elapsed_seconds": 38.1,
+      "log_excerpt": ""
     },
     {
       "brand": "Honda",
       "script": "honda_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 60.1,
+      "elapsed_seconds": 60.6,
       "log_excerpt": ""
     },
     {
       "brand": "Mazda",
       "script": "mazda_push_to_sheet.py",
-      "status": "OK",
-      "elapsed_seconds": 101.9,
-      "log_excerpt": ""
+      "status": "FAIL",
+      "elapsed_seconds": 96.0,
+      "log_excerpt": "CX-5 | € 275 | € 32.950 | 6,99% | 8,22% | attiva | anticipo € 7.100,00; 36 rate; rata_finale € 21.505,50,; importo_totale_credito € 25.850,00,; importo_totale_dovuto € 31.636,50.\nCX-30 | € 198 | € 24.700 | 6,99% | 8,67% | attiva | anticipo € 7.230,00; 36 rate; rata_finale € 14.185,50,; importo_totale_credito € 17.470,00,; importo_totale_dovuto € 21.544,43.\nMazda3 | € 199 | € 24.950 | 6,99% | 8,74% | attiva | anticipo € 8.200,00; 36 rate; rata_finale € 13.277,50,; importo_totale_credito € 16.750,00,; importo_totale_dovuto € 20.648,31.\nCX-6e | € 358 | € 44.500 | 4,99% | 5,95% | attiva | anticipo € 12.900,00; 36 rate; rata_finale € 23.375,00,; importo_totale_credito € 31.600,00,; importo_totale_dovuto € 36.519,17.\nMazda6e | € 298 | € 2 | 6,99% | 8,33% | attiva | anticipo € 13.650,00; 36 rate; rata_finale € 18.339,50,; importo_totale_credito € 24.050,00,; importo_totale_dovuto € 29.303,72.\nCX-60 |  |  |  |  | incompleta | missing_intero; missing_rata; missing_tan; missing_taeg; missing_note_legali\nCX-80 |  |  |  |  | incompleta | missing_intero; missing_rata; missing_tan; missing_taeg; missing_note_legali\nMazda2 Hybrid | € 150 | € 18.950 | 6,99% | 8,96% | attiva | anticipo € 6.670,00; 36 rate; rata_finale € 11.985,00,; importo_totale_credito € 14.126,54,; importo_totale_dovuto € 17.592,09.\nMX-5 | € 298 | € 29.950 | 6,99% | 8,34% | attiva | anticipo € 6.050,00; 36 rate; rata_finale € 18.150,00,; importo_totale_credito € 23.900,00,; importo_totale_dovuto € 29.117,08.\nMX-5 RF | € 298 | € 32.450 | 6,990% | 8,300% | attiva | anticipo € 7.720,00; 36 rate; rata_finale € 19.170,00,; importo_totale_credito € 24.730,00,; importo_totale_dovuto € 30.147,44.\nMX-30 |  |  |  |  | incompleta | missing_intero; missing_rata; missing_tan; missing_taeg; missing_note_legali\nMazda3 Sedan |  |  |  |  | incompleta | missing_intero; missing_rata; missing_tan; missing_taeg; missing_note_legali\nRIGHE MAZDA OLD: 12\n1/12 | CX-5 | hybrid | NUOVA MAZDA CX-5 | Mazda Advantage; finanziamento; prezzo promo; hybrid; dealers aderenti | € 275 | € 32.950 | € 7.100 | € 21.505 | € 25.850 | € 31.636 | 6,99% | 8,22% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n2/12 | CX-30 | hybrid | MAZDA CX-30 | finanziamento; prezzo promo; hybrid; dealers aderenti | € 198 | € 24.700 | € 7.230 | € 14.185 | € 17.470 | € 21.544 | 6,99% | 8,67% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n3/12 | Mazda3 | hybrid | MAZDA3 5 PORTE | finanziamento; prezzo promo; dealers aderenti | € 199 | € 24.950 | € 8.200 | € 13.277 | € 16.750 | € 20.648 | 6,99% | 8,74% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n4/12 | CX-6e | elettrica | MAZDA CX-6e | finanziamento; prezzo promo; elettrica; dealers aderenti | € 358 | € 44.500 | € 12.900 | € 23.375 | € 31.600 | € 36.519 | 4,99% | 5,95% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n5/12 | Mazda6e | elettrica | MAZDA6e | finanziamento; prezzo promo; elettrica; dealers aderenti | € 298 | € 2 | € 13.650 | € 18.339 | € 24.050 | € 29.303 | 6,99% | 8,33% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n6/12 | CX-60 | plug-in | MAZDA CX-60 | plug-in |  |  |  |  |  |  |  |  | 30/09/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short']\n7/12 | CX-80 | plug-in | MAZDA CX-80 | plug-in |  |  |  |  |  |  |  |  | 30/09/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short']\n8/12 | Mazda2 Hybrid | hybrid | MAZDA2 HYBRID | finanziamento; prezzo promo; hybrid; dealers aderenti | € 150 | € 18.950 | € 6.670 | € 11.985 | € 14.126 | € 17.592 | 6,99% | 8,96% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n9/12 | MX-5 | benzina | MAZDA MX-5 SOFT TOP | finanziamento; prezzo promo; dealers aderenti | € 298 | € 29.950 | € 6.050 | € 18.150 | € 23.900 | € 29.117 | 6,99% | 8,34% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n10/12 | MX-5 RF | benzina | MAZDA MX-5 RF | finanziamento; prezzo promo; dealers aderenti | € 298 | € 32.450 | € 7.720 | € 19.170 | € 24.730 | € 30.147 | 6,990% | 8,300% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n11/12 | MX-30 | elettrica | MAZDA MX-30 | elettrica |  |  |  |  |  |  |  |  | 30/06/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short']\n12/12 | Mazda3 Sedan | hybrid | MAZDA3 SEDAN |  |  |  |  |  |  |  |  |  | 30/06/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Claim Promo', 'missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short']\nRIGHE MAZDA: 9\nBAD: [('MAZDA CX-60', ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short']), ('MAZDA CX-80', ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short']), ('MAZDA MX-30', ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short']), ('MAZDA3 SEDAN', ['missing_Claim Promo', 'missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short'])]\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE MAZDA: 9\nERRORI: 9\nERRORE: 9 missing Rata: MAZDA MX-30\nERRORE: 9 missing Intero: MAZDA MX-30\nERRORE: 9 missing Anticipo: MAZDA MX-30\nERRORE: 9 missing Rata Finale / VFG: MAZDA MX-30\nERRORE: 9 missing Importo Totale Credito: MAZDA MX-30\nERRORE: 9 missing Importo Totale Dovuto: MAZDA MX-30\nERRORE: 9 missing TAN (%): MAZDA MX-30\nERRORE: 9 missing TAEG (%): MAZDA MX-30\nERRORE: 9 missing Note Legali: MAZDA MX-30\n\nSTOP: errori presenti, nessun push eseguito."
     },
     {
       "brand": "Hyundai",
       "script": "hyundai_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 171.0,
+      "elapsed_seconds": 177.6,
       "log_excerpt": ""
     },
     {
       "brand": "MG",
       "script": "mg_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 68.1,
-      "log_excerpt": "",
-      "last_manual_run": {
-        "command_id": "aea9b99b-89bc-42cd-8bef-0be60b605836",
-        "status": "OK",
-        "started_at": "2026-09-01T12:50:53+00:00",
-        "finished_at": "2026-09-01T12:52:26+00:00",
-        "elapsed_seconds": 90.7,
-        "return_code": 0,
-        "log_excerpt": "LINK MG: 9\nMG HS | MG HS Hybrid+ Comfort | hybrid | € 249 | € 25.990 | 7,45% | 9,11% | 30/09/2026 | 35 rate; anticipo € 5.025; rata_finale € 18.234,50; importo_totale_dovuto € 27.171,50\nMG HS | NUOVA MG HS PHEV Comfort | plug-in | € 249 | € 27.490 | 7,46% | 9,04% | 30/09/2026 | 35 rate; anticipo € 5.360; rata_finale € 19.755,00; importo_totale_dovuto € 28.695,03\nMG3 | Nuova MG3 Benzina Standard | benzina | € 89 | € 13.990 | 7,45% | 11,01% | 30/09/2026 | 35 rate; anticipo € 5.920; rata_finale € 7.645,50; importo_totale_dovuto € 10.930,77\nMG3 | MG3 Hybrid+ Comfort | hybrid | € 95 | € 16.990 | 7,45% | 10,02% | 30/09/2026 | 35 rate; anticipo € 5.610; rata_finale € 11.819,50; importo_totale_dovuto € 15.341,59\nMG ZS | NUOVA MG ZS Benzina Standard | benzina | € 89 | € 16.990 | 7,49% | 10,31% | 30/09/2026 | 35 rate; anticipo € 6.700; rata_finale € 10.655,00; importo_totale_dovuto € 13.964,26\nMG ZS | NUOVA MG ZS Hybrid+ COM | hybrid | € 120 | € 20.490 | 7,44% | 9,51% | 30/09/2026 | 35 rate; anticipo € 5.680; rata_finale € 15.294,00; importo_totale_dovuto € 19.700,00\nMGS5 | NUOVA MGS5 EV 49 Kwh COMFORT | elettrica | € 219 | € 24.990 | 7,47% | 9,60% | 30/09/2026 | 35 rate; anticipo € 9.070; rata_finale € 12.866,50; importo_totale_dovuto € 20.740,39\nMG4 | NUOVA MG4 PREMIUM 64KWH | elettrica | € 199 | € 29.490 | 7,47% | 9,74% | 30/09/2026 | 35 rate; anticipo € 14.790; rata_finale € 12.067,00; importo_totale_dovuto € 19.237,72\nMG4 | NUOVA MG4 URBAN Comfort 43KWH | elettrica | € 115 | € 19.490 | 7,45% | 9,98% | 30/09/2026 | 35 rate; anticipo € 7.580; rata_finale € 11.725,50; importo_totale_dovuto € 15.948,97\nRIGHE MG OLD: 9\n1/9 | MG HS | hybrid | MG HS Hybrid+ Comfort | finanziamento; prezzo promo; dealers aderenti; Santander; hybrid | € 249 | € 25.990 | € 5.025 | € 18.234 | € 21.903 | € 27.171 | 7,45% | 9,11% | 30/09/2026 | source=detail_legal; finanziamento_mg; 35 rate | FLAGS: []\n2/9 | MG HS | plug-in | NUOVA MG HS PHEV Comfort | finanziamento; prezzo promo; dealers aderenti; Santander; plug-in; elettrica | € 249 | € 27.490 | € 5.360 | € 19.755 | € 23.114 | € 28.695 | 7,46% | 9,04% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\n3/9 | MG3 | benzina | Nuova MG3 Benzina Standard | finanziamento; prezzo promo; dealers aderenti; Santander | € 89 | € 13.990 | € 5.920 | € 7.645 | € 8.409 | € 10.930 | 7,45% | 11,01% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\n4/9 | MG3 | hybrid | MG3 Hybrid+ Comfort | finanziamento; prezzo promo; dealers aderenti; Santander; hybrid | € 95 | € 16.990 | € 5.610 | € 11.819 | € 11.939 | € 15.341 | 7,45% | 10,02% | 30/09/2026 | source=detail_legal; finanziamento_mg; 35 rate | FLAGS: []\n5/9 | MG ZS | benzina | NUOVA MG ZS Benzina Standard | finanziamento; prezzo promo; dealers aderenti; Santander | € 89 | € 16.990 | € 6.700 | € 10.655 | € 10.805 | € 13.964 | 7,49% | 10,31% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\n6/9 | MG ZS | hybrid | NUOVA MG ZS Hybrid+ COM | finanziamento; prezzo promo; dealers aderenti; Santander; hybrid | € 120 | € 20.490 | € 5.680 | € 15.294 | € 15.504 | € 19.700 | 7,44% | 9,51% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\n7/9 | MGS5 | elettrica | NUOVA MGS5 EV 49 Kwh COMFORT | finanziamento; prezzo promo; dealers aderenti; Santander; elettrica | € 219 | € 24.990 | € 9.070 | € 12.866 | € 16.658 | € 20.740 | 7,47% | 9,60% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\n8/9 | MG4 | elettrica | NUOVA MG4 PREMIUM 64KWH | finanziamento; prezzo promo; dealers aderenti; Santander; elettrica | € 199 | € 29.490 | € 14.790 | € 12.067 | € 15.390 | € 19.237 | 7,47% | 9,74% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\n9/9 | MG4 | elettrica | NUOVA MG4 URBAN Comfort 43KWH | finanziamento; prezzo promo; dealers aderenti; Santander; elettrica | € 115 | € 19.490 | € 7.580 | € 11.725 | € 12.490 | € 15.948 | 7,45% | 9,98% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\nRIGHE MG: 9\nBAD: []\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE MG: 9\nPUSH COMPLETATO: righe MG scritte: 9\n\n/home/gruppobrandini/promo-monitor/mg_push_to_sheet.py:91: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio mg\")"
-      }
+      "elapsed_seconds": 69.9,
+      "log_excerpt": ""
     },
     {
       "brand": "Omoda / Jaecoo",
       "script": "omodajaecoo_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 93.5,
-      "log_excerpt": "",
-      "last_manual_run": {
-        "command_id": "77cd5f05-7691-452c-92e5-109d5932e646",
-        "status": "OK",
-        "started_at": "2026-09-01T13:05:33+00:00",
-        "finished_at": "2026-09-01T13:07:11+00:00",
-        "elapsed_seconds": 96.4,
-        "return_code": 0,
-        "log_excerpt": "LINK OMODA/JAECOO: 11\nOmoda | Omoda 5 | OMODA 5 |  | € 109 | € 21.900 | 6,95% | 9,09% | 30/09/2026 | anticipo € 7.599; 35 rate; maxi_rata € 14.202; importo_totale_credito € 14.792; importo_totale_dovuto € 7\nOmoda | Omoda 5 | OMODA 5 SHS-H | hybrid | € 129 | € 22.000 | 6,95% | 8,61% | 30/09/2026 | anticipo € 5.230; 35 rate; maxi_rata € 15.066; importo_totale_credito € 17.261; importo_totale_dovuto € 3\nOmoda | Omoda 5 | OMODA 5 EV | elettrica | € 289 |  | 6,95% | 9,26% | 30/09/2026 | anticipo € 9.740; importo_totale_credito € 19.325; importo_totale_dovuto € 9; missing_intero\nOmoda | Omoda 7 | OMODA 7 SHS-P | plug-in | € 199 | € 30.900 | 7,99% | 9,64% | 30/09/2026 | anticipo € 9.734; 35 rate; maxi_rata € 19.869; importo_totale_credito € 21.657; importo_totale_dovuto € 5\nOmoda | Omoda 9 | OMODA 9 SHS-P | plug-in | € 339 |  | 6,95% | 8,21% | 30/09/2026 | anticipo € 10.760; importo_totale_credito € 34.640; importo_totale_dovuto € 6; missing_intero\nJaecoo | Jaecoo 5 | JAECOO 5 |  | € 129 | € 22.500 | 6,95% | 9,14% | 30/09/2026 | anticipo € 8.213; 35 rate; maxi_rata € 13.405; importo_totale_credito € 14.778; importo_totale_dovuto € 1\nJaecoo | Jaecoo 5 | JAECOO 5 SHS-H | hybrid | € 129 | € 22.400 | 6,95% | 8,88% | 30/09/2026 | anticipo € 6.160; 35 rate; maxi_rata € 15.797; importo_totale_credito € 16.731; importo_totale_dovuto € 5\nJaecoo | Jaecoo 7 | JAECOO 7 |  | € 206 | € 26.900 | 6,95% | 8,97% | 30/09/2026 | anticipo € 8.640; 35 rate; maxi_rata € 15.293; importo_totale_credito € 18.751; importo_totale_dovuto € 1\nJaecoo | Jaecoo 7 | JAECOO 7 SHS-H | hybrid | € 179 | € 26.900 | 6,95% | 8,70% | 30/09/2026 | anticipo € 8.175; 35 rate; maxi_rata € 16.937; importo_totale_credito € 19.216; importo_totale_dovuto € 7\nJaecoo | Jaecoo 7 | JAECOO 7 SHS-P | plug-in | € 199 | € 30.900 | 6,95% | 8,53% | 30/09/2026 | anticipo € 9.780; 35 rate; maxi_rata € 19.105; importo_totale_credito € 21.611; importo_totale_dovuto € 5\nJaecoo | Jaecoo 8 | JAECOO 8 SHS-P | plug-in | € 369 | € 47.400 | 6,95% | 8,01% | 30/09/2026 | anticipo € 12.229; 35 rate; maxi_rata € 29.798; importo_totale_credito € 35.662; importo_totale_dovuto € 8\nRIGHE OMODA/JAECOO OLD: 11\n1/11 | Omoda | Omoda 5 | benzina | OMODA 5 | finanziamento; prezzo promo; permuta; rottamazione; dealer aderenti; CA Auto Bank; benzina | € 109 | € 21.900 | € 7.599 | € 14.202 | € 14.792 | € 18.017 | 6,95% | 9,09% | 30/09/2026 | source=detail_legal; finanziamento_ca_bank; 35 rate | FLAGS: []\n2/11 | Omoda | Omoda 5 | hybrid | OMODA 5 SHS-H | finanziamento; prezzo promo; rottamazione; dealer aderenti; CA Auto Bank; hybrid | € 129 | € 22.000 | € 5.230 | € 15.066 | € 17.261 | € 19.583 | 6,95% | 8,61% | 30/09/2026 | source=detail_legal; finanziamento_ca_bank; 35 rate | FLAGS: []\n3/11 | Omoda | Omoda 5 | elettrica | OMODA 5 EV | finanziamento; leasing finanziario; CA Auto Bank; elettrica | € 289 | € 29.065 | € 9.740 | € 12.765 | € 19.325 | € 23.489 | 6,95% | 9,26% | 30/09/2026 | source=detail_legal; leasing_finanziario_ca_bank; 35 rate | FLAGS: []\n4/11 | Omoda | Omoda 7 | plug-in | OMODA 7 SHS-P | finanziamento; prezzo promo; permuta; rottamazione; dealer aderenti; CA Auto Bank; plug-in | € 199 | € 30.900 | € 9.734 | € 19.869 | € 21.657 | € 26.835 | 7,99% | 9,64% | 30/09/2026 | source=detail_legal; finanziamento_ca_bank; 35 rate | FLAGS: []\n5/11 | Omoda | Omoda 9 | plug-in | OMODA 9 SHS-P | finanziamento; leasing finanziario; permuta; rottamazione; dealer aderenti; CA Auto Bank; plug-in | € 339 | € 45.400 | € 10.760 | € 29.702 | € 34.640 | € 42.156 | 6,95% | 8,21% | 30/09/2026 | source=detail_legal; leasing_finanziario_ca_bank; 35 rate | FLAGS: []\n6/11 | Jaecoo | Jaecoo 5 | benzina | JAECOO 5 | finanziamento; prezzo promo; permuta; rottamazione; dealer aderenti; CA Auto Bank; benzina | € 129 | € 22.500 | € 8.213 | € 13.405 | € 14.778 | € 17.921 | 6,95% | 9,14% | 30/09/2026 | source=detail_legal; finanziamento_ca_bank; 35 rate | FLAGS: []\n7/11 | Jaecoo | Jaecoo 5 | hybrid | JAECOO 5 SHS-H | finanziamento; prezzo promo; rottamazione; dealer aderenti; CA Auto Bank; hybrid | € 129 | € 22.400 | € 6.160 | € 15.797 | € 16.731 | € 20.325 | 6,95% | 8,88% | 30/09/2026 | source=detail_legal; finanziamento_ca_bank; 35 rate | FLAGS: []\n8/11 | Jaecoo | Jaecoo 7 | benzina | JAECOO 7 | finanziamento; prezzo promo; permuta; rottamazione; dealer aderenti; CA Auto Bank; benzina | € 206 | € 26.900 | € 8.640 | € 15.293 | € 18.751 | € 22.511 | 6,95% | 8,97% | 30/09/2026 | source=detail_legal; finanziamento_ca_bank; 35 rate | FLAGS: []\n9/11 | Jaecoo | Jaecoo 7 | hybrid | JAECOO 7 SHS-H | finanziamento; prezzo promo; permuta; rottamazione; dealer aderenti; CA Auto Bank; hybrid | € 179 | € 26.900 | € 8.175 | € 16.937 | € 19.216 | € 23.697 | 6,95% | 8,70% | 30/09/2026 | source=detail_legal; finanziamento_ca_bank; 35 rate | FLAGS: []\n10/11 | Jaecoo | Jaecoo 7 | plug-in | JAECOO 7 SHS-P | finanziamento; prezzo promo; permuta; rottamazione; dealer aderenti; CA Auto Bank; plug-in | € 199 | € 30.900 | € 9.780 | € 19.105 | € 21.611 | € 26.565 | 6,95% | 8,53% | 30/09/2026 | source=detail_legal; finanziamento_ca_bank; 35 rate | FLAGS: []\n11/11 | Jaecoo | Jaecoo 8 | plug-in | JAECOO 8 SHS-P | finanziamento; prezzo promo; permuta; rottamazione; dealer aderenti; CA Auto Bank; plug-in | € 369 | € 47.400 | € 12.229 | € 29.798 | € 35.662 | € 43.208 | 6,95% | 8,01% | 30/09/2026 | source=detail_legal; finanziamento_ca_bank; 35 rate | FLAGS: []\nRIGHE OMODA/JAECOO: 11\nBAD: []\nCONTEGGIO BRAND: Counter({'Jaecoo': 6, 'Omoda': 5})\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE OMODA/JAECOO: 11\nCONTEGGIO BRAND: {'Omoda': 5, 'Jaecoo': 6}\nPUSH COMPLETATO: righe Omoda/Jaecoo scritte: 11\n\n/home/gruppobrandini/promo-monitor/omodajaecoo_push_to_sheet.py:104: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio omodajaecoo\")"
-      }
+      "elapsed_seconds": 94.8,
+      "log_excerpt": ""
     },
     {
       "brand": "Changan",
       "script": "changan_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 18.9,
+      "elapsed_seconds": 21.8,
       "log_excerpt": ""
     },
     {
       "brand": "BMW",
       "script": "bmw_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 102.2,
-      "log_excerpt": "",
-      "last_manual_run": {
-        "command_id": "eb6b1e21-304b-4479-88d1-7298816978d8",
-        "status": "OK",
-        "started_at": "2026-09-01T11:02:33+00:00",
-        "finished_at": "2026-09-01T11:04:24+00:00",
-        "elapsed_seconds": 109.0,
-        "return_code": 0,
-        "log_excerpt": "Serie 3 Touring | € 500 | € 52.962 | 5,75% | 6,59% | 30/09/2026 | attiva | https://www.bmw.it/it/gamma/serie-3/bmw-serie-3-touring/bmw-serie-3-touring.html#offerta | anticipo € 14.990.; 48 mesi; 47 canoni; rata_finale € 21.542,23.; importo_totale_credito € 37.972.; importo_totale_dovuto € 45.554.\nX1 | € 390 | € 45.373 | 5,49% | 6,32% | 31/08/2026 | attiva | https://www.bmw.it/it/gamma/x/x1/bmw-x1.html#offerta | anticipo € 11.530.; 48 mesi; 47 canoni; rata_finale € 21.966,49.; importo_totale_credito € 33.843.; importo_totale_dovuto € 40.699.\nX3 | € 550 | € 66.148 | 5,75% | 6,42% | 31/08/2026 | attiva | https://www.bmw.it/it/gamma/x/x3/bmw-x3.html#offerta | anticipo € 17.630.; 48 mesi; 47 canoni; rata_finale € 32.093,78.; importo_totale_credito € 48.518.; importo_totale_dovuto € 58.514.\nX5 |  |  |  |  | 30/06/2026 | incompleta | https://www.bmw.it/it/gamma/x/x5/bmw-x5.html#offerta | missing_rata; missing_intero; missing_tan; missing_taeg; missing_note_legali\nX6 | € 890 | € 81.430 | 5,75% | 6,36% | 30/09/2026 | attiva | https://www.bmw.it/it/gamma/x/x6/bmw-x6.html#dati-tecnici | anticipo € 16.320.; 36 mesi; 35 canoni; rata_finale € 42.992,31.; importo_totale_credito € 65.110.; importo_totale_dovuto € 75.044.\niX | € 690 | € 74.358 | 4,50% | 5,05% | 30/09/2026 | attiva | https://www.bmw.it/it/gamma/i-series/ix/bmw-ix.html#offerta | anticipo € 19.730.; 48 mesi; 47 canoni; rata_finale € 29.823,52.; importo_totale_credito € 54.628.; importo_totale_dovuto € 62.948.\ni4 | € 560 | € 60.000 | 4,50% | 5,21% | 31/08/2026 | attiva | https://www.bmw.it/it/gamma/i-series/i4/bmw-i4-gran-coupe.html#offerta | anticipo € 18.600.; 48 mesi; 47 canoni; rata_finale € 20.823,72.; importo_totale_credito € 41.400.; importo_totale_dovuto € 47.724.\niX1 | € 360 | € 43.720 | 2,99% | 3,78% | 31/08/2026 | attiva | https://www.bmw.it/it/gamma/i-series/ix1/bmw-ix1.html#offerta | anticipo € 12.160.; 48 mesi; 47 canoni; rata_finale € 17.935,81.; importo_totale_credito € 31.560.; importo_totale_dovuto € 35.228.\niX3 | € 500 | € 64.315 | 4,99% | 5,67% | 30/09/2026 | attiva | https://www.bmw.it/it/gamma/x/ix3/bmw-ix3.html#offerta | anticipo € 17.460.; 36 mesi; 35 canoni; rata_finale € 35.636,19.; importo_totale_credito € 46.855.; importo_totale_dovuto € 53.650.\nRIGHE BMW OLD: 9\n1/9 | Serie 3 Touring | diesel | BMW Serie 3 Touring 320d xDrive M Sport | leasing finanziario; BMW Bank; concessionarie aderenti; diesel | € 500 | € 52.962 | € 14.990 | € 21.542 | € 37.972 | € 45.554 | 5,75% | 6,59% | 30/09/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 48 mesi; 47 canoni | FLAGS: []\n2/9 | X1 | diesel | BMW X1 sDrive18d M Sport | leasing finanziario; BMW Bank; manutenzione inclusa; concessionarie aderenti; diesel | € 390 | € 45.373 | € 11.530 | € 21.966 | € 33.843 | € 40.699 | 5,49% | 6,32% | 31/08/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 48 mesi; 47 canoni | FLAGS: []\n3/9 | X3 | diesel | BMW X3 xDrive20d M Sport | leasing finanziario; BMW Bank; concessionarie aderenti; diesel | € 550 | € 66.148 | € 17.630 | € 32.093 | € 48.518 | € 58.514 | 5,75% | 6,42% | 31/08/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 48 mesi; 47 canoni | FLAGS: []\n4/9 | X5 | diesel | BMW X5 xDrive30d M Sport | diesel |  |  |  |  |  |  |  |  | 30/06/2026 | source=detail_legal; leasing_finanziario_bmw_bank | FLAGS: ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short']\n5/9 | X6 | diesel | BMW X6 xDrive30d M Sport | leasing finanziario; BMW Bank; manutenzione inclusa; concessionarie aderenti; diesel | € 890 | € 81.430 | € 16.320 | € 42.992 | € 65.110 | € 75.044 | 5,75% | 6,36% | 30/09/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 36 mesi; 35 canoni | FLAGS: []\n6/9 | iX | elettrica | BMW iX xDrive45 M Sport | leasing finanziario; BMW Bank; concessionarie aderenti; elettrica | € 690 | € 74.358 | € 19.730 | € 29.823 | € 54.628 | € 62.948 | 4,50% | 5,05% | 30/09/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 48 mesi; 47 canoni | FLAGS: []\n7/9 | i4 | elettrica | BMW i4 eDrive40 M Sport Edition | leasing finanziario; BMW Bank; concessionarie aderenti; elettrica | € 560 | € 60.000 | € 18.600 | € 20.823 | € 41.400 | € 47.724 | 4,50% | 5,21% | 31/08/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 48 mesi; 47 canoni | FLAGS: []\n8/9 | iX1 | elettrica | BMW iX1 eDrive20 M Sport | leasing finanziario; BMW Bank; manutenzione inclusa; concessionarie aderenti; elettrica | € 360 | € 43.720 | € 12.160 | € 17.935 | € 31.560 | € 35.228 | 2,99% | 3,78% | 31/08/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 48 mesi; 47 canoni | FLAGS: []\n9/9 | iX3 | elettrica | Nuova BMW iX3 50 xDrive M Sport | leasing finanziario; BMW Bank; concessionarie aderenti; elettrica | € 500 | € 64.315 | € 17.460 | € 35.636 | € 46.855 | € 53.650 | 4,99% | 5,67% | 30/09/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 36 mesi; 35 canoni | FLAGS: []\nRIGHE BMW: 9\nBAD: [('BMW X5 xDrive30d M Sport', ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short'])]\nDEBUG ONLY: nessun push su Google Sheet\nBMW: x5_incompleta_skipped se presente\n\nRIGHE BMW: 8\nPUSH COMPLETATO: righe BMW scritte: 8\n\n/home/gruppobrandini/promo-monitor/bmw_push_to_sheet.py:103: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio bmw\")"
-      }
+      "elapsed_seconds": 140.9,
+      "log_excerpt": ""
     },
     {
       "brand": "MINI",
       "script": "mini_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 61.1,
+      "elapsed_seconds": 61.8,
       "log_excerpt": ""
     },
     {
       "brand": "DR",
       "script": "dr_push_to_sheet.py",
-      "status": "OK",
-      "elapsed_seconds": 61.5,
-      "log_excerpt": ""
+      "status": "FAIL",
+      "elapsed_seconds": 5.9,
+      "log_excerpt": "URL scoperti dinamicamente dalla hub: 0\nRIGHE DR: 0\nBAD: []\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE DR: 0\n\nSTOP: attese almeno 6 righe DR, trovate 0. Nessun push eseguito."
     },
     {
       "brand": "Lepas",
       "script": "lepas_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 13.9,
+      "elapsed_seconds": 20.8,
       "log_excerpt": ""
     },
     {
       "brand": "Dongfeng",
       "script": "dongfeng_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 14.3,
+      "elapsed_seconds": 15.7,
       "log_excerpt": ""
     }
   ]
