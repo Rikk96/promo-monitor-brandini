@@ -120,6 +120,7 @@ def parse_page(page, modello, title, motore, url, run_id):
     intero_raw = find1([
         r"Prezzo\s+promozionale\s+da\s*([\d\.,]{4,})\s*€",
         r"A\s+partire\s+da\s*([\d\.,]{4,})\s*€",
+        r"TUA\s+DA\s*([\d\.,]{4,})\s*€",
         r"Prezzo\s+promo(?:zionale)?[^€]{0,180}€\s*([\d\.,]{4,})",
     ], text)
 
@@ -127,8 +128,17 @@ def parse_page(page, modello, title, motore, url, run_id):
         intero_raw = find1([
             r"Prezzo\s+promozionale\s+da\s*([\d\.,]{4,})\s*€",
             r"A\s+partire\s+da\s*([\d\.,]{4,})\s*€",
+            r"TUA\s+DA\s*([\d\.,]{4,})\s*€",
             r"Prezzo\s+promo(?:zionale)?[^€]{0,180}€\s*([\d\.,]{4,})",
         ], body)
+
+    # Mazda "solo sconto cash": pagine tipo CX-60/CX-80 senza esempio di finanziamento
+    # (niente rata/TAN/TAEG pubblicati), ma con un disclaimer sul vantaggio cliente.
+    card_note = ""
+    if not note:
+        m_card = re.search(r"\*vantaggio[^\n]+\.", body, re.I)
+        if m_card:
+            card_note = m_card.group(0).strip()
 
     rata_raw = find1([
         r"\b\d+\s+rate\s+mensili\s+ognuna\s+di\s*€\s*([\d\.,]+)",
@@ -183,7 +193,7 @@ def parse_page(page, modello, title, motore, url, run_id):
         "TAN (%)": pct(tan_raw),
         "TAEG (%)": pct(taeg_raw),
         "Scadenza": scad,
-        "Note Legali": note,
+        "Note Legali": note or card_note,
         "Fonte URL": HUB_URL,
         "Offer URL": url,
         "Data Aggiornamento": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -197,12 +207,18 @@ def parse_page(page, modello, title, motore, url, run_id):
         "Note Tecniche": "",
     }
 
+    is_card_only = bool(card_note) and not row["Rata"] and not row["TAN (%)"] and not row["TAEG (%)"]
+
     missing = []
     if not row["Intero"]: missing.append("missing_intero")
-    if not row["Rata"]: missing.append("missing_rata")
-    if not row["TAN (%)"]: missing.append("missing_tan")
-    if not row["TAEG (%)"]: missing.append("missing_taeg")
     if not row["Note Legali"]: missing.append("missing_note_legali")
+
+    if is_card_only:
+        extras.append("card_only_no_legal")
+    else:
+        if not row["Rata"]: missing.append("missing_rata")
+        if not row["TAN (%)"]: missing.append("missing_tan")
+        if not row["TAEG (%)"]: missing.append("missing_taeg")
 
     if missing:
         row["Stato"] = "incompleta"
