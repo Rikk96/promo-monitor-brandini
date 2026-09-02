@@ -173,6 +173,8 @@ def extract_tan_taeg(legal):
         r"TAN\s*\(fisso\)\s*([\d\.,]+)\s*%",
         r"TAN\s*\(Fisso\)\s*([\d\.,]+)\s*%",
         r"TAN\s*([\d\.,]+)\s*%",
+        r"T\s*AN\s*\([Ff]isso\)\s*([\d\.,]+)\s*%",
+        r"T\s*AN\s*([\d\.,]+)\s*%",
     ], legal)
     taeg = find1([
         r"TAEG\s*([\d\.,]+)\s*%",
