@@ -1,8 +1,10 @@
 {
   "id": "307cefa2-509b-4261-b16c-163fe9630d13",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "jeep",
   "brand_label": "Jeep",
   "requested_at": "2026-09-02T10:38:54.170Z",
-  "message": "Aggiornamento manuale Jeep in coda"
+  "message": "Esecuzione manuale di jeep_push_to_sheet.py",
+  "script": "jeep_push_to_sheet.py",
+  "started_at": "2026-09-02T10:40:03+00:00"
 }
