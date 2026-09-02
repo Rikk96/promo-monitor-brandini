@@ -141,6 +141,7 @@ def extract_anticipo(legal):
         r"Anticipo\s*([\d\.,]+)\s*€",
         r"Primo\s+canone\s+anticipato\s*([\d\.,]+)\s*€",
         r"Primo\s+Canone\s+Anticipato\s*([\d\.,]+)\s*€",
+        r"P\s*rimo\s+[Cc]anone\s+[Aa]nticipato\s*([\d\.,]+)\s*€",
     ], legal)
 
 def extract_finale(legal):
