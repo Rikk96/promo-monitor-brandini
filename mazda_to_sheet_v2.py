@@ -26,8 +26,6 @@ URLS = [
     ("Mazda2 Hybrid", "MAZDA2 HYBRID", "hybrid", "https://www.mazda.it/offerte/offerte-privati/mazda2-hybrid/"),
     ("MX-5", "MAZDA MX-5 SOFT TOP", "benzina", "https://www.mazda.it/offerte/offerte-privati/mazda-mx-5-soft-top-offerte/"),
     ("MX-5 RF", "MAZDA MX-5 RF", "benzina", "https://www.mazda.it/offerte/offerte-privati/mazda-mx-5-rf-offerte/"),
-    ("MX-30", "MAZDA MX-30", "elettrica", "https://www.mazda.it/offerte/offerte-privati/mazda-mx-30-offerte/"),
-    ("Mazda3 Sedan", "MAZDA3 SEDAN", "hybrid", "https://www.mazda.it/offerte/offerte-privati/mazda3-sedan-offerte/"),
 ]
 
 def clean(s):
@@ -115,20 +113,21 @@ def parse_page(page, modello, title, motore, url, run_id):
     page.wait_for_timeout(7000)
 
     body = page.locator("body").inner_text(timeout=30000)
+    body = body.replace("\u00ad", "")
     note = extract_note(body)
     text = note if note else body
 
     intero_raw = find1([
-        r"Prezzo\s+promo(?:zionale)?[^€]{0,180}€\s*([\d\.,]+)",
-        r"Prezzo\s+promozionale\s+da\s*([\d\.,]+)\s*€",
-        r"A\s+partire\s+da\s*([\d\.,]+)\s*€",
+        r"Prezzo\s+promozionale\s+da\s*([\d\.,]{4,})\s*€",
+        r"A\s+partire\s+da\s*([\d\.,]{4,})\s*€",
+        r"Prezzo\s+promo(?:zionale)?[^€]{0,180}€\s*([\d\.,]{4,})",
     ], text)
 
     if not intero_raw:
         intero_raw = find1([
-            r"Prezzo\s+promo(?:zionale)?[^€]{0,180}€\s*([\d\.,]+)",
-            r"Prezzo\s+promozionale\s+da\s*([\d\.,]+)\s*€",
-            r"A\s+partire\s+da\s*([\d\.,]+)\s*€",
+            r"Prezzo\s+promozionale\s+da\s*([\d\.,]{4,})\s*€",
+            r"A\s+partire\s+da\s*([\d\.,]{4,})\s*€",
+            r"Prezzo\s+promo(?:zionale)?[^€]{0,180}€\s*([\d\.,]{4,})",
         ], body)
 
     rata_raw = find1([
