@@ -1,8 +1,10 @@
 {
   "id": "3ed2eaba-3ec4-4c68-9e38-0933264e535d",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "fiat_pro",
   "brand_label": "Fiat Professional",
   "requested_at": "2026-09-03T10:26:37.490Z",
-  "message": "Aggiornamento manuale Fiat Professional in coda"
+  "message": "Esecuzione manuale di fiat_pro_push_to_sheet.py",
+  "script": "fiat_pro_push_to_sheet.py",
+  "started_at": "2026-09-03T10:27:43+00:00"
 }
