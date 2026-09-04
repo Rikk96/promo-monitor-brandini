@@ -3,7 +3,7 @@
   "run_id": "20260904_043001",
   "run_type": "scheduled",
   "run_started_at": "2026-09-04T04:30:01+00:00",
-  "generated_at": "2026-09-04T05:08:50+00:00",
+  "generated_at": "2026-09-04T09:38:59+00:00",
   "overall_status": "ERROR",
   "totals": {
     "configured": 23,
@@ -59,7 +59,16 @@
       "script": "citroen_push_to_sheet.py",
       "status": "OK",
       "elapsed_seconds": 262.6,
-      "log_excerpt": ""
+      "log_excerpt": "",
+      "last_manual_run": {
+        "command_id": "bee23914-def2-43c4-b564-1ca4c5dc7542",
+        "status": "FAIL",
+        "started_at": "2026-09-04T09:34:13+00:00",
+        "finished_at": "2026-09-04T09:38:59+00:00",
+        "elapsed_seconds": 284.3,
+        "return_code": 1,
+        "log_excerpt": "URL FINANZIAMENTO TROVATI: 22\n1/22 | NUOVA AMI | Ami Elettrica | € 39 | € 8.490 | € 4.451 | € 3.905 | 6,99% | 10,31% | 30/09/2026 | extended_legal_found\n2/22 | NUOVA AMI | RIP CURL | € 39 | € 9.290 | € 4.924 | € 4.281 | 6,99% | 10,06% | 30/09/2026 | extended_legal_found\n3/22 | NUOVA AMI | AMI pack color | € 39 | € 8.990 | € 4.747 | € 4.140 | 6,99% | 10,15% | 30/09/2026 | extended_legal_found\n4/22 | NUOVA AMI | RIP CURL | € 39 | € 9.290 | € 4.924 | € 4.281 | 6,99% | 10,06% | 30/09/2026 | extended_legal_found\n5/22 | C3 | YOU Turbo 100 Manuale | € 49 | € 15.556 | € 6.416 | € 9.409 | 3,99% | 7,5% |  | extended_legal_found\n6/22 | C3 | PLUS Hybrid 110 cv Automatico | € 99 | € 20.350 | € 7.820 | € 11.768 | 7,99% | 11,29% | 30/09/2026 | extended_legal_found\n7/22 | C3 | YOU Elettrico 113 cv Automatico | € 139 | € 23.150 | € 8.608 | € 10.835 | 0% | 2,42% | 30/09/2026 | extended_legal_found\n8/22 | C3 Aircross | YOU Turbo 100 Manuale | € 99 | € 18.100 | € 5.338 | € 12.062 | 7,99% | 11,23% | 30/09/2026 | extended_legal_found\n9/22 | C3 Aircross | PLUS Hybrid 145 Automatico | € 129 | € 24.650 | € 7.394 | € 16.684 | 5,99% | 8,15% | 30/09/2026 | extended_legal_found\n10/22 | C3 Aircross | YOU Elettrico 113 cv Automatico | € 169 | € 26.990 | € 10.259 | € 11.955 | 0% | 2,14% | 30/09/2026 | extended_legal_found\n11/22 | C4 | YOU Motore Elettrico 100kW (136cv) | € 199 | € 33.500 | € 14.980 | € 12.772 | 0% | 1,95% | 30/09/2026 | extended_legal_found\n12/22 | C4 | YOU Hybrid 110 Automatico | € 129 | € 21.250 | € 7.278 | € 12.754 | 5,99% | 8,67% |  | extended_legal_found\n13/22 | C4 X | YOU Motore Elettrico 100kW (136cv) | € 199 | € 33.150 | € 13.259 | € 14.143 | 0% | 1,8% | 30/09/2026 | extended_legal_found\n14/22 | C4 X | X HYBRID 145 AUTOMATICO YOU | € 129 | € 24.550 | € 9.500 | € 14.417 | 7,99% | 10,72% |  | extended_legal_found\n15/22 | Nuovo Suv C5 Aircross | YOU Elettrico 210 cv Automatico | € 249 | € 36.900 | € 11.507 | € 21.719 | 5,49% | 7% | 30/09/2026 | extended_legal_found\n16/22 | Nuovo Suv C5 Aircross | YOU Hybrid 145 cv Automatico | € 249 | € 30.656 | € 4.254 | € 21.438 | 5,49% | 7,08% |  | extended_legal_found\n17/22 | Spacetourer | BUSINESS BlueHDi 180 S&S EAT8 | € 299 | € 39.400 | € 8.191 | € 28.217 | 7,99% | 9,53% | 30/09/2026 | extended_legal_found\n18/22 | Spacetourer | BUSINESS 136cv M | € 399 | € 51.749 | € 21.001 | € 23.472 | 7,99% | 9,63% | 30/09/2026 | extended_legal_found\n19/22 | Jumpy Combi | Nuovo Jumpy Combi BlueHDi 180 S&S EAT8 | € 299 | € 36.330 | € 6.505 | € 26.134 | 6,99% | 8,49% | 30/09/2026 | extended_legal_found\n20/22 | Nuovo Berlingo | PLUS BlueHDi 100 S&S | € 299 | € 22.950 | € 1.100 | € 16.305 | 6,99% | 9,03% | 30/09/2026 | extended_legal_found\n21/22 | Nuovo Berlingo | NUOVO CITROËN BERLINGO 30 anni | € 299 | € 24.950 | € 2.079 | € 17.563 | 6,99% | 8,94% | 30/09/2026 | extended_legal_found\n22/22 | Nuovo Berlingo | PLUS Elettrico 136 S&S | € 399 | € 34.150 | € 11.632 | € 13.236 | 6,99% | 9,14% | 30/09/2026 | extended_legal_found\nRIGHE VALIDE: 22\nSKIPPED: 0\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE CITROEN: 22\nERRORI: 4\nERRORE: 5 missing Scadenza: YOU Turbo 100 Manuale\nERRORE: 12 missing Scadenza: YOU Hybrid 110 Automatico\nERRORE: 14 missing Scadenza: X HYBRID 145 AUTOMATICO YOU\nERRORE: 16 missing Scadenza: YOU Hybrid 145 cv Automatico\n\nSTOP: errori presenti, nessun push eseguito."
+      }
     },
     {
       "brand": "Opel",
