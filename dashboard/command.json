@@ -1,8 +1,10 @@
 {
   "id": "bee23914-def2-43c4-b564-1ca4c5dc7542",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "citroen",
   "brand_label": "Citroen",
   "requested_at": "2026-09-04T09:33:32.602Z",
-  "message": "Aggiornamento manuale Citroen in coda (richiesto da {'display_name': 'Riccardo Pescini', 'user_id': 2, 'username': 'riccardo.pescini@brandini.it'} via BDH)"
+  "message": "Esecuzione manuale di citroen_push_to_sheet.py",
+  "script": "citroen_push_to_sheet.py",
+  "started_at": "2026-09-04T09:34:13+00:00"
 }
