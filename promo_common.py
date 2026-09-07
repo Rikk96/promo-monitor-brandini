@@ -191,7 +191,7 @@ def extract_scadenza(legal):
         return m.group(1)
 
     m = re.search(
-        r"(?:fino al|entro il|immatricolazioni fino al|valid[ao] fino al|termini di validità|contratti stipulati.*?fino al)\s*(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s+(\d{4})",
+        r"(?:fino al|entro il|immatricolazioni fino al|valid[ao] fino al|termini di validità|contratti stipulati.*?fino al)\s*(\d{1,2})\s+([A-Za-zÀ-ÿ]+?)\s*(\d{4})",
         legal or "",
         re.I | re.S
     )
