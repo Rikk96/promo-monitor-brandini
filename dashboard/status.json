@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "run_id": "20260904_043001",
+  "run_id": "20260907_043005",
   "run_type": "scheduled",
-  "run_started_at": "2026-09-04T04:30:01+00:00",
-  "generated_at": "2026-09-04T09:38:59+00:00",
+  "run_started_at": "2026-09-07T04:30:05+00:00",
+  "generated_at": "2026-09-07T13:22:05+00:00",
   "overall_status": "ERROR",
   "totals": {
     "configured": 23,
@@ -16,170 +16,161 @@
       "brand": "Fiat",
       "script": "fiat_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 132.7,
+      "elapsed_seconds": 134.5,
       "log_excerpt": ""
     },
     {
       "brand": "Abarth",
       "script": "abarth_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 25.8,
+      "elapsed_seconds": 27.4,
       "log_excerpt": ""
     },
     {
       "brand": "Lancia",
       "script": "lancia_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 68.7,
+      "elapsed_seconds": 72.0,
       "log_excerpt": ""
     },
     {
       "brand": "Alfa Romeo",
       "script": "alfa_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 87.7,
+      "elapsed_seconds": 94.6,
       "log_excerpt": ""
     },
     {
       "brand": "Jeep",
       "script": "jeep_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 68.3,
+      "elapsed_seconds": 69.1,
       "log_excerpt": ""
     },
     {
       "brand": "Peugeot",
       "script": "peugeot_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 200.9,
+      "elapsed_seconds": 212.3,
       "log_excerpt": ""
     },
     {
       "brand": "Citroen",
       "script": "citroen_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 262.6,
-      "log_excerpt": "",
-      "last_manual_run": {
-        "command_id": "bee23914-def2-43c4-b564-1ca4c5dc7542",
-        "status": "FAIL",
-        "started_at": "2026-09-04T09:34:13+00:00",
-        "finished_at": "2026-09-04T09:38:59+00:00",
-        "elapsed_seconds": 284.3,
-        "return_code": 1,
-        "log_excerpt": "URL FINANZIAMENTO TROVATI: 22\n1/22 | NUOVA AMI | Ami Elettrica | € 39 | € 8.490 | € 4.451 | € 3.905 | 6,99% | 10,31% | 30/09/2026 | extended_legal_found\n2/22 | NUOVA AMI | RIP CURL | € 39 | € 9.290 | € 4.924 | € 4.281 | 6,99% | 10,06% | 30/09/2026 | extended_legal_found\n3/22 | NUOVA AMI | AMI pack color | € 39 | € 8.990 | € 4.747 | € 4.140 | 6,99% | 10,15% | 30/09/2026 | extended_legal_found\n4/22 | NUOVA AMI | RIP CURL | € 39 | € 9.290 | € 4.924 | € 4.281 | 6,99% | 10,06% | 30/09/2026 | extended_legal_found\n5/22 | C3 | YOU Turbo 100 Manuale | € 49 | € 15.556 | € 6.416 | € 9.409 | 3,99% | 7,5% |  | extended_legal_found\n6/22 | C3 | PLUS Hybrid 110 cv Automatico | € 99 | € 20.350 | € 7.820 | € 11.768 | 7,99% | 11,29% | 30/09/2026 | extended_legal_found\n7/22 | C3 | YOU Elettrico 113 cv Automatico | € 139 | € 23.150 | € 8.608 | € 10.835 | 0% | 2,42% | 30/09/2026 | extended_legal_found\n8/22 | C3 Aircross | YOU Turbo 100 Manuale | € 99 | € 18.100 | € 5.338 | € 12.062 | 7,99% | 11,23% | 30/09/2026 | extended_legal_found\n9/22 | C3 Aircross | PLUS Hybrid 145 Automatico | € 129 | € 24.650 | € 7.394 | € 16.684 | 5,99% | 8,15% | 30/09/2026 | extended_legal_found\n10/22 | C3 Aircross | YOU Elettrico 113 cv Automatico | € 169 | € 26.990 | € 10.259 | € 11.955 | 0% | 2,14% | 30/09/2026 | extended_legal_found\n11/22 | C4 | YOU Motore Elettrico 100kW (136cv) | € 199 | € 33.500 | € 14.980 | € 12.772 | 0% | 1,95% | 30/09/2026 | extended_legal_found\n12/22 | C4 | YOU Hybrid 110 Automatico | € 129 | € 21.250 | € 7.278 | € 12.754 | 5,99% | 8,67% |  | extended_legal_found\n13/22 | C4 X | YOU Motore Elettrico 100kW (136cv) | € 199 | € 33.150 | € 13.259 | € 14.143 | 0% | 1,8% | 30/09/2026 | extended_legal_found\n14/22 | C4 X | X HYBRID 145 AUTOMATICO YOU | € 129 | € 24.550 | € 9.500 | € 14.417 | 7,99% | 10,72% |  | extended_legal_found\n15/22 | Nuovo Suv C5 Aircross | YOU Elettrico 210 cv Automatico | € 249 | € 36.900 | € 11.507 | € 21.719 | 5,49% | 7% | 30/09/2026 | extended_legal_found\n16/22 | Nuovo Suv C5 Aircross | YOU Hybrid 145 cv Automatico | € 249 | € 30.656 | € 4.254 | € 21.438 | 5,49% | 7,08% |  | extended_legal_found\n17/22 | Spacetourer | BUSINESS BlueHDi 180 S&S EAT8 | € 299 | € 39.400 | € 8.191 | € 28.217 | 7,99% | 9,53% | 30/09/2026 | extended_legal_found\n18/22 | Spacetourer | BUSINESS 136cv M | € 399 | € 51.749 | € 21.001 | € 23.472 | 7,99% | 9,63% | 30/09/2026 | extended_legal_found\n19/22 | Jumpy Combi | Nuovo Jumpy Combi BlueHDi 180 S&S EAT8 | € 299 | € 36.330 | € 6.505 | € 26.134 | 6,99% | 8,49% | 30/09/2026 | extended_legal_found\n20/22 | Nuovo Berlingo | PLUS BlueHDi 100 S&S | € 299 | € 22.950 | € 1.100 | € 16.305 | 6,99% | 9,03% | 30/09/2026 | extended_legal_found\n21/22 | Nuovo Berlingo | NUOVO CITROËN BERLINGO 30 anni | € 299 | € 24.950 | € 2.079 | € 17.563 | 6,99% | 8,94% | 30/09/2026 | extended_legal_found\n22/22 | Nuovo Berlingo | PLUS Elettrico 136 S&S | € 399 | € 34.150 | € 11.632 | € 13.236 | 6,99% | 9,14% | 30/09/2026 | extended_legal_found\nRIGHE VALIDE: 22\nSKIPPED: 0\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE CITROEN: 22\nERRORI: 4\nERRORE: 5 missing Scadenza: YOU Turbo 100 Manuale\nERRORE: 12 missing Scadenza: YOU Hybrid 110 Automatico\nERRORE: 14 missing Scadenza: X HYBRID 145 AUTOMATICO YOU\nERRORE: 16 missing Scadenza: YOU Hybrid 145 cv Automatico\n\nSTOP: errori presenti, nessun push eseguito."
-      }
+      "elapsed_seconds": 277.7,
+      "log_excerpt": ""
     },
     {
       "brand": "Opel",
       "script": "opel_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 207.3,
+      "elapsed_seconds": 209.8,
       "log_excerpt": ""
     },
     {
       "brand": "DS",
       "script": "ds_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 120.8,
+      "elapsed_seconds": 116.1,
       "log_excerpt": ""
     },
     {
       "brand": "Fiat Professional",
       "script": "fiat_pro_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 99.1,
+      "elapsed_seconds": 101.3,
       "log_excerpt": ""
     },
     {
       "brand": "Nissan",
       "script": "nissan_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 289.9,
+      "elapsed_seconds": 291.2,
       "log_excerpt": ""
     },
     {
       "brand": "Leapmotor",
       "script": "leapmotor_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 37.4,
+      "elapsed_seconds": 37.9,
       "log_excerpt": ""
     },
     {
       "brand": "Honda",
       "script": "honda_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 60.3,
+      "elapsed_seconds": 60.6,
       "log_excerpt": ""
     },
     {
       "brand": "Mazda",
       "script": "mazda_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 80.1,
-      "log_excerpt": "CX-5 | € 275 | € 32.950 | 6,99% | 8,22% | attiva | anticipo € 7.100,00; 36 rate; rata_finale € 21.505,50,; importo_totale_credito € 25.850,00,; importo_totale_dovuto € 31.636,50.\nCX-30 | € 198 | € 24.700 | 6,99% | 8,67% | attiva | anticipo € 7.230,00; 36 rate; rata_finale € 14.185,50,; importo_totale_credito € 17.470,00,; importo_totale_dovuto € 21.544,43.\nMazda3 | € 199 | € 24.950 | 6,99% | 8,74% | attiva | anticipo € 8.200,00; 36 rate; rata_finale € 13.277,50,; importo_totale_credito € 16.750,00,; importo_totale_dovuto € 20.648,31.\nCX-6e | € 358 | € 44.500 | 4,99% | 5,95% | attiva | anticipo € 12.900,00; 36 rate; rata_finale € 23.375,00,; importo_totale_credito € 31.600,00,; importo_totale_dovuto € 36.519,17.\nMazda6e | € 298 | € 37.700 | 6,99% | 8,33% | attiva | anticipo € 13.650,00; 36 rate; rata_finale € 18.339,50,; importo_totale_credito € 24.050,00,; importo_totale_dovuto € 29.303,72.\nCX-60 |  | € 58.550 |  |  | attiva | card_only_no_legal\nCX-80 |  |  |  |  | incompleta | card_only_no_legal; missing_intero\nMazda2 Hybrid | € 150 | € 18.950 | 6,99% | 8,96% | attiva | anticipo € 6.670,00; 36 rate; rata_finale € 11.985,00,; importo_totale_credito € 14.126,54,; importo_totale_dovuto € 17.592,09.\nMX-5 | € 298 | € 29.950 | 6,99% | 8,34% | attiva | anticipo € 6.050,00; 36 rate; rata_finale € 18.150,00,; importo_totale_credito € 23.900,00,; importo_totale_dovuto € 29.117,08.\nMX-5 RF | € 298 | € 32.450 | 6,990% | 8,300% | attiva | anticipo € 7.720,00; 36 rate; rata_finale € 19.170,00,; importo_totale_credito € 24.730,00,; importo_totale_dovuto € 30.147,44.\nRIGHE MAZDA OLD: 10\n1/10 | CX-5 | hybrid | NUOVA MAZDA CX-5 | Mazda Advantage; finanziamento; prezzo promo; hybrid; dealers aderenti | € 275 | € 32.950 | € 7.100 | € 21.505 | € 25.850 | € 31.636 | 6,99% | 8,22% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n2/10 | CX-30 | hybrid | MAZDA CX-30 | finanziamento; prezzo promo; hybrid; dealers aderenti | € 198 | € 24.700 | € 7.230 | € 14.185 | € 17.470 | € 21.544 | 6,99% | 8,67% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n3/10 | Mazda3 | hybrid | MAZDA3 5 PORTE | finanziamento; prezzo promo; dealers aderenti | € 199 | € 24.950 | € 8.200 | € 13.277 | € 16.750 | € 20.648 | 6,99% | 8,74% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n4/10 | CX-6e | elettrica | MAZDA CX-6e | finanziamento; prezzo promo; elettrica; dealers aderenti | € 358 | € 44.500 | € 12.900 | € 23.375 | € 31.600 | € 36.519 | 4,99% | 5,95% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n5/10 | Mazda6e | elettrica | MAZDA6e | finanziamento; prezzo promo; elettrica; dealers aderenti | € 298 | € 37.700 | € 13.650 | € 18.339 | € 24.050 | € 29.303 | 6,99% | 8,33% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n6/10 | CX-60 | plug-in | MAZDA CX-60 | stock; plug-in |  | € 58.550 |  |  |  |  |  |  | 30/09/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']\n7/10 | CX-80 | plug-in | MAZDA CX-80 | stock; plug-in |  |  |  |  |  |  |  |  | 30/09/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']\n8/10 | Mazda2 Hybrid | hybrid | MAZDA2 HYBRID | finanziamento; prezzo promo; hybrid; dealers aderenti | € 150 | € 18.950 | € 6.670 | € 11.985 | € 14.126 | € 17.592 | 6,99% | 8,96% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n9/10 | MX-5 | benzina | MAZDA MX-5 SOFT TOP | finanziamento; prezzo promo; dealers aderenti | € 298 | € 29.950 | € 6.050 | € 18.150 | € 23.900 | € 29.117 | 6,99% | 8,34% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n10/10 | MX-5 RF | benzina | MAZDA MX-5 RF | finanziamento; prezzo promo; dealers aderenti | € 298 | € 32.450 | € 7.720 | € 19.170 | € 24.730 | € 30.147 | 6,990% | 8,300% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\nRIGHE MAZDA: 9\nBAD: [('MAZDA CX-60', ['missing_Rata', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']), ('MAZDA CX-80', ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short'])]\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE MAZDA: 9\nERRORI: 7\nERRORE: 6 missing Rata: MAZDA CX-60\nERRORE: 6 missing Anticipo: MAZDA CX-60\nERRORE: 6 missing Rata Finale / VFG: MAZDA CX-60\nERRORE: 6 missing Importo Totale Credito: MAZDA CX-60\nERRORE: 6 missing Importo Totale Dovuto: MAZDA CX-60\nERRORE: 6 missing TAN (%): MAZDA CX-60\nERRORE: 6 missing TAEG (%): MAZDA CX-60\n\nSTOP: errori presenti, nessun push eseguito."
+      "elapsed_seconds": 79.9,
+      "log_excerpt": "CX-5 | € 279 | € 32.950 | 6,99% | 8,22% | attiva | anticipo € 6.980,00; 36 rate; rata_finale € 21.505,50,; importo_totale_credito € 25.970,00,; importo_totale_dovuto € 31.770,36.\nCX-30 | € 198 | € 24.700 | 6,99% | 8,67% | attiva | anticipo € 7.230,00; 36 rate; rata_finale € 14.185,50,; importo_totale_credito € 17.470,00,; importo_totale_dovuto € 21.544,43.\nMazda3 | € 199 | € 24.950 | 6,99% | 8,74% | attiva | anticipo € 8.200,00; 36 rate; rata_finale € 13.277,50,; importo_totale_credito € 16.750,00,; importo_totale_dovuto € 20.648,31.\nCX-6e | € 358 | € 44.500 | 4,99% | 5,95% | attiva | anticipo € 12.900,00; 36 rate; rata_finale € 23.375,00,; importo_totale_credito € 31.600,00,; importo_totale_dovuto € 36.519,17.\nMazda6e | € 298 | € 37.700 | 6,99% | 8,33% | attiva | anticipo € 13.650,00; 36 rate; rata_finale € 18.339,50,; importo_totale_credito € 24.050,00,; importo_totale_dovuto € 29.303,72.\nCX-60 |  | € 58.550 |  |  | attiva | card_only_no_legal\nCX-80 |  |  |  |  | incompleta | card_only_no_legal; missing_intero\nMazda2 Hybrid | € 150 | € 18.950 | 6,99% | 8,96% | attiva | anticipo € 6.670,00; 36 rate; rata_finale € 11.985,00,; importo_totale_credito € 14.126,54,; importo_totale_dovuto € 17.592,09.\nMX-5 | € 298 | € 29.950 | 6,99% | 8,34% | attiva | anticipo € 6.050,00; 36 rate; rata_finale € 18.150,00,; importo_totale_credito € 23.900,00,; importo_totale_dovuto € 29.117,08.\nMX-5 RF | € 298 | € 32.450 | 6,990% | 8,300% | attiva | anticipo € 7.720,00; 36 rate; rata_finale € 19.170,00,; importo_totale_credito € 24.730,00,; importo_totale_dovuto € 30.147,44.\nRIGHE MAZDA OLD: 10\n1/10 | CX-5 | hybrid | NUOVA MAZDA CX-5 | Mazda Advantage; finanziamento; prezzo promo; hybrid; dealers aderenti | € 279 | € 32.950 | € 6.980 | € 21.505 | € 25.970 | € 31.770 | 6,99% | 8,22% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n2/10 | CX-30 | hybrid | MAZDA CX-30 | finanziamento; prezzo promo; hybrid; dealers aderenti | € 198 | € 24.700 | € 7.230 | € 14.185 | € 17.470 | € 21.544 | 6,99% | 8,67% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n3/10 | Mazda3 | hybrid | MAZDA3 5 PORTE | finanziamento; prezzo promo; dealers aderenti | € 199 | € 24.950 | € 8.200 | € 13.277 | € 16.750 | € 20.648 | 6,99% | 8,74% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n4/10 | CX-6e | elettrica | MAZDA CX-6e | finanziamento; prezzo promo; elettrica; dealers aderenti | € 358 | € 44.500 | € 12.900 | € 23.375 | € 31.600 | € 36.519 | 4,99% | 5,95% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n5/10 | Mazda6e | elettrica | MAZDA6e | finanziamento; prezzo promo; elettrica; dealers aderenti | € 298 | € 37.700 | € 13.650 | € 18.339 | € 24.050 | € 29.303 | 6,99% | 8,33% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n6/10 | CX-60 | plug-in | MAZDA CX-60 | stock; plug-in |  | € 58.550 |  |  |  |  |  |  | 30/09/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']\n7/10 | CX-80 | plug-in | MAZDA CX-80 | stock; plug-in |  |  |  |  |  |  |  |  | 30/09/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']\n8/10 | Mazda2 Hybrid | hybrid | MAZDA2 HYBRID | finanziamento; prezzo promo; hybrid; dealers aderenti | € 150 | € 18.950 | € 6.670 | € 11.985 | € 14.126 | € 17.592 | 6,99% | 8,96% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n9/10 | MX-5 | benzina | MAZDA MX-5 SOFT TOP | finanziamento; prezzo promo; dealers aderenti | € 298 | € 29.950 | € 6.050 | € 18.150 | € 23.900 | € 29.117 | 6,99% | 8,34% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n10/10 | MX-5 RF | benzina | MAZDA MX-5 RF | finanziamento; prezzo promo; dealers aderenti | € 298 | € 32.450 | € 7.720 | € 19.170 | € 24.730 | € 30.147 | 6,990% | 8,300% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\nRIGHE MAZDA: 9\nBAD: [('MAZDA CX-60', ['missing_Rata', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']), ('MAZDA CX-80', ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short'])]\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE MAZDA: 9\nERRORI: 7\nERRORE: 6 missing Rata: MAZDA CX-60\nERRORE: 6 missing Anticipo: MAZDA CX-60\nERRORE: 6 missing Rata Finale / VFG: MAZDA CX-60\nERRORE: 6 missing Importo Totale Credito: MAZDA CX-60\nERRORE: 6 missing Importo Totale Dovuto: MAZDA CX-60\nERRORE: 6 missing TAN (%): MAZDA CX-60\nERRORE: 6 missing TAEG (%): MAZDA CX-60\n\nSTOP: errori presenti, nessun push eseguito."
     },
     {
       "brand": "Hyundai",
       "script": "hyundai_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 168.9,
+      "elapsed_seconds": 171.2,
       "log_excerpt": ""
     },
     {
       "brand": "MG",
       "script": "mg_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 69.7,
+      "elapsed_seconds": 70.0,
       "log_excerpt": ""
     },
     {
       "brand": "Omoda / Jaecoo",
       "script": "omodajaecoo_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 90.0,
+      "elapsed_seconds": 97.1,
       "log_excerpt": ""
     },
     {
       "brand": "Changan",
       "script": "changan_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 20.3,
+      "elapsed_seconds": 21.3,
       "log_excerpt": ""
     },
     {
       "brand": "BMW",
       "script": "bmw_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 139.3,
+      "elapsed_seconds": 139.7,
       "log_excerpt": ""
     },
     {
       "brand": "MINI",
       "script": "mini_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 61.4,
+      "elapsed_seconds": 61.5,
       "log_excerpt": ""
     },
     {
       "brand": "DR",
       "script": "dr_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 6.0,
+      "elapsed_seconds": 5.9,
       "log_excerpt": "URL scoperti dinamicamente dalla hub: 0\nRIGHE DR: 0\nBAD: []\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE DR: 0\n\nSTOP: attese almeno 6 righe DR, trovate 0. Nessun push eseguito."
     },
     {
       "brand": "Lepas",
       "script": "lepas_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 14.4,
+      "elapsed_seconds": 14.2,
       "log_excerpt": ""
     },
     {
       "brand": "Dongfeng",
       "script": "dongfeng_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 15.2,
+      "elapsed_seconds": 15.7,
       "log_excerpt": ""
     }
   ]
