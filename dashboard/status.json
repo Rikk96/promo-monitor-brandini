@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "run_id": "20260911_043003",
+  "run_id": "20260912_043005",
   "run_type": "scheduled",
-  "run_started_at": "2026-09-11T04:30:03+00:00",
-  "generated_at": "2026-09-11T05:09:39+00:00",
+  "run_started_at": "2026-09-12T04:30:05+00:00",
+  "generated_at": "2026-09-12T05:09:59+00:00",
   "overall_status": "ERROR",
   "totals": {
     "configured": 23,
@@ -16,161 +16,161 @@
       "brand": "Fiat",
       "script": "fiat_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 134.0,
+      "elapsed_seconds": 133.8,
       "log_excerpt": ""
     },
     {
       "brand": "Abarth",
       "script": "abarth_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 26.6,
+      "elapsed_seconds": 25.7,
       "log_excerpt": ""
     },
     {
       "brand": "Lancia",
       "script": "lancia_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 69.2,
+      "elapsed_seconds": 68.3,
       "log_excerpt": ""
     },
     {
       "brand": "Alfa Romeo",
       "script": "alfa_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 88.9,
+      "elapsed_seconds": 88.5,
       "log_excerpt": ""
     },
     {
       "brand": "Jeep",
       "script": "jeep_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 68.5,
+      "elapsed_seconds": 67.5,
       "log_excerpt": ""
     },
     {
       "brand": "Peugeot",
       "script": "peugeot_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 209.3,
+      "elapsed_seconds": 200.3,
       "log_excerpt": ""
     },
     {
       "brand": "Citroen",
       "script": "citroen_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 253.0,
+      "elapsed_seconds": 254.5,
       "log_excerpt": ""
     },
     {
       "brand": "Opel",
       "script": "opel_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 194.3,
+      "elapsed_seconds": 189.0,
       "log_excerpt": ""
     },
     {
       "brand": "DS",
       "script": "ds_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 109.4,
+      "elapsed_seconds": 117.3,
       "log_excerpt": ""
     },
     {
       "brand": "Fiat Professional",
       "script": "fiat_pro_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 99.0,
+      "elapsed_seconds": 101.0,
       "log_excerpt": ""
     },
     {
       "brand": "Nissan",
       "script": "nissan_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 291.3,
+      "elapsed_seconds": 291.4,
       "log_excerpt": ""
     },
     {
       "brand": "Leapmotor",
       "script": "leapmotor_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 36.3,
+      "elapsed_seconds": 36.8,
       "log_excerpt": ""
     },
     {
       "brand": "Honda",
       "script": "honda_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 60.3,
+      "elapsed_seconds": 60.6,
       "log_excerpt": ""
     },
     {
       "brand": "Mazda",
       "script": "mazda_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 80.3,
+      "elapsed_seconds": 82.8,
       "log_excerpt": "CX-5 | € 279 | € 32.950 | 6,99% | 8,22% | attiva | anticipo € 6.980,00; 36 rate; rata_finale € 21.505,50,; importo_totale_credito € 25.970,00,; importo_totale_dovuto € 31.770,36.\nCX-30 | € 198 | € 24.700 | 6,99% | 8,67% | attiva | anticipo € 7.230,00; 36 rate; rata_finale € 14.185,50,; importo_totale_credito € 17.470,00,; importo_totale_dovuto € 21.544,43.\nMazda3 | € 199 | € 24.950 | 6,99% | 8,74% | attiva | anticipo € 8.200,00; 36 rate; rata_finale € 13.277,50,; importo_totale_credito € 16.750,00,; importo_totale_dovuto € 20.648,31.\nCX-6e | € 358 | € 44.500 | 4,99% | 5,95% | attiva | anticipo € 12.900,00; 36 rate; rata_finale € 23.375,00,; importo_totale_credito € 31.600,00,; importo_totale_dovuto € 36.519,17.\nMazda6e | € 298 | € 37.700 | 6,99% | 8,33% | attiva | anticipo € 13.650,00; 36 rate; rata_finale € 18.339,50,; importo_totale_credito € 24.050,00,; importo_totale_dovuto € 29.303,72.\nCX-60 |  | € 58.550 |  |  | attiva | card_only_no_legal\nCX-80 |  |  |  |  | incompleta | card_only_no_legal; missing_intero\nMazda2 Hybrid | € 150 | € 18.950 | 6,99% | 8,96% | attiva | anticipo € 6.670,00; 36 rate; rata_finale € 11.985,00,; importo_totale_credito € 14.126,54,; importo_totale_dovuto € 17.592,09.\nMX-5 | € 298 | € 29.950 | 6,99% | 8,34% | attiva | anticipo € 6.050,00; 36 rate; rata_finale € 18.150,00,; importo_totale_credito € 23.900,00,; importo_totale_dovuto € 29.117,08.\nMX-5 RF | € 298 | € 32.450 | 6,990% | 8,300% | attiva | anticipo € 7.720,00; 36 rate; rata_finale € 19.170,00,; importo_totale_credito € 24.730,00,; importo_totale_dovuto € 30.147,44.\nRIGHE MAZDA OLD: 10\n1/10 | CX-5 | hybrid | NUOVA MAZDA CX-5 | Mazda Advantage; finanziamento; prezzo promo; hybrid; dealers aderenti | € 279 | € 32.950 | € 6.980 | € 21.505 | € 25.970 | € 31.770 | 6,99% | 8,22% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n2/10 | CX-30 | hybrid | MAZDA CX-30 | finanziamento; prezzo promo; hybrid; dealers aderenti | € 198 | € 24.700 | € 7.230 | € 14.185 | € 17.470 | € 21.544 | 6,99% | 8,67% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n3/10 | Mazda3 | hybrid | MAZDA3 5 PORTE | finanziamento; prezzo promo; dealers aderenti | € 199 | € 24.950 | € 8.200 | € 13.277 | € 16.750 | € 20.648 | 6,99% | 8,74% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n4/10 | CX-6e | elettrica | MAZDA CX-6e | finanziamento; prezzo promo; elettrica; dealers aderenti | € 358 | € 44.500 | € 12.900 | € 23.375 | € 31.600 | € 36.519 | 4,99% | 5,95% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n5/10 | Mazda6e | elettrica | MAZDA6e | finanziamento; prezzo promo; elettrica; dealers aderenti | € 298 | € 37.700 | € 13.650 | € 18.339 | € 24.050 | € 29.303 | 6,99% | 8,33% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n6/10 | CX-60 | plug-in | MAZDA CX-60 | stock; plug-in |  | € 58.550 |  |  |  |  |  |  | 30/09/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']\n7/10 | CX-80 | plug-in | MAZDA CX-80 | stock; plug-in |  |  |  |  |  |  |  |  | 30/09/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']\n8/10 | Mazda2 Hybrid | hybrid | MAZDA2 HYBRID | finanziamento; prezzo promo; hybrid; dealers aderenti | € 150 | € 18.950 | € 6.670 | € 11.985 | € 14.126 | € 17.592 | 6,99% | 8,96% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n9/10 | MX-5 | benzina | MAZDA MX-5 SOFT TOP | finanziamento; prezzo promo; dealers aderenti | € 298 | € 29.950 | € 6.050 | € 18.150 | € 23.900 | € 29.117 | 6,99% | 8,34% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n10/10 | MX-5 RF | benzina | MAZDA MX-5 RF | finanziamento; prezzo promo; dealers aderenti | € 298 | € 32.450 | € 7.720 | € 19.170 | € 24.730 | € 30.147 | 6,990% | 8,300% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\nRIGHE MAZDA: 9\nBAD: [('MAZDA CX-60', ['missing_Rata', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']), ('MAZDA CX-80', ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short'])]\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE MAZDA: 9\nERRORI: 7\nERRORE: 6 missing Rata: MAZDA CX-60\nERRORE: 6 missing Anticipo: MAZDA CX-60\nERRORE: 6 missing Rata Finale / VFG: MAZDA CX-60\nERRORE: 6 missing Importo Totale Credito: MAZDA CX-60\nERRORE: 6 missing Importo Totale Dovuto: MAZDA CX-60\nERRORE: 6 missing TAN (%): MAZDA CX-60\nERRORE: 6 missing TAEG (%): MAZDA CX-60\n\nSTOP: errori presenti, nessun push eseguito."
     },
     {
       "brand": "Hyundai",
       "script": "hyundai_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 198.5,
+      "elapsed_seconds": 200.5,
       "log_excerpt": ""
     },
     {
       "brand": "MG",
       "script": "mg_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 106.3,
+      "elapsed_seconds": 69.3,
       "log_excerpt": ""
     },
     {
       "brand": "Omoda / Jaecoo",
       "script": "omodajaecoo_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 90.5,
+      "elapsed_seconds": 93.6,
       "log_excerpt": ""
     },
     {
       "brand": "Changan",
       "script": "changan_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 19.1,
+      "elapsed_seconds": 20.0,
       "log_excerpt": ""
     },
     {
       "brand": "BMW",
       "script": "bmw_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 140.1,
+      "elapsed_seconds": 139.1,
       "log_excerpt": ""
     },
     {
       "brand": "MINI",
       "script": "mini_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 61.7,
+      "elapsed_seconds": 62.6,
       "log_excerpt": ""
     },
     {
       "brand": "DR",
       "script": "dr_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 6.1,
-      "log_excerpt": "URL scoperti dinamicamente dalla hub: 0\nRIGHE DR: 0\nBAD: []\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE DR: 0\n\nSTOP: attese almeno 6 righe DR, trovate 0. Nessun push eseguito."
+      "elapsed_seconds": 58.3,
+      "log_excerpt": "URL scoperti dinamicamente dalla hub: 6\n  - https://drautomobiles.com/promozione-dr-5-collection-bz-gpl/\n  - https://drautomobiles.com/promozione-dr-5-full-hybrid-collection/\n  - https://drautomobiles.com/promozione-dr-5-stilnovo/\n  - https://drautomobiles.com/promozione-dr-6-collection/\n  - https://drautomobiles.com/promozione-dr-6-stilnovo/\n  - https://drautomobiles.com/promozione-dr-6-superhybrid-collection/\n1/1 | DR 6 Superhybrid Collection | plug-in | DR 6 Superhybrid Collection Superhybrid PHEV | Bonus DR; bonus € 6.000; Superhybrid PHEV; plug-in | Intero € 29.900 | Scad 30/09/2026 | card_only_no_legal | source=detail_card; no_financial_legal_found; bonus_dr | FLAGS: []\nRIGHE DR: 1\nBAD: []\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE DR: 1\n\nSTOP: attese almeno 6 righe DR, trovate 1. Nessun push eseguito."
     },
     {
       "brand": "Lepas",
       "script": "lepas_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 15.7,
+      "elapsed_seconds": 15.5,
       "log_excerpt": ""
     },
     {
       "brand": "Dongfeng",
       "script": "dongfeng_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 15.1,
+      "elapsed_seconds": 15.2,
       "log_excerpt": ""
     }
   ]
