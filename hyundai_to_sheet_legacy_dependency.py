@@ -52,6 +52,8 @@ def normalize_date(s):
 
 def modello_from_title(title):
     u = title.upper()
+    if "IONIQ 3" in u:
+        return "IONIQ 3"
     if "IONIQ 9" in u:
         return "IONIQ 9"
     if "SANTA FE" in u:
@@ -84,13 +86,13 @@ def title_from_body(body, url):
     candidates = []
     for l in lines[:140]:
         u = l.upper()
-        if any(x in u for x in ["INSTER", "I20", "BAYON", "KONA", "TUCSON", "SANTA FE", "IONIQ 9"]):
+        if any(x in u for x in ["INSTER", "I20", "BAYON", "KONA", "TUCSON", "SANTA FE", "IONIQ 9", "IONIQ 3"]):
             if len(l) <= 90 and not any(b in u for b in ["MODELLI", "TUTTI I MODELLI", "KONA ELECTRIC", "CONFIGURATORE"]):
                 candidates.append(l)
 
     # preferisci titoli con Hyundai/Nuova o nomi modello chiari
     for c in candidates:
-        if any(x in c.upper() for x in ["HYUNDAI", "NUOVA", "TUCSON", "SANTA FE", "IONIQ 9", "KONA FULL"]):
+        if any(x in c.upper() for x in ["HYUNDAI", "NUOVA", "TUCSON", "SANTA FE", "IONIQ 9", "IONIQ 3", "KONA FULL"]):
             return clean(c.replace(".", ""))
 
     if candidates:
