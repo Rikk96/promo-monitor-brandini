@@ -3,7 +3,7 @@
   "run_id": "20260918_043005",
   "run_type": "scheduled",
   "run_started_at": "2026-09-18T04:30:05+00:00",
-  "generated_at": "2026-09-18T05:09:11+00:00",
+  "generated_at": "2026-09-18T13:01:29+00:00",
   "overall_status": "ERROR",
   "totals": {
     "configured": 23,
@@ -45,7 +45,16 @@
       "script": "jeep_push_to_sheet.py",
       "status": "FAIL",
       "elapsed_seconds": 18.7,
-      "log_excerpt": "https://www.jeep-official.it/offerte-jeep-prezzi/avenger | link: 0\nhttps://www.jeep-official.it/offerte-jeep-prezzi/nuova-compass | link: 0\nURL JEEP TROVATI: 1\nDEBUG NO LEGAL: https://www.jeep-official.it/offerte-jeep-prezzi/promozione/grand-cherokee-offerta-rata\n1/1 | SKIP | https://www.jeep-official.it/offerte-jeep-prezzi/promozione/grand-cherokee-offerta-rata\n\nRIGHE JEEP: 0\nERRORI: 0\n\nSTOP: attese almeno 7 righe Jeep, trovate 0. Nessun push eseguito."
+      "log_excerpt": "https://www.jeep-official.it/offerte-jeep-prezzi/avenger | link: 0\nhttps://www.jeep-official.it/offerte-jeep-prezzi/nuova-compass | link: 0\nURL JEEP TROVATI: 1\nDEBUG NO LEGAL: https://www.jeep-official.it/offerte-jeep-prezzi/promozione/grand-cherokee-offerta-rata\n1/1 | SKIP | https://www.jeep-official.it/offerte-jeep-prezzi/promozione/grand-cherokee-offerta-rata\n\nRIGHE JEEP: 0\nERRORI: 0\n\nSTOP: attese almeno 7 righe Jeep, trovate 0. Nessun push eseguito.",
+      "last_manual_run": {
+        "command_id": "d1519834-e2ab-4a62-a52b-b56f88fb1f36",
+        "status": "OK",
+        "started_at": "2026-09-18T13:01:13+00:00",
+        "finished_at": "2026-09-18T13:01:29+00:00",
+        "elapsed_seconds": 14.2,
+        "return_code": 0,
+        "log_excerpt": "BLOCCHI JEEP TROVATI: 6\n1/6 | Jeep AVENGER | benzina | Jeep AVENGER BENZINA |  |  | € 21.900 | € 8.431 |  |  |  | 0% | 3,33% | 30/09/2026 | legal_block_found_not_extended | source=hub_card_inline; missing_rata\n2/6 | Jeep AVENGER | plug-in | Jeep AVENGER 4xe HYBRID |  | € 149 |  | € 7.913 |  |  |  | 5,75% | 7,47% | 30/09/2026 | legal_block_found_not_extended | source=hub_card_inline\n3/6 | Jeep AVENGER | hybrid | Jeep AVENGER e-HYBRID |  | € 149 |  | € 6.155 |  |  |  | 5,75% | 7,76% | 30/09/2026 | legal_block_found_not_extended | source=hub_card_inline\n4/6 | Jeep AVENGER | elettrica | Jeep AVENGER ELETTRICA |  | € 149 |  | € 11.751 |  |  |  | 2,99% | 4,68% | 30/09/2026 | legal_block_found_not_extended | source=hub_card_inline\n5/6 | Jeep COMPASS | elettrica | Jeep COMPASS ELETTRICA |  | € 249 |  | € 7.416 |  |  |  | 2,99% | 4,13% | 30/09/2026 | legal_block_found_not_extended | source=hub_card_inline\n6/6 | Jeep COMPASS | hybrid | Jeep COMPASS e-HYBRID |  |  | € 33.900 | € 14.239 |  |  |  | 0,00% | 2,32% | 30/09/2026 | legal_block_found_not_extended | source=hub_card_inline; missing_rata\nRIGHE VALIDE: 6\nSKIPPED: 0\n\nRIGHE JEEP: 6\nERRORI: 0\nPUSH COMPLETATO: righe Jeep scritte: 6\n\n/home/gruppobrandini/promo-monitor/jeep_push_to_sheet.py:61: DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)\n  with_retry(lambda: ws.update(\"A1\", values), label=\"scrittura foglio jeep\")"
+      }
     },
     {
       "brand": "Peugeot",
