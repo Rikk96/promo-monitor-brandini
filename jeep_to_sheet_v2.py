@@ -5,16 +5,68 @@ from datetime import datetime
 from promo_common import clean, build_row
 
 BRAND = "Jeep"
-HUB = "https://www.jeep-official.it/offerte-jeep-prezzi"
+HUB = "https://www.jeep-official.it/offerte-privati"
 
-MODEL_URLS = [
-    "https://www.jeep-official.it/offerte-jeep-prezzi/avenger",
-    "https://www.jeep-official.it/offerte-jeep-prezzi/nuova-compass",
-]
+def split_blocks(body):
+    """La pagina hub Jeep (dal cambio struttura di settembre 2026) mostra
+    tutte le offerte come blocchi ripetuti nella stessa pagina, invece di
+    link a pagine dettaglio separate. Ogni blocco inizia con 'NUOVA JEEP®'.
 
-DIRECT_URLS = [
-    "https://www.jeep-official.it/offerte-jeep-prezzi/promozione/grand-cherokee-offerta-rata",
-]
+    IMPORTANTE: lavoriamo sul testo GREZZO (con gli a-capo originali), mai
+    su clean(body) - clean() collassa tutti i \n in uno spazio singolo,
+    rendendo impossibile qualsiasi split per righe (bug gia' visto su LEPAS)."""
+    raw_lines = [l.strip() for l in body.split("\n") if l.strip()]
+
+    blocks = []
+    current = []
+    for line in raw_lines:
+        if line.upper().startswith("NUOVA JEEP") and current:
+            blocks.append("\n".join(current))
+            current = [line]
+        elif line.upper().startswith("NUOVA JEEP"):
+            current = [line]
+        elif current:
+            current.append(line)
+            if re.match(r"^Valido\s+fino\s+al\s*\d{2}/\d{2}/\d{4}\.?$", line, re.I):
+                blocks.append("\n".join(current))
+                current = []
+
+    if current:
+        blocks.append("\n".join(current))
+
+    return blocks
+
+def parse_block(block, run_id, idx):
+    lines = [l.strip() for l in block.split("\n") if l.strip()]
+    if len(lines) < 2:
+        return None
+
+    modello = lines[0].replace("NUOVA JEEP", "Jeep").replace("®", "").strip()
+    versione = lines[1]
+    titolo = f"{modello} {versione}".strip()
+
+    motore_map = {
+        "BENZINA": "benzina",
+        "ELETTRICA": "elettrica",
+        "4XE HYBRID": "plug-in",
+        "E-HYBRID": "hybrid",
+    }
+    motore = motore_map.get(versione.upper(), "")
+
+    row = build_row(
+        brand=BRAND,
+        modello=modello,
+        titolo_promo=titolo,
+        claim_promo="",
+        motorizzazione=motore,
+        legal=block,
+        fonte_url=HUB,
+        offer_url=HUB,
+        run_id=run_id,
+        note_tecniche_extra=["source=hub_card_inline"],
+        allow_missing_intero=True,
+    )
+    return row
 
 def html_to_text(html):
     html = re.sub(r"<br\s*/?>", "\n", html, flags=re.I)
@@ -300,34 +352,33 @@ def build_rows():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
 
-        hub = browser.new_page(viewport={"width":1366,"height":8000})
-        urls = get_urls(hub)
+        page = browser.new_page(viewport={"width":1366,"height":8000})
+        page.goto(HUB, wait_until="domcontentloaded", timeout=90000)
+        page.wait_for_timeout(5000)
+        body = page.locator("body").inner_text(timeout=30000)
 
-        print("URL JEEP TROVATI:", len(urls))
-        for u in urls:
-            print("URL:", u)
+        blocks = split_blocks(body)
+        print("BLOCCHI JEEP TROVATI:", len(blocks))
 
-        detail = browser.new_page(viewport={"width":1366,"height":10000})
-
-        for i, url in enumerate(urls, start=1):
+        for i, block in enumerate(blocks, start=1):
             try:
-                r = parse_detail(detail, url, run_id)
+                r = parse_block(block, run_id, i)
                 if not r:
-                    skipped.append(f"{i} NO_ROW {url}")
-                    print(f"{i}/{len(urls)} | NO_ROW | {url}")
+                    skipped.append(f"{i} NO_ROW")
+                    print(f"{i}/{len(blocks)} | NO_ROW")
                     continue
 
                 rows.append(r)
                 print(
-                    f"{i}/{len(urls)} | {r['Modello']} | {r['Motorizzazione']} | {r['Titolo Promo']} | "
+                    f"{i}/{len(blocks)} | {r['Modello']} | {r['Motorizzazione']} | {r['Titolo Promo']} | "
                     f"{r['Claim Promo']} | {r['Rata']} | {r['Intero']} | {r['Anticipo']} | "
                     f"{r['Rata Finale / VFG']} | {r['Importo Totale Credito']} | {r['Importo Totale Dovuto']} | "
                     f"{r['TAN (%)']} | {r['TAEG (%)']} | {r['Scadenza']} | {r['Legal Source Status']} | "
                     f"{r['Note Tecniche']}"
                 )
             except Exception as e:
-                skipped.append(f"{i} ERR {url} | {e}")
-                print(f"{i}/{len(urls)} | ERR | {url} | {e}")
+                skipped.append(f"{i} ERR | {e}")
+                print(f"{i}/{len(blocks)} | ERR | {e}")
 
         browser.close()
 

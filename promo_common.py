@@ -128,12 +128,16 @@ def extract_rata(legal):
 
 def extract_intero_promo(legal):
     # Sempre prezzo promo, non prezzo listino.
+    # "Tua da X€ al mese" indica la RATA mensile, non un prezzo assoluto:
+    # il negative lookahead evita di confondere le due cose (visto su Jeep,
+    # stesso principio del caso Mazda CX-80: se il sito non pubblica un
+    # prezzo assoluto, il campo resta onestamente vuoto).
     return find1([
         r"Prezzo\s+Promo\s*([\d\.,]+)\s*€",
         r"Prezzo\s+promo\s*([\d\.,]+)\s*€",
         r"Prezzo\s+promozionale\s*([\d\.,]+)\s*€",
-        r"Tua\s+da\s*([\d\.,]+)\s*€",
-        r"Subito\s+tua\s+da\s*([\d\.,]+)\s*€",
+        r"Tua\s+da\s*([\d\.,]+)\s*€(?!\s+al\s+mese)",
+        r"Subito\s+tua\s+da\s*([\d\.,]+)\s*€(?!\s+al\s+mese)",
     ], legal)
 
 def extract_anticipo(legal):

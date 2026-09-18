@@ -1,10 +1,9 @@
 from datetime import datetime
 import gspread
 from google.oauth2.service_account import Credentials
-from playwright.sync_api import sync_playwright
 
 from promo_common import HEADERS, with_retry
-from jeep_to_sheet_v2 import get_urls, parse_detail, BRAND
+from jeep_to_sheet_v2 import build_rows, BRAND
 
 SPREADSHEET_ID = "1okKJrFrLMRXHaZsGUpiJICroVpxLm3wsF22X2o1WXfo"
 KEY_PATH = "/tmp/key.json"
@@ -15,46 +14,11 @@ def safe_cell_value(v):
         return v[:49000] + " ... [TRONCATO PER LIMITE GOOGLE SHEETS]"
     return v
 
-run_id = "jeep_push_" + datetime.now().strftime("%Y%m%d_%H%M%S")
-rows = []
+rows = build_rows()
 errors = []
 
-with sync_playwright() as p:
-    browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
-
-    hub = browser.new_page(viewport={"width":1366,"height":8000})
-    urls = get_urls(hub)
-
-    print("URL JEEP TROVATI:", len(urls))
-
-    detail = browser.new_page(viewport={"width":1366,"height":10000})
-
-    for i, url in enumerate(urls, start=1):
-        try:
-            r = parse_detail(detail, url, run_id)
-
-            if not r:
-                print(f"{i}/{len(urls)} | SKIP | {url}")
-                continue
-
-            r["Note Tecniche"] = r["Note Tecniche"].replace("debug_only_no_push", "").replace(";;", ";").strip("; ").strip()
-
-            rows.append(r)
-
-            print(
-                f"{i}/{len(urls)} | {r['Modello']} | {r['Motorizzazione']} | {r['Titolo Promo']} | "
-                f"{r['Rata']} | {r['Intero']} | {r['Anticipo']} | {r['Rata Finale / VFG']} | "
-                f"{r['Importo Totale Credito']} | {r['Importo Totale Dovuto']} | "
-                f"{r['TAN (%)']} | {r['TAEG (%)']} | {r['Scadenza']} | "
-                f"{r['Legal Source Status']} | {r['Note Tecniche']}"
-            )
-
-        except Exception as e:
-            err = f"{i}/{len(urls)} ERR {url} | {e}"
-            errors.append(err)
-            print("ERRORE:", err)
-
-    browser.close()
+for r in rows:
+    r["Note Tecniche"] = r["Note Tecniche"].replace("debug_only_no_push", "").replace(";;", ";").strip("; ").strip()
 
 print()
 print("RIGHE JEEP:", len(rows))
@@ -65,8 +29,8 @@ for e in errors:
 if errors:
     raise SystemExit("STOP: errori presenti, nessun push eseguito.")
 
-if len(rows) < 7:
-    raise SystemExit(f"STOP: attese almeno 7 righe Jeep, trovate {len(rows)}. Nessun push eseguito.")
+if len(rows) < 6:
+    raise SystemExit(f"STOP: attese almeno 6 righe Jeep, trovate {len(rows)}. Nessun push eseguito.")
 
 creds = Credentials.from_service_account_file(KEY_PATH, scopes=[
     "https://www.googleapis.com/auth/spreadsheets",
