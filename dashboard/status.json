@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "run_id": "20260924_043001",
+  "run_id": "20260925_043005",
   "run_type": "scheduled",
-  "run_started_at": "2026-09-24T04:30:01+00:00",
-  "generated_at": "2026-09-24T05:04:01+00:00",
+  "run_started_at": "2026-09-25T04:30:05+00:00",
+  "generated_at": "2026-09-25T05:02:49+00:00",
   "overall_status": "ERROR",
   "totals": {
     "configured": 23,
-    "ok": 19,
-    "bad": 4,
+    "ok": 18,
+    "bad": 5,
     "not_run": 0
   },
   "items": [
@@ -16,70 +16,70 @@
       "brand": "Fiat",
       "script": "fiat_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 132.7,
+      "elapsed_seconds": 135.9,
       "log_excerpt": ""
     },
     {
       "brand": "Abarth",
       "script": "abarth_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 25.9,
+      "elapsed_seconds": 26.6,
       "log_excerpt": ""
     },
     {
       "brand": "Lancia",
       "script": "lancia_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 68.3,
+      "elapsed_seconds": 69.8,
       "log_excerpt": ""
     },
     {
       "brand": "Alfa Romeo",
       "script": "alfa_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 87.1,
+      "elapsed_seconds": 87.6,
       "log_excerpt": ""
     },
     {
       "brand": "Jeep",
       "script": "jeep_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 11.3,
+      "elapsed_seconds": 12.0,
       "log_excerpt": ""
     },
     {
       "brand": "Peugeot",
       "script": "peugeot_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 213.2,
+      "elapsed_seconds": 219.1,
       "log_excerpt": ""
     },
     {
       "brand": "Citroen",
       "script": "citroen_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 146.0,
+      "elapsed_seconds": 147.9,
       "log_excerpt": "URL FINANZIAMENTO TROVATI: 22\nSKIP NO LEGAL | 1/22 | https://www.citroen.it/acquista/offerte-privati/ami-elettrica-finanziamento.html\nSKIP NO LEGAL | 2/22 | https://www.citroen.it/acquista/offerte-privati/ami-buggy-elettrica-finanziamento.html\nSKIP NO LEGAL | 3/22 | https://www.citroen.it/acquista/offerte-privati/ami-pack-color-finanziamento.html\nSKIP NO LEGAL | 4/22 | https://www.citroen.it/acquista/offerte-privati/ami-rip-curl-finanziamento.html\nSKIP NO LEGAL | 5/22 | https://www.citroen.it/acquista/offerte-privati/nuova-c3-you-finanziamento.html\nSKIP NO LEGAL | 6/22 | https://www.citroen.it/acquista/offerte-privati/nuova-c3-hybrid-finanziamento.html\nSKIP NO LEGAL | 7/22 | https://www.citroen.it/acquista/offerte-privati/e-c3-finanziamento.html\nSKIP NO LEGAL | 8/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-c3-aircross-finanziamento.html\nSKIP NO LEGAL | 9/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-c3-aircross-hybrid-finanziamento.html\nSKIP NO LEGAL | 10/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-e-c3-aircross-elettrico-finanziamento.html\nSKIP NO LEGAL | 11/22 | https://www.citroen.it/acquista/offerte-privati/nuova-e-c4-elettrica-finanziamento.html\nSKIP NO LEGAL | 12/22 | https://www.citroen.it/acquista/offerte-privati/nuova-c4-hybrid-finanziamento.html\nSKIP NO LEGAL | 13/22 | https://www.citroen.it/acquista/offerte-privati/nuova-e-c4x-elettrica-finanziamento.html\nSKIP NO LEGAL | 14/22 | https://www.citroen.it/acquista/offerte-privati/nuova-c4x-hybrid-finanziamento.html\nSKIP NO LEGAL | 15/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-e-c5-aircross-finanziamento.html\nSKIP NO LEGAL | 16/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-c5-aircross-finanziamento.html\nSKIP NO LEGAL | 17/22 | https://www.citroen.it/acquista/offerte-privati/spacetourer-finanziamento.html\nSKIP NO LEGAL | 18/22 | https://www.citroen.it/acquista/offerte-privati/e-spacetourer-finanziamento.html\nSKIP NO LEGAL | 19/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-jumpy-combi-finanziamento.html\nSKIP NO LEGAL | 20/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-berlingo-finanziamento.html\nSKIP NO LEGAL | 21/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-berlingo-30anni-finanziamento.html\nSKIP NO LEGAL | 22/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-e-berlingo-finanziamento.html\nRIGHE VALIDE: 0\nSKIPPED: 22\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE CITROEN: 0\n\nSTOP: attese almeno 1 righe Citroen, trovate 0. Nessun push eseguito."
     },
     {
       "brand": "Opel",
       "script": "opel_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 217.2,
+      "elapsed_seconds": 209.2,
       "log_excerpt": ""
     },
     {
       "brand": "DS",
       "script": "ds_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 110.5,
+      "elapsed_seconds": 110.9,
       "log_excerpt": ""
     },
     {
       "brand": "Fiat Professional",
       "script": "fiat_pro_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 99.6,
+      "elapsed_seconds": 100.5,
       "log_excerpt": ""
     },
     {
@@ -87,48 +87,48 @@
       "script": "nissan_push_to_sheet.py",
       "status": "FAIL",
       "elapsed_seconds": 64.9,
-      "log_excerpt": "JUKE | offerte dichiarate: 4 | detail ids: ['NIT003', 'NIT004', 'NIT005', 'NIT006']\nQASHQAI | offerte dichiarate: 4 | detail ids: ['NIT007', 'NIT008', 'NIT009', 'NIT010']\n\nTraceback (most recent call last):\n  File \"/home/gruppobrandini/promo-monitor/nissan_push_to_sheet.py\", line 16, in <module>\n    rows = build_rows()\n           ^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/nissan_to_sheet_v2.py\", line 321, in build_rows\n    declared, ids = get_offer_ids(browser, name, value)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/nissan_to_sheet_v2.py\", line 51, in get_offer_ids\n    page.locator(\"select\").nth(1).select_option(model_value)\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py\", line 19592, in select_option\n    self._sync(\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py\", line 628, in select_option\n    return await self._frame.select_option(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py\", line 786, in select_option\n    return await self._channel.send(\"selectOption\", self._timeout, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 69, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 559, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.TimeoutError: Locator.select_option: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"select\").nth(1)\n    - locator resolved to <select required=\"\" name=\"model\" id=\"switch-model\" class=\"toggle-model\">…</select>\n  - attempting select option action\n    2 × waiting for element to be visible and enabled\n      - did not find some options\n    - retrying select option action\n    - waiting 20ms\n    2 × waiting for element to be visible and enabled\n      - did not find some options\n    - retrying select option action\n      - waiting 100ms\n    59 × waiting for element to be visible and enabled\n       - did not find some options\n     - retrying select option action\n       - waiting 500ms"
+      "log_excerpt": "JUKE | offerte dichiarate: 4 | detail ids: ['NIT003', 'NIT004', 'NIT005', 'NIT006']\nQASHQAI | offerte dichiarate: 4 | detail ids: ['NIT007', 'NIT008', 'NIT009', 'NIT010']\n\nTraceback (most recent call last):\n  File \"/home/gruppobrandini/promo-monitor/nissan_push_to_sheet.py\", line 16, in <module>\n    rows = build_rows()\n           ^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/nissan_to_sheet_v2.py\", line 321, in build_rows\n    declared, ids = get_offer_ids(browser, name, value)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/nissan_to_sheet_v2.py\", line 51, in get_offer_ids\n    page.locator(\"select\").nth(1).select_option(model_value)\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py\", line 19592, in select_option\n    self._sync(\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py\", line 628, in select_option\n    return await self._frame.select_option(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py\", line 786, in select_option\n    return await self._channel.send(\"selectOption\", self._timeout, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 69, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 559, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.TimeoutError: Locator.select_option: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"select\").nth(1)\n    - locator resolved to <select required=\"\" name=\"model\" id=\"switch-model\" class=\"toggle-model\">…</select>\n  - attempting select option action\n    2 × waiting for element to be visible and enabled\n      - did not find some options\n    - retrying select option action\n    - waiting 20ms\n    2 × waiting for element to be visible and enabled\n      - did not find some options\n    - retrying select option action\n      - waiting 100ms\n    60 × waiting for element to be visible and enabled\n       - did not find some options\n     - retrying select option action\n       - waiting 500ms"
     },
     {
       "brand": "Leapmotor",
       "script": "leapmotor_push_to_sheet.py",
-      "status": "OK",
-      "elapsed_seconds": 36.9,
-      "log_excerpt": ""
+      "status": "FAIL",
+      "elapsed_seconds": 28.8,
+      "log_excerpt": "URL LEAPMOTOR TROVATI: 4\n1/4 | NO_ROW | https://www.leapmotor.net/it/t03\n2/4 | NO_ROW | https://www.leapmotor.net/it/b10-reev-hybrid\n3/4 | NO_ROW | https://www.leapmotor.net/it/c10-reev-hybrid\n4/4 | NO_ROW | https://www.leapmotor.net/it/b05\n\nRIGHE LEAPMOTOR: 0\nERRORI: 4\nERRORE: 1/4 NO_ROW https://www.leapmotor.net/it/t03\nERRORE: 2/4 NO_ROW https://www.leapmotor.net/it/b10-reev-hybrid\nERRORE: 3/4 NO_ROW https://www.leapmotor.net/it/c10-reev-hybrid\nERRORE: 4/4 NO_ROW https://www.leapmotor.net/it/b05\n\nSTOP: errori presenti, nessun push eseguito."
     },
     {
       "brand": "Honda",
       "script": "honda_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 59.8,
+      "elapsed_seconds": 62.5,
       "log_excerpt": ""
     },
     {
       "brand": "Mazda",
       "script": "mazda_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 80.2,
-      "log_excerpt": "CX-5 | € 279 | € 32.950 | 6,99% | 8,22% | attiva | anticipo € 6.980,00; 36 rate; rata_finale € 21.505,50,; importo_totale_credito € 25.970,00,; importo_totale_dovuto € 31.770,36.\nCX-30 | € 198 | € 24.700 | 6,99% | 8,67% | attiva | anticipo € 7.230,00; 36 rate; rata_finale € 14.185,50,; importo_totale_credito € 17.470,00,; importo_totale_dovuto € 21.544,43.\nMazda3 | € 199 | € 24.950 | 6,99% | 8,74% | attiva | anticipo € 8.200,00; 36 rate; rata_finale € 13.277,50,; importo_totale_credito € 16.750,00,; importo_totale_dovuto € 20.648,31.\nCX-6e | € 358 | € 44.500 | 4,99% | 5,95% | attiva | anticipo € 12.900,00; 36 rate; rata_finale € 23.375,00,; importo_totale_credito € 31.600,00,; importo_totale_dovuto € 36.519,17.\nMazda6e | € 298 | € 37.700 | 6,99% | 8,33% | attiva | anticipo € 13.650,00; 36 rate; rata_finale € 18.339,50,; importo_totale_credito € 24.050,00,; importo_totale_dovuto € 29.303,72.\nCX-60 |  | € 58.550 |  |  | attiva | card_only_no_legal\nCX-80 |  |  |  |  | incompleta | card_only_no_legal; missing_intero\nMazda2 Hybrid | € 150 | € 18.950 | 6,99% | 8,96% | attiva | anticipo € 6.670,00; 36 rate; rata_finale € 11.985,00,; importo_totale_credito € 14.126,54,; importo_totale_dovuto € 17.592,09.\nMX-5 | € 299 | € 31.500 | 6,99% | 8,31% | attiva | anticipo € 7.140,00; 36 rate; rata_finale € 18.704,00,; importo_totale_credito € 24.360,00,; importo_totale_dovuto € 29.686,99.\nMX-5 RF | € 299 | € 34.000 | 6,99% | 8,26% | attiva | anticipo € 8.500,00; 36 rate; rata_finale € 20.104,00,; importo_totale_credito € 25.500,00,; importo_totale_dovuto € 31.101,72.\nRIGHE MAZDA OLD: 10\n1/10 | CX-5 | hybrid | NUOVA MAZDA CX-5 | Mazda Advantage; finanziamento; prezzo promo; hybrid; dealers aderenti | € 279 | € 32.950 | € 6.980 | € 21.505 | € 25.970 | € 31.770 | 6,99% | 8,22% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n2/10 | CX-30 | hybrid | MAZDA CX-30 | finanziamento; prezzo promo; hybrid; dealers aderenti | € 198 | € 24.700 | € 7.230 | € 14.185 | € 17.470 | € 21.544 | 6,99% | 8,67% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n3/10 | Mazda3 | hybrid | MAZDA3 5 PORTE | finanziamento; prezzo promo; dealers aderenti | € 199 | € 24.950 | € 8.200 | € 13.277 | € 16.750 | € 20.648 | 6,99% | 8,74% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n4/10 | CX-6e | elettrica | MAZDA CX-6e | finanziamento; prezzo promo; elettrica; dealers aderenti | € 358 | € 44.500 | € 12.900 | € 23.375 | € 31.600 | € 36.519 | 4,99% | 5,95% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n5/10 | Mazda6e | elettrica | MAZDA6e | finanziamento; prezzo promo; elettrica; dealers aderenti | € 298 | € 37.700 | € 13.650 | € 18.339 | € 24.050 | € 29.303 | 6,99% | 8,33% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n6/10 | CX-60 | plug-in | MAZDA CX-60 | stock; plug-in |  | € 58.550 |  |  |  |  |  |  | 30/09/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']\n7/10 | CX-80 | plug-in | MAZDA CX-80 | stock; plug-in |  |  |  |  |  |  |  |  | 30/09/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']\n8/10 | Mazda2 Hybrid | hybrid | MAZDA2 HYBRID | finanziamento; prezzo promo; hybrid; dealers aderenti | € 150 | € 18.950 | € 6.670 | € 11.985 | € 14.126 | € 17.592 | 6,99% | 8,96% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n9/10 | MX-5 | benzina | MAZDA MX-5 SOFT TOP | finanziamento; prezzo promo; dealers aderenti | € 299 | € 31.500 | € 7.140 | € 18.704 | € 24.360 | € 29.686 | 6,99% | 8,31% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n10/10 | MX-5 RF | benzina | MAZDA MX-5 RF | finanziamento; prezzo promo; dealers aderenti | € 299 | € 34.000 | € 8.500 | € 20.104 | € 25.500 | € 31.101 | 6,99% | 8,26% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\nRIGHE MAZDA: 9\nBAD: [('MAZDA CX-60', ['missing_Rata', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']), ('MAZDA CX-80', ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short'])]\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE MAZDA: 9\nERRORI: 7\nERRORE: 6 missing Rata: MAZDA CX-60\nERRORE: 6 missing Anticipo: MAZDA CX-60\nERRORE: 6 missing Rata Finale / VFG: MAZDA CX-60\nERRORE: 6 missing Importo Totale Credito: MAZDA CX-60\nERRORE: 6 missing Importo Totale Dovuto: MAZDA CX-60\nERRORE: 6 missing TAN (%): MAZDA CX-60\nERRORE: 6 missing TAEG (%): MAZDA CX-60\n\nSTOP: errori presenti, nessun push eseguito."
+      "elapsed_seconds": 1.5,
+      "log_excerpt": "Traceback (most recent call last):\n  File \"/home/gruppobrandini/promo-monitor/mazda_push_to_sheet.py\", line 16, in <module>\n    rows = build_rows()\n           ^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/mazda_to_sheet_v3.py\", line 170, in build_rows\n    old_rows = mazda_to_sheet_v2.build_rows()\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/mazda_to_sheet_v2.py\", line 242, in build_rows\n    r = parse_page(page, modello, title, motore, url, run_id)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/mazda_to_sheet_v2.py\", line 112, in parse_page\n    page.goto(url, wait_until=\"domcontentloaded\", timeout=60000)\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py\", line 9612, in goto\n    self._sync(\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_page.py\", line 557, in goto\n    return await self._main_frame.goto(**locals_to_params(locals()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py\", line 156, in goto\n    await self._channel.send(\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 69, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 559, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.Error: Page.goto: net::ERR_CONNECTION_RESET at https://www.mazda.it/offerte/offerte-privati/mazda-cx-5-offerte/\nCall log:\n  - navigating to \"https://www.mazda.it/offerte/offerte-privati/mazda-cx-5-offerte/\", waiting until \"domcontentloaded\""
     },
     {
       "brand": "Hyundai",
       "script": "hyundai_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 200.2,
+      "elapsed_seconds": 198.0,
       "log_excerpt": ""
     },
     {
       "brand": "MG",
       "script": "mg_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 69.0,
+      "elapsed_seconds": 69.1,
       "log_excerpt": ""
     },
     {
       "brand": "Omoda / Jaecoo",
       "script": "omodajaecoo_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 91.5,
+      "elapsed_seconds": 94.2,
       "log_excerpt": ""
     },
     {
@@ -142,35 +142,35 @@
       "brand": "BMW",
       "script": "bmw_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 143.7,
+      "elapsed_seconds": 142.6,
       "log_excerpt": ""
     },
     {
       "brand": "MINI",
       "script": "mini_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 61.7,
+      "elapsed_seconds": 62.1,
       "log_excerpt": ""
     },
     {
       "brand": "DR",
       "script": "dr_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 68.1,
+      "elapsed_seconds": 66.5,
       "log_excerpt": "URL scoperti dinamicamente dalla hub: 7\n  - https://drautomobiles.com/promozione-dr-5-collection-bz-gpl/\n  - https://drautomobiles.com/promozione-dr-5-full-hybrid-collection/\n  - https://drautomobiles.com/promozione-dr-5-stilnovo/\n  - https://drautomobiles.com/promozione-dr-6-collection/\n  - https://drautomobiles.com/promozione-dr-6-full-hybrid/\n  - https://drautomobiles.com/promozione-dr-6-stilnovo/\n  - https://drautomobiles.com/promozione-dr-6-superhybrid-collection/\n1/1 | DR 6 Superhybrid Collection | plug-in | DR 6 Superhybrid Collection Superhybrid PHEV | Bonus DR; bonus € 6.000; Superhybrid PHEV; plug-in | Intero € 29.900 | Scad 30/09/2026 | card_only_no_legal | source=detail_card; no_financial_legal_found; bonus_dr | FLAGS: []\nRIGHE DR: 1\nBAD: []\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE DR: 1\n\nSTOP: attese almeno 6 righe DR, trovate 1. Nessun push eseguito."
     },
     {
       "brand": "Lepas",
       "script": "lepas_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 14.5,
+      "elapsed_seconds": 15.4,
       "log_excerpt": ""
     },
     {
       "brand": "Dongfeng",
       "script": "dongfeng_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 15.0,
+      "elapsed_seconds": 16.2,
       "log_excerpt": ""
     }
   ]
