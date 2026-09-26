@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "run_id": "20260925_043005",
+  "run_id": "20260926_043001",
   "run_type": "scheduled",
-  "run_started_at": "2026-09-25T04:30:05+00:00",
-  "generated_at": "2026-09-25T05:02:49+00:00",
+  "run_started_at": "2026-09-26T04:30:01+00:00",
+  "generated_at": "2026-09-26T05:03:30+00:00",
   "overall_status": "ERROR",
   "totals": {
     "configured": 23,
-    "ok": 18,
-    "bad": 5,
+    "ok": 19,
+    "bad": 4,
     "not_run": 0
   },
   "items": [
@@ -16,91 +16,91 @@
       "brand": "Fiat",
       "script": "fiat_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 135.9,
+      "elapsed_seconds": 132.9,
       "log_excerpt": ""
     },
     {
       "brand": "Abarth",
       "script": "abarth_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 26.6,
+      "elapsed_seconds": 26.1,
       "log_excerpt": ""
     },
     {
       "brand": "Lancia",
       "script": "lancia_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 69.8,
+      "elapsed_seconds": 69.7,
       "log_excerpt": ""
     },
     {
       "brand": "Alfa Romeo",
       "script": "alfa_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 87.6,
+      "elapsed_seconds": 88.8,
       "log_excerpt": ""
     },
     {
       "brand": "Jeep",
       "script": "jeep_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 12.0,
+      "elapsed_seconds": 11.9,
       "log_excerpt": ""
     },
     {
       "brand": "Peugeot",
       "script": "peugeot_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 219.1,
+      "elapsed_seconds": 217.7,
       "log_excerpt": ""
     },
     {
       "brand": "Citroen",
       "script": "citroen_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 147.9,
+      "elapsed_seconds": 182.7,
       "log_excerpt": "URL FINANZIAMENTO TROVATI: 22\nSKIP NO LEGAL | 1/22 | https://www.citroen.it/acquista/offerte-privati/ami-elettrica-finanziamento.html\nSKIP NO LEGAL | 2/22 | https://www.citroen.it/acquista/offerte-privati/ami-buggy-elettrica-finanziamento.html\nSKIP NO LEGAL | 3/22 | https://www.citroen.it/acquista/offerte-privati/ami-pack-color-finanziamento.html\nSKIP NO LEGAL | 4/22 | https://www.citroen.it/acquista/offerte-privati/ami-rip-curl-finanziamento.html\nSKIP NO LEGAL | 5/22 | https://www.citroen.it/acquista/offerte-privati/nuova-c3-you-finanziamento.html\nSKIP NO LEGAL | 6/22 | https://www.citroen.it/acquista/offerte-privati/nuova-c3-hybrid-finanziamento.html\nSKIP NO LEGAL | 7/22 | https://www.citroen.it/acquista/offerte-privati/e-c3-finanziamento.html\nSKIP NO LEGAL | 8/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-c3-aircross-finanziamento.html\nSKIP NO LEGAL | 9/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-c3-aircross-hybrid-finanziamento.html\nSKIP NO LEGAL | 10/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-e-c3-aircross-elettrico-finanziamento.html\nSKIP NO LEGAL | 11/22 | https://www.citroen.it/acquista/offerte-privati/nuova-e-c4-elettrica-finanziamento.html\nSKIP NO LEGAL | 12/22 | https://www.citroen.it/acquista/offerte-privati/nuova-c4-hybrid-finanziamento.html\nSKIP NO LEGAL | 13/22 | https://www.citroen.it/acquista/offerte-privati/nuova-e-c4x-elettrica-finanziamento.html\nSKIP NO LEGAL | 14/22 | https://www.citroen.it/acquista/offerte-privati/nuova-c4x-hybrid-finanziamento.html\nSKIP NO LEGAL | 15/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-e-c5-aircross-finanziamento.html\nSKIP NO LEGAL | 16/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-c5-aircross-finanziamento.html\nSKIP NO LEGAL | 17/22 | https://www.citroen.it/acquista/offerte-privati/spacetourer-finanziamento.html\nSKIP NO LEGAL | 18/22 | https://www.citroen.it/acquista/offerte-privati/e-spacetourer-finanziamento.html\nSKIP NO LEGAL | 19/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-jumpy-combi-finanziamento.html\nSKIP NO LEGAL | 20/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-berlingo-finanziamento.html\nSKIP NO LEGAL | 21/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-berlingo-30anni-finanziamento.html\nSKIP NO LEGAL | 22/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-e-berlingo-finanziamento.html\nRIGHE VALIDE: 0\nSKIPPED: 22\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE CITROEN: 0\n\nSTOP: attese almeno 1 righe Citroen, trovate 0. Nessun push eseguito."
     },
     {
       "brand": "Opel",
       "script": "opel_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 209.2,
+      "elapsed_seconds": 212.8,
       "log_excerpt": ""
     },
     {
       "brand": "DS",
       "script": "ds_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 110.9,
+      "elapsed_seconds": 115.1,
       "log_excerpt": ""
     },
     {
       "brand": "Fiat Professional",
       "script": "fiat_pro_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 100.5,
+      "elapsed_seconds": 104.2,
       "log_excerpt": ""
     },
     {
       "brand": "Nissan",
       "script": "nissan_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 64.9,
-      "log_excerpt": "JUKE | offerte dichiarate: 4 | detail ids: ['NIT003', 'NIT004', 'NIT005', 'NIT006']\nQASHQAI | offerte dichiarate: 4 | detail ids: ['NIT007', 'NIT008', 'NIT009', 'NIT010']\n\nTraceback (most recent call last):\n  File \"/home/gruppobrandini/promo-monitor/nissan_push_to_sheet.py\", line 16, in <module>\n    rows = build_rows()\n           ^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/nissan_to_sheet_v2.py\", line 321, in build_rows\n    declared, ids = get_offer_ids(browser, name, value)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/nissan_to_sheet_v2.py\", line 51, in get_offer_ids\n    page.locator(\"select\").nth(1).select_option(model_value)\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py\", line 19592, in select_option\n    self._sync(\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py\", line 628, in select_option\n    return await self._frame.select_option(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py\", line 786, in select_option\n    return await self._channel.send(\"selectOption\", self._timeout, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 69, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 559, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.TimeoutError: Locator.select_option: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"select\").nth(1)\n    - locator resolved to <select required=\"\" name=\"model\" id=\"switch-model\" class=\"toggle-model\">…</select>\n  - attempting select option action\n    2 × waiting for element to be visible and enabled\n      - did not find some options\n    - retrying select option action\n    - waiting 20ms\n    2 × waiting for element to be visible and enabled\n      - did not find some options\n    - retrying select option action\n      - waiting 100ms\n    60 × waiting for element to be visible and enabled\n       - did not find some options\n     - retrying select option action\n       - waiting 500ms"
+      "elapsed_seconds": 65.1,
+      "log_excerpt": "JUKE | offerte dichiarate: 4 | detail ids: ['NIT003', 'NIT004', 'NIT005', 'NIT006']\nQASHQAI | offerte dichiarate: 4 | detail ids: ['NIT007', 'NIT008', 'NIT009', 'NIT010']\n\nTraceback (most recent call last):\n  File \"/home/gruppobrandini/promo-monitor/nissan_push_to_sheet.py\", line 16, in <module>\n    rows = build_rows()\n           ^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/nissan_to_sheet_v2.py\", line 321, in build_rows\n    declared, ids = get_offer_ids(browser, name, value)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/nissan_to_sheet_v2.py\", line 51, in get_offer_ids\n    page.locator(\"select\").nth(1).select_option(model_value)\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py\", line 19592, in select_option\n    self._sync(\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py\", line 628, in select_option\n    return await self._frame.select_option(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py\", line 786, in select_option\n    return await self._channel.send(\"selectOption\", self._timeout, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 69, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 559, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.TimeoutError: Locator.select_option: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"select\").nth(1)\n    - locator resolved to <select required=\"\" name=\"model\" id=\"switch-model\" class=\"toggle-model\">…</select>\n  - attempting select option action\n    2 × waiting for element to be visible and enabled\n      - did not find some options\n    - retrying select option action\n    - waiting 20ms\n    2 × waiting for element to be visible and enabled\n      - did not find some options\n    - retrying select option action\n      - waiting 100ms\n    59 × waiting for element to be visible and enabled\n       - did not find some options\n     - retrying select option action\n       - waiting 500ms"
     },
     {
       "brand": "Leapmotor",
       "script": "leapmotor_push_to_sheet.py",
-      "status": "FAIL",
-      "elapsed_seconds": 28.8,
-      "log_excerpt": "URL LEAPMOTOR TROVATI: 4\n1/4 | NO_ROW | https://www.leapmotor.net/it/t03\n2/4 | NO_ROW | https://www.leapmotor.net/it/b10-reev-hybrid\n3/4 | NO_ROW | https://www.leapmotor.net/it/c10-reev-hybrid\n4/4 | NO_ROW | https://www.leapmotor.net/it/b05\n\nRIGHE LEAPMOTOR: 0\nERRORI: 4\nERRORE: 1/4 NO_ROW https://www.leapmotor.net/it/t03\nERRORE: 2/4 NO_ROW https://www.leapmotor.net/it/b10-reev-hybrid\nERRORE: 3/4 NO_ROW https://www.leapmotor.net/it/c10-reev-hybrid\nERRORE: 4/4 NO_ROW https://www.leapmotor.net/it/b05\n\nSTOP: errori presenti, nessun push eseguito."
+      "status": "OK",
+      "elapsed_seconds": 36.6,
+      "log_excerpt": ""
     },
     {
       "brand": "Honda",
       "script": "honda_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 62.5,
+      "elapsed_seconds": 60.0,
       "log_excerpt": ""
     },
     {
@@ -114,63 +114,63 @@
       "brand": "Hyundai",
       "script": "hyundai_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 198.0,
+      "elapsed_seconds": 199.7,
       "log_excerpt": ""
     },
     {
       "brand": "MG",
       "script": "mg_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 69.1,
+      "elapsed_seconds": 69.5,
       "log_excerpt": ""
     },
     {
       "brand": "Omoda / Jaecoo",
       "script": "omodajaecoo_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 94.2,
+      "elapsed_seconds": 93.1,
       "log_excerpt": ""
     },
     {
       "brand": "Changan",
       "script": "changan_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 20.4,
+      "elapsed_seconds": 19.4,
       "log_excerpt": ""
     },
     {
       "brand": "BMW",
       "script": "bmw_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 142.6,
+      "elapsed_seconds": 139.5,
       "log_excerpt": ""
     },
     {
       "brand": "MINI",
       "script": "mini_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 62.1,
+      "elapsed_seconds": 64.0,
       "log_excerpt": ""
     },
     {
       "brand": "DR",
       "script": "dr_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 66.5,
+      "elapsed_seconds": 66.8,
       "log_excerpt": "URL scoperti dinamicamente dalla hub: 7\n  - https://drautomobiles.com/promozione-dr-5-collection-bz-gpl/\n  - https://drautomobiles.com/promozione-dr-5-full-hybrid-collection/\n  - https://drautomobiles.com/promozione-dr-5-stilnovo/\n  - https://drautomobiles.com/promozione-dr-6-collection/\n  - https://drautomobiles.com/promozione-dr-6-full-hybrid/\n  - https://drautomobiles.com/promozione-dr-6-stilnovo/\n  - https://drautomobiles.com/promozione-dr-6-superhybrid-collection/\n1/1 | DR 6 Superhybrid Collection | plug-in | DR 6 Superhybrid Collection Superhybrid PHEV | Bonus DR; bonus € 6.000; Superhybrid PHEV; plug-in | Intero € 29.900 | Scad 30/09/2026 | card_only_no_legal | source=detail_card; no_financial_legal_found; bonus_dr | FLAGS: []\nRIGHE DR: 1\nBAD: []\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE DR: 1\n\nSTOP: attese almeno 6 righe DR, trovate 1. Nessun push eseguito."
     },
     {
       "brand": "Lepas",
       "script": "lepas_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 15.4,
+      "elapsed_seconds": 15.1,
       "log_excerpt": ""
     },
     {
       "brand": "Dongfeng",
       "script": "dongfeng_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 16.2,
+      "elapsed_seconds": 14.9,
       "log_excerpt": ""
     }
   ]
