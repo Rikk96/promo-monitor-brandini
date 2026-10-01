@@ -1,8 +1,10 @@
 {
   "id": "b6fc864a-10a6-44bb-84c3-c963bcec23b0",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "nissan",
   "brand_label": "Nissan",
   "requested_at": "2026-10-01T14:48:25.525Z",
-  "message": "Aggiornamento manuale Nissan in coda (richiesto da {'display_name': 'Salvino De Marco', 'user_id': 3, 'username': 'salvino.demarco@brandini.it'} via BDH)"
+  "message": "Esecuzione manuale di nissan_push_to_sheet.py",
+  "script": "nissan_push_to_sheet.py",
+  "started_at": "2026-10-01T14:49:23+00:00"
 }
