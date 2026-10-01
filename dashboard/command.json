@@ -1,8 +1,10 @@
 {
   "id": "fb078adf-8892-4183-819b-8050f2cb83af",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "fiat",
   "brand_label": "Fiat",
   "requested_at": "2026-10-01T10:36:43.571Z",
-  "message": "Aggiornamento manuale Fiat in coda (richiesto da {'display_name': 'Salvino De Marco', 'user_id': 3, 'username': 'salvino.demarco@brandini.it'} via BDH)"
+  "message": "Esecuzione manuale di fiat_push_to_sheet.py",
+  "script": "fiat_push_to_sheet.py",
+  "started_at": "2026-10-01T10:37:23+00:00"
 }
