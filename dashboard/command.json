@@ -1,8 +1,10 @@
 {
   "id": "65c05906-6d42-41b0-b252-69f5d8cab301",
-  "status": "PENDING",
+  "status": "RUNNING",
   "brand": "bmw",
   "brand_label": "BMW",
   "requested_at": "2026-10-01T14:16:00.833Z",
-  "message": "Aggiornamento manuale BMW in coda (richiesto da {'display_name': 'Salvino De Marco', 'user_id': 3, 'username': 'salvino.demarco@brandini.it'} via BDH)"
+  "message": "Esecuzione manuale di bmw_push_to_sheet.py",
+  "script": "bmw_push_to_sheet.py",
+  "started_at": "2026-10-01T14:16:29+00:00"
 }
