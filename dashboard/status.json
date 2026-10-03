@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "run_id": "20261002_043005",
+  "run_id": "20261003_043005",
   "run_type": "scheduled",
-  "run_started_at": "2026-10-02T04:30:05+00:00",
-  "generated_at": "2026-10-02T05:02:40+00:00",
+  "run_started_at": "2026-10-03T04:30:05+00:00",
+  "generated_at": "2026-10-03T05:00:47+00:00",
   "overall_status": "ERROR",
   "totals": {
     "configured": 23,
-    "ok": 16,
-    "bad": 7,
+    "ok": 15,
+    "bad": 8,
     "not_run": 0
   },
   "items": [
@@ -16,14 +16,14 @@
       "brand": "Fiat",
       "script": "fiat_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 135.5,
+      "elapsed_seconds": 135.3,
       "log_excerpt": ""
     },
     {
       "brand": "Abarth",
       "script": "abarth_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 26.0,
+      "elapsed_seconds": 27.3,
       "log_excerpt": ""
     },
     {
@@ -37,140 +37,140 @@
       "brand": "Alfa Romeo",
       "script": "alfa_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 119.1,
+      "elapsed_seconds": 120.5,
       "log_excerpt": ""
     },
     {
       "brand": "Jeep",
       "script": "jeep_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 12.2,
+      "elapsed_seconds": 12.3,
       "log_excerpt": ""
     },
     {
       "brand": "Peugeot",
       "script": "peugeot_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 231.5,
+      "elapsed_seconds": 204.0,
       "log_excerpt": ""
     },
     {
       "brand": "Citroen",
       "script": "citroen_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 147.8,
+      "elapsed_seconds": 170.7,
       "log_excerpt": "URL FINANZIAMENTO TROVATI: 22\nSKIP NO LEGAL | 1/22 | https://www.citroen.it/acquista/offerte-privati/ami-elettrica-finanziamento.html\nSKIP NO LEGAL | 2/22 | https://www.citroen.it/acquista/offerte-privati/ami-buggy-elettrica-finanziamento.html\nSKIP NO LEGAL | 3/22 | https://www.citroen.it/acquista/offerte-privati/ami-pack-color-finanziamento.html\nSKIP NO LEGAL | 4/22 | https://www.citroen.it/acquista/offerte-privati/ami-rip-curl-finanziamento.html\nSKIP NO LEGAL | 5/22 | https://www.citroen.it/acquista/offerte-privati/nuova-c3-you-finanziamento.html\nSKIP NO LEGAL | 6/22 | https://www.citroen.it/acquista/offerte-privati/nuova-c3-hybrid-finanziamento.html\nSKIP NO LEGAL | 7/22 | https://www.citroen.it/acquista/offerte-privati/e-c3-finanziamento.html\nSKIP NO LEGAL | 8/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-c3-aircross-finanziamento.html\nSKIP NO LEGAL | 9/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-c3-aircross-hybrid-finanziamento.html\nSKIP NO LEGAL | 10/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-e-c3-aircross-elettrico-finanziamento.html\nSKIP NO LEGAL | 11/22 | https://www.citroen.it/acquista/offerte-privati/nuova-e-c4-elettrica-finanziamento.html\nSKIP NO LEGAL | 12/22 | https://www.citroen.it/acquista/offerte-privati/nuova-c4-hybrid-finanziamento.html\nSKIP NO LEGAL | 13/22 | https://www.citroen.it/acquista/offerte-privati/nuova-e-c4x-elettrica-finanziamento.html\nSKIP NO LEGAL | 14/22 | https://www.citroen.it/acquista/offerte-privati/nuova-c4x-hybrid-finanziamento.html\nSKIP NO LEGAL | 15/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-e-c5-aircross-finanziamento.html\nSKIP NO LEGAL | 16/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-c5-aircross-finanziamento.html\nSKIP NO LEGAL | 17/22 | https://www.citroen.it/acquista/offerte-privati/spacetourer-finanziamento.html\nSKIP NO LEGAL | 18/22 | https://www.citroen.it/acquista/offerte-privati/e-spacetourer-finanziamento.html\nSKIP NO LEGAL | 19/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-jumpy-combi-finanziamento.html\nSKIP NO LEGAL | 20/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-berlingo-finanziamento.html\nSKIP NO LEGAL | 21/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-berlingo-30anni-finanziamento.html\nSKIP NO LEGAL | 22/22 | https://www.citroen.it/acquista/offerte-privati/nuovo-e-berlingo-finanziamento.html\nRIGHE VALIDE: 0\nSKIPPED: 22\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE CITROEN: 0\n\nSTOP: attese almeno 1 righe Citroen, trovate 0. Nessun push eseguito."
     },
     {
       "brand": "Opel",
       "script": "opel_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 202.6,
+      "elapsed_seconds": 198.9,
       "log_excerpt": ""
     },
     {
       "brand": "DS",
       "script": "ds_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 115.5,
+      "elapsed_seconds": 116.2,
       "log_excerpt": ""
     },
     {
       "brand": "Fiat Professional",
       "script": "fiat_pro_push_to_sheet.py",
-      "status": "OK",
-      "elapsed_seconds": 100.5,
-      "log_excerpt": ""
+      "status": "FAIL",
+      "elapsed_seconds": 14.2,
+      "log_excerpt": "URL: 0\nURL FIAT PRO: 0\nCARD HUB: 5\nRIGHE FIAT PRO OLD: 0\nRIGHE VALIDE: 0\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE FIAT PROFESSIONAL: 0\n\nSTOP: attese almeno 8 righe Fiat Professional, trovate 0. Nessun push eseguito."
     },
     {
       "brand": "Nissan",
       "script": "nissan_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 65.8,
+      "elapsed_seconds": 64.7,
       "log_excerpt": "JUKE | offerte dichiarate: 4 | detail ids: ['NIT042', 'NIT043', 'NIT044', 'NIT045']\nQASHQAI | offerte dichiarate: 4 | detail ids: ['NIT046', 'NIT047', 'NIT048', 'NIT049']\n\nTraceback (most recent call last):\n  File \"/home/gruppobrandini/promo-monitor/nissan_push_to_sheet.py\", line 16, in <module>\n    rows = build_rows()\n           ^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/nissan_to_sheet_v2.py\", line 321, in build_rows\n    declared, ids = get_offer_ids(browser, name, value)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/nissan_to_sheet_v2.py\", line 51, in get_offer_ids\n    page.locator(\"select\").nth(1).select_option(model_value)\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py\", line 19592, in select_option\n    self._sync(\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_locator.py\", line 628, in select_option\n    return await self._frame.select_option(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_frame.py\", line 786, in select_option\n    return await self._channel.send(\"selectOption\", self._timeout, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 69, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gruppobrandini/promo-monitor/.venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 559, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.TimeoutError: Locator.select_option: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"select\").nth(1)\n    - locator resolved to <select required=\"\" name=\"model\" id=\"switch-model\" class=\"toggle-model\">…</select>\n  - attempting select option action\n    2 × waiting for element to be visible and enabled\n      - did not find some options\n    - retrying select option action\n    - waiting 20ms\n    2 × waiting for element to be visible and enabled\n      - did not find some options\n    - retrying select option action\n      - waiting 100ms\n    59 × waiting for element to be visible and enabled\n       - did not find some options\n     - retrying select option action\n       - waiting 500ms"
     },
     {
       "brand": "Leapmotor",
       "script": "leapmotor_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 37.7,
+      "elapsed_seconds": 38.6,
       "log_excerpt": ""
     },
     {
       "brand": "Honda",
       "script": "honda_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 61.5,
+      "elapsed_seconds": 60.2,
       "log_excerpt": ""
     },
     {
       "brand": "Mazda",
       "script": "mazda_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 84.1,
+      "elapsed_seconds": 81.0,
       "log_excerpt": "CX-5 | € 348 | € 37.200 | 6,990% | 8,110% | attiva | anticipo € 6.950,00; 36 rate; rata_finale € 24.013,00,; importo_totale_credito € 30.250,00,; importo_totale_dovuto € 36.797,40.\nCX-30 | € 198 | € 23.950 | 6,99% | 8,67% | attiva | anticipo € 5.980; 36 rate; rata_finale € 14.185,50,; importo_totale_credito € 17.470,00,; importo_totale_dovuto € 21.544,43.\nMazda3 | € 199 | € 24.950 | 6,99% | 8,74% | attiva | anticipo € 8.200,00; 36 rate; rata_finale € 13.277,50,; importo_totale_credito € 16.750,00,; importo_totale_dovuto € 20.648,31.\nCX-6e | € 358 | € 44.500 | 4,99% | 5,95% | attiva | anticipo € 12.900,00; 36 rate; rata_finale € 23.375,00,; importo_totale_credito € 31.600,00,; importo_totale_dovuto € 36.519,17.\nMazda6e | € 299 | € 40.950 | 6,990% | 8,200% | attiva | anticipo € 14.070,00; 36 rate; rata_finale € 21.825,00,; importo_totale_credito € 26.880,00,; importo_totale_dovuto € 32.817,17.\nCX-60 |  | € 58.550 |  |  | attiva | card_only_no_legal\nCX-80 |  |  |  |  | incompleta | card_only_no_legal; missing_intero\nMazda2 Hybrid | € 150 | € 18.950 | 6,99% | 8,96% | attiva | anticipo € 6.670,00; 36 rate; rata_finale € 11.985,00,; importo_totale_credito € 14.126,54,; importo_totale_dovuto € 17.592,09.\nMX-5 | € 299 | € 31.500 | 6,99% | 8,31% | attiva | anticipo € 7.140,00; 36 rate; rata_finale € 18.704,00,; importo_totale_credito € 24.360,00,; importo_totale_dovuto € 29.686,99.\nMX-5 RF | € 299 | € 34.000 | 6,99% | 8,26% | attiva | anticipo € 8.500,00; 36 rate; rata_finale € 20.104,00,; importo_totale_credito € 25.500,00,; importo_totale_dovuto € 31.101,72.\nRIGHE MAZDA OLD: 10\n1/10 | CX-5 | hybrid | NUOVA MAZDA CX-5 | finanziamento; prezzo promo; hybrid; dealers aderenti | € 348 | € 37.200 | € 6.950 | € 24.013 | € 30.250 | € 36.797 | 6,990% | 8,110% | 31/12/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n2/10 | CX-30 | hybrid | MAZDA CX-30 | finanziamento; prezzo promo; hybrid; dealers aderenti | € 198 | € 23.950 | € 5.980 | € 14.185 | € 17.470 | € 21.544 | 6,99% | 8,67% | 30/06/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n3/10 | Mazda3 | hybrid | MAZDA3 5 PORTE | finanziamento; prezzo promo; dealers aderenti | € 199 | € 24.950 | € 8.200 | € 13.277 | € 16.750 | € 20.648 | 6,99% | 8,74% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n4/10 | CX-6e | elettrica | MAZDA CX-6e | finanziamento; prezzo promo; elettrica; dealers aderenti | € 358 | € 44.500 | € 12.900 | € 23.375 | € 31.600 | € 36.519 | 4,99% | 5,95% | 31/12/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n5/10 | Mazda6e | elettrica | MAZDA6e | finanziamento; prezzo promo; elettrica; dealers aderenti | € 299 | € 40.950 | € 14.070 | € 21.825 | € 26.880 | € 32.817 | 6,990% | 8,200% | 31/12/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n6/10 | CX-60 | plug-in | MAZDA CX-60 | stock; plug-in |  | € 58.550 |  |  |  |  |  |  | 31/12/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']\n7/10 | CX-80 | plug-in | MAZDA CX-80 | stock; plug-in |  |  |  |  |  |  |  |  | 31/12/2026 | source=detail_legal; finanziamento_mazda | FLAGS: ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']\n8/10 | Mazda2 Hybrid | hybrid | MAZDA2 HYBRID | finanziamento; prezzo promo; hybrid; dealers aderenti | € 150 | € 18.950 | € 6.670 | € 11.985 | € 14.126 | € 17.592 | 6,99% | 8,96% | 30/09/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n9/10 | MX-5 | benzina | MAZDA MX-5 SOFT TOP | finanziamento; prezzo promo; dealers aderenti | € 299 | € 31.500 | € 7.140 | € 18.704 | € 24.360 | € 29.686 | 6,99% | 8,31% | 31/12/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\n10/10 | MX-5 RF | benzina | MAZDA MX-5 RF | finanziamento; prezzo promo; dealers aderenti | € 299 | € 34.000 | € 8.500 | € 20.104 | € 25.500 | € 31.101 | 6,99% | 8,26% | 31/12/2026 | source=detail_legal; finanziamento_mazda; 36 rate | FLAGS: []\nRIGHE MAZDA: 9\nBAD: [('MAZDA CX-60', ['missing_Rata', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short']), ('MAZDA CX-80', ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'note_short'])]\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE MAZDA: 9\nERRORI: 7\nERRORE: 6 missing Rata: MAZDA CX-60\nERRORE: 6 missing Anticipo: MAZDA CX-60\nERRORE: 6 missing Rata Finale / VFG: MAZDA CX-60\nERRORE: 6 missing Importo Totale Credito: MAZDA CX-60\nERRORE: 6 missing Importo Totale Dovuto: MAZDA CX-60\nERRORE: 6 missing TAN (%): MAZDA CX-60\nERRORE: 6 missing TAEG (%): MAZDA CX-60\n\nSTOP: errori presenti, nessun push eseguito."
     },
     {
       "brand": "Hyundai",
       "script": "hyundai_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 199.8,
+      "elapsed_seconds": 202.9,
       "log_excerpt": ""
     },
     {
       "brand": "MG",
       "script": "mg_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 65.2,
+      "elapsed_seconds": 64.7,
       "log_excerpt": "LINK MG: 9\nMG HS | MG HS Hybrid+ Comfort | hybrid | € 249 | € 25.990 | 7,45% | 9,11% | 30/09/2026 | 35 rate; anticipo € 5.025; rata_finale € 18.234,50; importo_totale_dovuto € 27.171,50\nMG HS | NUOVA MG HS PHEV Comfort | plug-in | € 249 | € 27.490 | 7,46% | 9,04% | 30/09/2026 | 35 rate; anticipo € 5.360; rata_finale € 19.755,00; importo_totale_dovuto € 28.695,03\nMG3 | Nuova MG3 Benzina Standard | benzina | € 89 | € 13.990 | 7,45% | 11,01% | 30/09/2026 | 35 rate; anticipo € 5.920; rata_finale € 7.645,50; importo_totale_dovuto € 10.930,77\nMG3 | MG3 Hybrid+ Comfort | hybrid | € 95 | € 16.990 | 7,45% | 10,02% | 30/09/2026 | 35 rate; anticipo € 5.610; rata_finale € 11.819,50; importo_totale_dovuto € 15.341,59\nMG | MG GO! Concept |  | € 196 | € 16.490 | 0,00% | 1,73% | 31/10/2026 | 35 rate; anticipo € 0; rata_finale € 10.655,00; importo_totale_dovuto € 17.713.71\nMG ZS | NUOVA MG ZS Hybrid+ COM | hybrid | € 120 | € 20.490 | 7,44% | 9,51% | 30/09/2026 | 35 rate; anticipo € 5.680; rata_finale € 15.294,00; importo_totale_dovuto € 19.700,00\nMGS5 | NUOVA MGS5 EV 49 Kwh COMFORT | elettrica | € 219 | € 24.990 | 7,47% | 9,60% | 30/09/2026 | 35 rate; anticipo € 9.070; rata_finale € 12.866,50; importo_totale_dovuto € 20.740,39\nMG4 | NUOVA MG4 PREMIUM 64KWH | elettrica | € 199 | € 29.490 | 7,47% | 9,74% | 30/09/2026 | 35 rate; anticipo € 14.790; rata_finale € 12.067,00; importo_totale_dovuto € 19.237,72\nMG4 | NUOVA MG4 URBAN Comfort 43KWH | elettrica | € 115 | € 19.490 | 7,45% | 9,98% | 30/09/2026 | 35 rate; anticipo € 7.580; rata_finale € 11.725,50; importo_totale_dovuto € 15.948,97\nRIGHE MG OLD: 9\n1/9 | MG HS | hybrid | MG HS Hybrid+ Comfort | finanziamento; prezzo promo; dealers aderenti; Santander; hybrid | € 249 | € 25.990 | € 5.025 | € 18.234 | € 21.903 | € 27.171 | 7,45% | 9,11% | 30/09/2026 | source=detail_legal; finanziamento_mg; 35 rate | FLAGS: []\n2/9 | MG HS | plug-in | NUOVA MG HS PHEV Comfort | finanziamento; prezzo promo; dealers aderenti; Santander; plug-in; elettrica | € 249 | € 27.490 | € 5.360 | € 19.755 | € 23.114 | € 28.695 | 7,46% | 9,04% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\n3/9 | MG3 | benzina | Nuova MG3 Benzina Standard | finanziamento; prezzo promo; dealers aderenti; Santander | € 89 | € 13.990 | € 5.920 | € 7.645 | € 8.409 | € 10.930 | 7,45% | 11,01% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\n4/9 | MG3 | hybrid | MG3 Hybrid+ Comfort | finanziamento; prezzo promo; dealers aderenti; Santander; hybrid | € 95 | € 16.990 | € 5.610 | € 11.819 | € 11.939 | € 15.341 | 7,45% | 10,02% | 30/09/2026 | source=detail_legal; finanziamento_mg; 35 rate | FLAGS: []\n5/9 | MG |  | MG GO! Concept | finanziamento; prezzo promo; dealers aderenti; Santander | € 196 | € 16.490 | € 0 | € 10.654 | € 17.005 | € 17.713 | 0,00% | 1,73% | 31/10/2026 | source=detail_legal; finanziamento_mg; 35 rate | FLAGS: ['missing_Motorizzazione']\n6/9 | MG ZS | hybrid | NUOVA MG ZS Hybrid+ COM | finanziamento; prezzo promo; dealers aderenti; Santander; hybrid | € 120 | € 20.490 | € 5.680 | € 15.294 | € 15.504 | € 19.700 | 7,44% | 9,51% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\n7/9 | MGS5 | elettrica | NUOVA MGS5 EV 49 Kwh COMFORT | finanziamento; prezzo promo; dealers aderenti; Santander; elettrica | € 219 | € 24.990 | € 9.070 | € 12.866 | € 16.658 | € 20.740 | 7,47% | 9,60% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\n8/9 | MG4 | elettrica | NUOVA MG4 PREMIUM 64KWH | finanziamento; prezzo promo; dealers aderenti; Santander; elettrica | € 199 | € 29.490 | € 14.790 | € 12.067 | € 15.390 | € 19.237 | 7,47% | 9,74% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\n9/9 | MG4 | elettrica | NUOVA MG4 URBAN Comfort 43KWH | finanziamento; prezzo promo; dealers aderenti; Santander; elettrica | € 115 | € 19.490 | € 7.580 | € 11.725 | € 12.490 | € 15.948 | 7,45% | 9,98% | 30/09/2026 | source=detail_legal; finanziamento_mg; 36 rate | FLAGS: []\nRIGHE MG: 9\nBAD: [('MG GO! Concept', ['missing_Motorizzazione'])]\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE MG: 9\nERRORI: 1\nERRORE: 5 missing Motorizzazione: MG GO! Concept\n\nSTOP: errori presenti, nessun push eseguito."
     },
     {
       "brand": "Omoda / Jaecoo",
       "script": "omodajaecoo_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 91.6,
+      "elapsed_seconds": 93.3,
       "log_excerpt": ""
     },
     {
       "brand": "Changan",
       "script": "changan_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 19.8,
+      "elapsed_seconds": 21.3,
       "log_excerpt": ""
     },
     {
       "brand": "BMW",
       "script": "bmw_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 50.3,
+      "elapsed_seconds": 46.5,
       "log_excerpt": "BMW URL scoperti dinamicamente: 5\n - /bmw-i/ix1 -> https://offerte.bmw.it/embedded/bmw-i/ix1\n - /edrive/x1-plug-in-hybrid -> https://offerte.bmw.it/embedded/edrive/x1-plug-in-hybrid\n - /serie-1/5-porte -> https://offerte.bmw.it/embedded/serie-1/5-porte\n - /x/x1 -> https://offerte.bmw.it/embedded/x/x1\n - /x/x2 -> https://offerte.bmw.it/embedded/x/x2\niX1 | elettrica | € 400 | € 42.160 | 2,99% | 3,87% | 31/10/2026 | attiva | source=offerte.bmw.it_embedded; anticipo € 9.890.; 35 canoni; rata_finale € 20.859,03.; importo_totale_credito € 32.270.; importo_totale_dovuto € 35.277.\nX1 | plug-in | € 420 | € 50.859 | 5,49% | 6,41% | 31/10/2026 | attiva | source=offerte.bmw.it_embedded; anticipo € 15.520.; 35 canoni; rata_finale € 25.871,44.; importo_totale_credito € 35.339.; importo_totale_dovuto € 41.008.\n5 PORTE | diesel |  |  |  |  | 07/10/2026 | incompleta | source=offerte.bmw.it_embedded; 36 mesi; missing_rata; missing_intero; missing_tan; missing_taeg; missing_note_legali\nX1 | diesel | € 400 | € 43.688 | 5,49% | 6,43% | 31/10/2026 | attiva | source=offerte.bmw.it_embedded; anticipo € 9.990.; 35 canoni; rata_finale € 24.723,94.; importo_totale_credito € 33.698.; importo_totale_dovuto € 39.138.\nX2 | diesel |  |  |  |  | 07/10/2026 | incompleta | source=offerte.bmw.it_embedded; 36 mesi; missing_rata; missing_intero; missing_tan; missing_taeg; missing_note_legali\nRIGHE BMW OLD: 5\n1/5 | iX1 | elettrica | BMW iX1 eDrive20 M Sport | leasing finanziario; BMW Bank; manutenzione inclusa; concessionarie aderenti; elettrica | € 400 | € 42.160 | € 9.890 | € 20.859 | € 32.270 | € 35.277 | 2,99% | 3,87% | 31/10/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 36 mesi; 35 canoni | FLAGS: []\n2/5 | X1 | plug-in | BMW X1 Plug-in Hybrid xDrive25e M Sport | leasing finanziario; BMW Bank; manutenzione inclusa; concessionarie aderenti; plug-in | € 420 | € 50.859 | € 15.520 | € 25.871 | € 35.339 | € 41.008 | 5,49% | 6,41% | 31/10/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 36 mesi; 35 canoni | FLAGS: []\n3/5 | 5 PORTE | diesel | BMW 5 PORTE | diesel |  |  |  |  |  |  |  |  | 07/10/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 36 mesi | FLAGS: ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short']\n4/5 | X1 | diesel | BMW X1 sDrive18d M Sport | leasing finanziario; BMW Bank; manutenzione inclusa; concessionarie aderenti; diesel | € 400 | € 43.688 | € 9.990 | € 24.723 | € 33.698 | € 39.138 | 5,49% | 6,43% | 31/10/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 36 mesi; 35 canoni | FLAGS: []\n5/5 | X2 | diesel | BMW X2 | diesel |  |  |  |  |  |  |  |  | 07/10/2026 | source=detail_legal; leasing_finanziario_bmw_bank; 36 mesi | FLAGS: ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short']\nRIGHE BMW: 5\nBAD: [('BMW 5 PORTE', ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short']), ('BMW X2', ['missing_Rata', 'missing_Intero', 'missing_Anticipo', 'missing_Rata Finale / VFG', 'missing_Importo Totale Credito', 'missing_Importo Totale Dovuto', 'missing_TAN (%)', 'missing_TAEG (%)', 'missing_Note Legali', 'note_short'])]\nDEBUG ONLY: nessun push su Google Sheet\nBMW: x5_incompleta_skipped se presente\n\nRIGHE BMW: 5\n\nSTOP: attese almeno 15 righe BMW, trovate 5. Nessun push eseguito."
     },
     {
       "brand": "MINI",
       "script": "mini_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 72.7,
+      "elapsed_seconds": 62.6,
       "log_excerpt": ""
     },
     {
       "brand": "DR",
       "script": "dr_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 7.8,
+      "elapsed_seconds": 6.1,
       "log_excerpt": "URL scoperti dinamicamente dalla hub: 0\nRIGHE DR: 0\nBAD: []\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE DR: 0\n\nSTOP: attese almeno 6 righe DR, trovate 0. Nessun push eseguito."
     },
     {
       "brand": "Lepas",
       "script": "lepas_push_to_sheet.py",
       "status": "FAIL",
-      "elapsed_seconds": 16.0,
+      "elapsed_seconds": 10.7,
       "log_excerpt": "URL scoperti dinamicamente dalla hub: 1\n  - https://www.lepasautoitalia.com/promozioni/lepas-l8/\n1/1 | LEPAS L8 PHEV | Rata € 269 | Intero  | TAN 4,61% TAEG 5,49% | Scad 31/10/2026 | FLAGS: ['missing_Intero']\nRIGHE LEPAS: 1\nBAD: [('LEPAS L8 PHEV', ['missing_Intero'])]\nDEBUG ONLY: nessun push su Google Sheet\n\nRIGHE LEPAS: 1\nERRORI: 1\nERRORE: 1 missing Intero: LEPAS L8 PHEV\n\nSTOP: errori presenti, nessun push eseguito."
     },
     {
       "brand": "Dongfeng",
       "script": "dongfeng_push_to_sheet.py",
       "status": "OK",
-      "elapsed_seconds": 18.4,
+      "elapsed_seconds": 16.9,
       "log_excerpt": ""
     }
   ]
